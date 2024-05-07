@@ -2,8 +2,8 @@
 \contentsline {chapter}{ΕΥΧΑΡΙΣΤΙΕΣ}{i}{}%
 \contentsline {chapter}{ΠΕΡΙΛΗΨΗ}{ii}{}%
 \contentsline {chapter}{ABSTRACT}{iii}{}%
-\contentsline {chapter}{\textKappa \textalpha \texttau \acctonos \textalpha \textlambda \textomicron \textgamma \textomicron \textfinalsigma {} \textSigma \textchi \texteta \textmu \acctonos \textalpha \texttau \textomega \textnu }{vi}{}%
-\contentsline {chapter}{\textKappa \textalpha \texttau \acctonos \textalpha \textlambda \textomicron \textgamma \textomicron \textfinalsigma {} \textPi \textiota \textnu \acctonos \textalpha \textkappa \textomega \textnu }{vi}{}%
+\contentsline {chapter}{\textKappa \textalpha \texttau \acctonos \textalpha \textlambda \textomicron \textgamma \textomicron \textfinalsigma {} \textSigma \textchi \texteta \textmu \acctonos \textalpha \texttau \textomega \textnu }{v}{}%
+\contentsline {chapter}{\textKappa \textalpha \texttau \acctonos \textalpha \textlambda \textomicron \textgamma \textomicron \textfinalsigma {} \textPi \textiota \textnu \acctonos \textalpha \textkappa \textomega \textnu }{v}{}%
 \addvspace {1em}
 \contentsline {chapter}{\numberline {\textLR {1}}ΕΙΣΑΓΩΓΗ}{1}{}%
 \contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }ΣΗΜΑΣΙΑ ΤΟΥ ΠΡΟΒΛΗΜΑΤΟΣ}{1}{}%
@@ -11,4 +11,4 @@
 \contentsline {section}{\numberline {\if@rl \I {3.1}\else \textLR {1.3}\fi }ΜΕΘΟΔΟΛΟΓΙΑ ΠΡΟΣΕΓΓΙΣΗΣ}{1}{}%
 \contentsline {section}{\numberline {\if@rl \I {4.1}\else \textLR {1.4}\fi }ΔΙΑΡΘΡΩΣΗ ΤΗΣ ΔΙΠΛΩΜΑΤΙΚΗΣ ΕΡΓΑΣΙΑΣ}{1}{}%
 \contentsline {chapter}{\numberline {\textLR {2}}LOW CODE}{1}{}%
-\contentsline {subparagraph}{}{2}{}%
+\contentsline {subparagraph}{}{1}{}%
