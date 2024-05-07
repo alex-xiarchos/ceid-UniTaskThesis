@@ -418,129 +418,129 @@
 
 %% CD covers and labels
 
-\usepackage{tikz} % allows drawing shapes
-\usetikzlibrary{decorations.text}
-\usepgflibrary{shapes}
-\usepackage{calculator}
+%\usepackage{tikz} % allows drawing shapes
+%\usetikzlibrary{decorations.text}
+%\usepgflibrary{shapes}
+%\usepackage{calculator}
 
-\newcommand{\definecdlabeloffsets}[4]{
-	\edef\upperlabelxoffset{#1}
-	\edef\upperlabelyoffset{#2}
-	\edef\lowerlabelxoffset{#3}
-	\edef\lowerlabelyoffset{#4}
-}
+%\newcommand{\definecdlabeloffsets}[4]{
+%	\edef\upperlabelxoffset{#1}
+%	\edef\upperlabelyoffset{#2}
+%	\edef\lowerlabelxoffset{#3}
+%	\edef\lowerlabelyoffset{#4}
+%}
 
-\newcommand{\createcdlabel}[5]{
-	\cleardoublepage
-	\thispagestyle{empty}
-	% Zero page margins
-		\setlength{\oddsidemargin}{0mm}
-		\setlength{\evensidemargin}{0mm}
-		\setlength{\textwidth}{\paperwidth}
-		\setlength{\topmargin}{0mm}
-		\setlength{\textheight}{\paperheight}
-	\fontsize{7}{8.4}\selectfont
-	\begin{tikzpicture}[remember picture, overlay]
-	    \ADD{-10.5}{\upperlabelxoffset}{\x} \ADD{-7.4}{\upperlabelyoffset}{\y}
-	    \node [shift={(\x cm,\y cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-	            \draw(0,0) % circle's center (relative)
-				circle (2cm) % circle #1 radius
-				circle (5.6cm);
-                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ} \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
-                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
-	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS }}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
-	        \end{tikzpicture}
-	        };
-	     \ADD{-13.5}{\upperlabelxoffset}{\xx} \ADD{-12}{\upperlabelyoffset}{\yy}
-	     \node [shift={(\xx cm,\yy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-	             \draw(0,0) % rectangle's center (relative)
-				  rectangle (6cm,2.5cm);
-           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
-	        \end{tikzpicture}
-	        };
-	\end{tikzpicture}
-
-	%% lower copy:
-	\fontsize{7}{8.4}\selectfont
-	\begin{tikzpicture}[remember picture, overlay]
-	    \ADD{-10.5}{\lowerlabelxoffset}{\xxx} \ADD{-22.2}{\lowerlabelyoffset}{\yyy}
-	    \node [shift={(\xxx cm,\yyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-	            \draw(0,0) % circle's center (relative)
-				circle (2cm) % circle #1 radius
-				circle (5.6cm);
-                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ}  \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
-                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
-	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS}}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
-	        \end{tikzpicture}
-	        };
-	     \ADD{-13.5}{\lowerlabelxoffset}{\xxxx} \ADD{-26.8}{\lowerlabelyoffset}{\yyyy}
-	     \node [shift={(\xxxx cm,\yyyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-	             \draw(0,0) % rectangle's center (relative)
-				  rectangle (6cm,2.5cm);
-           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
-	        \end{tikzpicture}
-	        };
-	\end{tikzpicture}
-	%
-	\pagebreak
-}
-
-\newcommand{\createcdcover}[5]{
-	\cleardoublepage
-	\thispagestyle{empty}
-	% Zero page margins
+%\newcommand{\createcdlabel}[5]{
+%	\cleardoublepage
+%	\thispagestyle{empty}
+%	% Zero page margins
 %		\setlength{\oddsidemargin}{0mm}
 %		\setlength{\evensidemargin}{0mm}
 %		\setlength{\textwidth}{\paperwidth}
 %		\setlength{\topmargin}{0mm}
 %		\setlength{\textheight}{\paperheight}
-	\fontsize{9}{10.8}\selectfont
-	\begin{tikzpicture}[remember picture, overlay]
-	    \node [shift={(-10.5cm,-8.4cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
-			\draw[dashed] (-6,-6) rectangle (6,6);
-			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
-                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
-                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
-                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
-                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
-                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
-	        \end{tikzpicture}
-	        };
-	\end{tikzpicture}
+%	\fontsize{7}{8.4}\selectfont
+%	\begin{tikzpicture}[remember picture, overlay]
+%	    \ADD{-10.5}{\upperlabelxoffset}{\x} \ADD{-7.4}{\upperlabelyoffset}{\y}
+%	    \node [shift={(\x cm,\y cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%	            \draw(0,0) % circle's center (relative)
+%				circle (2cm) % circle #1 radius
+%				circle (5.6cm);
+%                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ} \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
+%                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
+%			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
+%	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS }}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
+%	        \end{tikzpicture}
+%	        };
+%	     \ADD{-13.5}{\upperlabelxoffset}{\xx} \ADD{-12}{\upperlabelyoffset}{\yy}
+%	     \node [shift={(\xx cm,\yy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%	             \draw(0,0) % rectangle's center (relative)
+%				  rectangle (6cm,2.5cm);
+%           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
+%	        \end{tikzpicture}
+%	        };
+%	\end{tikzpicture}
+%
+%	%% lower copy:
+%	\fontsize{7}{8.4}\selectfont
+%	\begin{tikzpicture}[remember picture, overlay]
+%	    \ADD{-10.5}{\lowerlabelxoffset}{\xxx} \ADD{-22.2}{\lowerlabelyoffset}{\yyy}
+%	    \node [shift={(\xxx cm,\yyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%	            \draw(0,0) % circle's center (relative)
+%				circle (2cm) % circle #1 radius
+%				circle (5.6cm);
+%                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ}  \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
+%                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
+%			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
+%	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS}}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
+%	        \end{tikzpicture}
+%	        };
+%	     \ADD{-13.5}{\lowerlabelxoffset}{\xxxx} \ADD{-26.8}{\lowerlabelyoffset}{\yyyy}
+%	     \node [shift={(\xxxx cm,\yyyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%	             \draw(0,0) % rectangle's center (relative)
+%				  rectangle (6cm,2.5cm);
+%           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
+%	        \end{tikzpicture}
+%	        };
+%	\end{tikzpicture}
+%	%
+%	\pagebreak
+%}
 
-	%% lower copy:
-	\fontsize{9}{10.8}\selectfont
-	\begin{tikzpicture}[remember picture, overlay]
-	    \node [shift={(-10.5cm,-21.9cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-	        {%
-	        \begin{tikzpicture}[remember picture, overlay]
-			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
-			\draw[dashed] (-6,-6) rectangle (6,6);
-			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
-                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
-                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
-                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
-                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
-                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
-	        \end{tikzpicture}
-	        };
-	\end{tikzpicture}
-	%
-}
+%\newcommand{\createcdcover}[5]{
+%	\cleardoublepage
+%	\thispagestyle{empty}
+%	% Zero page margins
+%%		\setlength{\oddsidemargin}{0mm}
+%%		\setlength{\evensidemargin}{0mm}
+%%		\setlength{\textwidth}{\paperwidth}
+%%		\setlength{\topmargin}{0mm}
+%%		\setlength{\textheight}{\paperheight}
+%	\fontsize{9}{10.8}\selectfont
+%	\begin{tikzpicture}[remember picture, overlay]
+%	    \node [shift={(-10.5cm,-8.4cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
+%			\draw[dashed] (-6,-6) rectangle (6,6);
+%			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
+%                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
+%                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
+%			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
+%                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
+%                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
+%                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
+%	        \end{tikzpicture}
+%	        };
+%	\end{tikzpicture}
+%
+%	%% lower copy:
+%	\fontsize{9}{10.8}\selectfont
+%	\begin{tikzpicture}[remember picture, overlay]
+%	    \node [shift={(-10.5cm,-21.9cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+%	        {%
+%	        \begin{tikzpicture}[remember picture, overlay]
+%			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
+%			\draw[dashed] (-6,-6) rectangle (6,6);
+%			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
+%                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
+%                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
+%			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
+%                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
+%                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
+%                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
+%	        \end{tikzpicture}
+%	        };
+%	\end{tikzpicture}
+%	%
+%}
 
 \endinput
