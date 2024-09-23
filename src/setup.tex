@@ -22,12 +22,22 @@
 \usepackage{arabicore}
 \usepackage{booktabs}
 \usepackage{titleps}
-\usepackage{biblatex}
 \usepackage{lstmisc}
+\usepackage{caption}
+\usepackage{wrapfig} % Wrap image side to text
+\usepackage{tikz}
 \usepackage{blindtext}
 \graphicspath{ {./img/} }
 %\usepackage[fontsize=13pt]{fontsize}
 
+
+% Εισαγωγή βιβλιογραφίας
+\usepackage[backend=biber]{biblatex}
+\addbibresource{References.bib}
+\bibliographystyle{ieeetr}
+
+
+% Ορισμός γραμματοσειρών
 \setmainfont{Conduit ITC Hel Light}
 \newfontfamily\fontDin{CF Din Condensed}
     \newenvironment{Din}{\fontDin}{\par}
@@ -40,19 +50,22 @@
 \setmonofont[Scale=0.8]{Courier New}
 \newfontfamily\fontTimes{Times New Roman}
     \newenvironment{Times}{\fontTimes}{\par}
-
 \newfontfamily\headingfont[]{CF Din Medium Condensed}
 
+
+% Ορισμός γλώσσας - Μετάφραση Keywords
 \addto\captionsgreek{% Replace "english" with the language you use
   \renewcommand{\contentsname}%
     {ΠΕΡΙΕΧΟΜΕΝΑ}%
 }
 
+% Δημιουργία Custom colorboxes
 \newtcolorbox{headerdark}{colback=darkgray, boxrule=0pt,arc=0pt, boxsep=12pt,left=2pt,right=2pt,leftrule=0pt}
 \newtcolorbox{headerlight}{colback=gray!50, boxrule=0pt,arc=0pt, boxsep=2pt,left=2pt,right=2pt,leftrule=0pt}
 \newtcolorbox{graycomment}{colback=gray!25, boxrule=0pt,arc=0pt, boxsep=2pt,left=2pt,right=2pt,leftrule=1pt, grow to left by=-28pt,  grow to right by=-28pt}
 
-% Το στιλ των νέων κεφαλαίων/sectionσ
+
+% Μορφοποίηση chapters/sections
 \titleformat{\chapter}[block]
     {\color{black} \fontDin \large } % global formatting (number and title)
     {\color{white} \fontDin \colorbox{black!90} {\hspace{7pt}\thechapter\hspace{7pt}}} % label: number and its formatting
@@ -77,6 +90,7 @@
     {} % optional (content between number and title)
 \titlespacing*{\subsection}
    {0pt}{1em}{0.4em}  % left before after
+
 
 
 %% Setting for the column separator
@@ -105,7 +119,6 @@
 %  {\color{shadecol}\rule[-\fboxsep]{\dimexpr\columnwidth-\wd\labbox}{\dimexpr\ht\labbox+\fboxsep}}%
 %  \vspace{#2}\par}
 
-
 % Ρύθμση αλλαγής γραμμής
 \tolerance=1
 \emergencystretch=\maxdimen
@@ -125,6 +138,7 @@
 % Συνεχόμενη αρίθμηση ανά chapters
 \counterwithout{footnote}{chapter}
 
+% Μορφοποίηση κώδικα
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{gray!10},
     keywordstyle=\bf\ttfamily,
@@ -140,6 +154,7 @@
 }
 \lstset{style=mystyle}
 
-\usepackage[style=authoryear,backend=biber]{biblatex}
+\usepackage{float} % Allows for more flexible positioning of floats σε πίνακες πχ
+\restylefloat{table}
 
 \endinput

@@ -1,0 +1,3267 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  23 SEP 2024 20:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+(template.cls
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen143
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count195
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip17
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks19
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks20
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks28
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count268
+\c@chapter=\count269
+\c@section=\count270
+\c@subsection=\count271
+\c@subsubsection=\count272
+\c@paragraph=\count273
+\c@subparagraph=\count274
+\c@figure=\count275
+\c@table=\count276
+\abovecaptionskip=\skip64
+\belowcaptionskip=\skip65
+\bibindent=\dimen152
+)
+\c@definition=\count277
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
+ty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+
+Package epstopdf Warning: Drivers other than `pdftex' and `luatex' are not supp
+orted.
+
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read2
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language79
+LaTeX Info: Redefining \_ on input line 43.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudoc
+ode.sty
+Package: algpseudocode 
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmi
+cx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count278
+\c@ALG@rem=\count279
+\c@ALG@nested=\count280
+\ALG@tlm=\skip66
+\ALG@thistlm=\skip67
+\c@ALG@Lnr=\count281
+\c@ALG@blocknr=\count282
+\c@ALG@storecount=\count283
+\c@ALG@tmpcounter=\count284
+\ALG@tmplength=\skip68
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
+y
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+ (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count285
+\float@exts=\toks31
+\float@box=\box54
+\@float@everytoks=\toks32
+\@floatcapt=\box55
+)
+\@float@every@algorithm=\toks33
+\c@algorithm=\count286
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip69
+\enit@outerparindent=\dimen153
+\enit@toks=\toks34
+\enit@inbox=\box56
+\enit@count@id=\count287
+\enitdp@description=\count288
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen166
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count293
+\multirow@dima=\skip71
+\bigstrutjot=\dimen167
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen168
+\captionmargin=\dimen169
+\caption@leftmargin=\dimen170
+\caption@rightmargin=\dimen171
+\caption@width=\dimen172
+\caption@indent=\dimen173
+\caption@parindent=\dimen174
+\caption@hangindent=\dimen175
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count294
+\c@continuedfloat=\count295
+Package caption Info: float package is loaded.
+)
+\c@KVtest=\count296
+\sf@farskip=\skip72
+\sf@captopadj=\dimen176
+\sf@capskip=\skip73
+\sf@nearskip=\skip74
+\c@subfigure=\count297
+\c@subfigure@save=\count298
+\c@lofdepth=\count299
+\c@subtable=\count300
+\c@subtable@save=\count301
+\c@lotdepth=\count302
+\sf@top=\skip75
+\sf@bottom=\skip76
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
+\col@sep=\dimen177
+\ar@mcellbox=\box57
+\extrarowheight=\dimen178
+\NC@list=\toks35
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box58
+)
+\TX@col@width=\dimen179
+\TX@old@table=\dimen180
+\TX@old@col=\dimen181
+\TX@target=\dimen182
+\TX@delta=\dimen183
+\TX@cols=\count303
+\TX@ftn=\toks36
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count304
+\lst@gtempboxa=\box59
+\lst@token=\toks37
+\lst@length=\count305
+\lst@currlwidth=\dimen184
+\lst@column=\count306
+\lst@pos=\count307
+\lst@lostspace=\dimen185
+\lst@width=\dimen186
+\lst@newlines=\count308
+\lst@lineno=\count309
+\lst@maxwidth=\dimen187
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+\c@lstnumber=\count310
+\lst@skipnumbers=\count311
+\lst@framebox=\box60
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/05/25 1.10b listings configuration
+))
+Package: listings 2024/05/25 1.10b (Carsten Heinz)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/bbding\bbding.sty
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks38
+\footnotemargin=\dimen188
+\@outputbox@depth=\dimen189
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+)
+template.cls:204: Undefined control sequence.
+l.204 \addto
+            \captionsgreek{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+template.cls:204: Undefined control sequence.
+l.204 \addto\captionsgreek
+                          {%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 354.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 356.
+
+) (setup.tex
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count312
+\Gm@cntv=\count313
+\c@Gm@tempcnt=\count314
+\Gm@bindingoffset=\dimen190
+\Gm@wd@mp=\dimen191
+\Gm@odd@mp=\dimen192
+\Gm@even@mp=\dimen193
+\Gm@layoutwidth=\dimen194
+\Gm@layoutheight=\dimen195
+\Gm@layouthoffset=\dimen196
+\Gm@layoutvoffset=\dimen197
+\Gm@dimlist=\toks39
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-08-16 L3 programming layer (loader) 
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
+\g__graphics_track_int=\count315
+\l__pdf_internal_box=\box61
+\g__pdf_backend_annotation_int=\count316
+\g__pdf_backend_link_int=\count317
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count318
+\l__fontspec_language_int=\count319
+\l__fontspec_strnum_int=\count320
+\l__fontspec_tmp_int=\count321
+\l__fontspec_tmpa_int=\count322
+\l__fontspec_tmpb_int=\count323
+\l__fontspec_tmpc_int=\count324
+\l__fontspec_em_int=\count325
+\l__fontspec_emdef_int=\count326
+\l__fontspec_strong_int=\count327
+\l__fontspec_strongdef_int=\count328
+\l__fontspec_tmpa_dim=\dimen198
+\l__fontspec_tmpb_dim=\dimen199
+\l__fontspec_tmpc_dim=\dimen256
+ (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks40
+\minrowclearance=\skip79
+\rownum=\count329
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.s
+ty
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count330
+\l__tblr_c_int=\count331
+\l__tblr_r_int=\count332
+\l__tblr_d_dim=\dimen257
+\l__tblr_h_dim=\dimen258
+\l__tblr_o_dim=\dimen259
+\l__tblr_p_dim=\dimen260
+\l__tblr_q_dim=\dimen261
+\l__tblr_r_dim=\dimen262
+\l__tblr_s_dim=\dimen263
+\l__tblr_t_dim=\dimen264
+\l__tblr_v_dim=\dimen265
+\l__tblr_w_dim=\dimen266
+\l__tblr_a_box=\box62
+\l__tblr_b_box=\box63
+\l__tblr_c_box=\box64
+\l__tblr_d_box=\box65
+\g__tblr_table_count_int=\count333
+\c@colnum=\count334
+\c@rowcount=\count335
+\c@colcount=\count336
+\abovesep=\dimen267
+\belowsep=\dimen268
+\leftsep=\dimen269
+\rightsep=\dimen270
+\g_tblr_level_int=\count337
+\g__tblr_data_row_key_count_int=\count338
+\g__tblr_data_column_key_count_int=\count339
+\g__tblr_data_cell_key_count_int=\count340
+\g__tblr_array_int=\count341
+\l__tblr_key_count_int=\count342
+\l__tblr_key_quotient_int=\count343
+\l__tblr_key_quotient_two_int=\count344
+\l__tblr_key_remainder_int=\count345
+\g__tblr_data_str_value_count_int=\count346
+\rulewidth=\dimen271
+\l__tblr_strut_dp_dim=\dimen272
+\l__tblr_strut_ht_dim=\dimen273
+\g__tblr_cell_wd_dim=\dimen274
+\g__tblr_cell_ht_dim=\dimen275
+\g__tblr_cell_head_dim=\dimen276
+\g__tblr_cell_foot_dim=\dimen277
+\l__column_target_dim=\dimen278
+\l__tblr_caption_box=\box66
+\l__tblr_caption_left_box=\box67
+\l__tblr_row_head_box=\box68
+\l__tblr_row_foot_box=\box69
+\l__tblr_row_head_foot_dim=\dimen279
+\tablewidth=\dimen280
+\l__tblr_table_firsthead_box=\box70
+\l__tblr_table_middlehead_box=\box71
+\l__tblr_table_lasthead_box=\box72
+\l__tblr_table_firstfoot_box=\box73
+\l__tblr_table_middlefoot_box=\box74
+\l__tblr_table_lastfoot_box=\box75
+\l__tblr_remain_height_dim=\dimen281
+\l__tblr_long_from_int=\count347
+\l__tblr_long_to_int=\count348
+\l__tblr_curr_i_int=\count349
+\l__tblr_prev_i_int=\count350
+\l__tblr_table_page_int=\count351
+\l__tblr_table_head_box=\box76
+\l__tblr_table_foot_box=\box77
+\l__tblr_table_head_foot_dim=\dimen282
+\l__tblr_table_head_body_foot_dim=\dimen283
+\l__tblr_table_box=\box78
+\l__tblr_table_hlines_box=\box79
+\l__tblr_hline_box=\box80
+\l__tblr_row_box=\box81
+\l__tblr_col_o_wd_dim=\dimen284
+\l__tblr_col_b_wd_dim=\dimen285
+\l__tblr_hline_leftskip_dim=\dimen286
+\l__tblr_hline_rightskip_dim=\dimen287
+\l__tblr_row_ht_dim=\dimen288
+\l__tblr_row_dp_dim=\dimen289
+\l__tblr_row_abovesep_dim=\dimen290
+\l__tblr_row_belowsep_dim=\dimen291
+\l__tblr_row_vlines_box=\box82
+\l__tblr_vline_box=\box83
+\l__tblr_cell_box=\box84
+\l__row_upper_dim=\dimen292
+\l__row_lower_dim=\dimen293
+\l__row_vpace_dim=\dimen294
+\l__tblr_vline_aboveskip_dim=\dimen295
+\l__tblr_vline_belowskip_dim=\dimen296
+\l__tblr_cell_wd_dim=\dimen297
+\l__tblr_cell_ht_dim=\dimen298
+\l__tblr_diag_box=\box85
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2024/05/23 v1.9h multicolumn formatting (FMi)
+\c@tracingmulticols=\count352
+\mult@box=\box86
+\multicol@leftmargin=\dimen299
+\c@unbalance=\count353
+\c@collectmore=\count354
+\doublecol@number=\count355
+\multicoltolerance=\count356
+\multicolpretolerance=\count357
+\full@width=\dimen300
+\page@free=\dimen301
+\premulticols=\dimen302
+\postmulticols=\dimen303
+\multicolsep=\skip80
+\multicolbaselineskip=\skip81
+\partial@page=\box87
+\last@line=\box88
+\mc@boxedresult=\box89
+\maxbalancingoverflow=\dimen304
+\mult@rightbox=\box90
+\mult@grightbox=\box91
+\mult@firstbox=\box92
+\mult@gfirstbox=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\c@minrows=\count358
+\c@columnbadness=\count359
+\c@finalcolumnbadness=\count360
+\last@try=\dimen305
+\multicolovershoot=\dimen306
+\multicolundershoot=\dimen307
+\mult@nat@firstbox=\box130
+\colbreak@box=\box131
+\mc@col@check@num=\count361
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count362
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstex.sty
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstex.sty:29: P
+ackage amstex Error:  Package `amstex' is obsolete, substituting `amsmath'.
+
+See the amstex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 %\string\usepackage{amstex12beta}.}
+                                        
+You should use \usepackage{amsmath} instead. If that does not give satisfactory
+ results, rename your previous copy of amstex.sty to amstex12beta.sty and call 
+it with \usepackage{amstex12beta}.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+
+LaTeX Warning: You have requested package `amstex',
+               but the package provides `amsmath'.
+
+Package: amsmath 2024/05/23 v2.17q AMS math features
+\@mathmargin=\skip82
+For additional information on amsmath, use the `?' option.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:144:
+ LaTeX Error: Command \AmSfont already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 ...\@xp\@car\f@series\@nil bb\else m\fi}{n}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:178:
+ LaTeX Error: Command \mspace already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \newcommand{\mspace}[1]{\mskip#1\relax}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \primfrac on input line 217.
+LaTeX Info: Redefining \frac on input line 233.
+LaTeX Info: Redefining \dfrac on input line 237.
+LaTeX Info: Redefining \tfrac on input line 238.
+LaTeX Info: Redefining \binom on input line 239.
+LaTeX Info: Redefining \dbinom on input line 240.
+LaTeX Info: Redefining \tbinom on input line 241.
+LaTeX Info: Redefining \genfrac on input line 274.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:350:
+ LaTeX Error: Command \leftroot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 ...{\@amsmath@err{\Invalid@@\leftroot}\@eha}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:351:
+ LaTeX Error: Command \uproot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...t}{\@amsmath@err{\Invalid@@\uproot}\@eha}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\uproot@=\count363
+\leftroot@=\count364
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \boxed on input line 399.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:400:
+ LaTeX Error: Command \implies already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.400 ...mand{\implies}{\DOTSB\;\Longrightarrow\;}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:401:
+ LaTeX Error: Command \impliedby already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.401 ...and{\impliedby}{\DOTSB\;\Longleftarrow\;}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:408:
+ LaTeX Error: Command \nobreakdash already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 }
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count365
+\DOTSCASE@=\count366
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:575:
+ LaTeX Error: Command \dotsi already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.575 \newcommand{\dotsi}{\!\@cdots}
+                                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \cdots on input line 619.
+LaTeX Info: Redefining \dotso on input line 622.
+LaTeX Info: Redefining \dotsc on input line 626.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:658:
+ LaTeX Error: Command \iint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.658 ...ewcommand{\iint}{\DOTSI\MultiIntegral{2}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:659:
+ LaTeX Error: Command \iiint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 ...wcommand{\iiint}{\DOTSI\MultiIntegral{3}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:660:
+ LaTeX Error: Command \iiiint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.660 ...command{\iiiint}{\DOTSI\MultiIntegral{4}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:661:
+ LaTeX Error: Command \idotsint already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.661 ...mmand{\idotsint}{\DOTSI\MultiIntegral{0}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \MultiIntegral on input line 662.
+\Mathstrutbox@=\box132
+\strutbox@=\box133
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen308
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:746:
+ LaTeX Error: Command \dddot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.746    \hbox{\,\normalfont...}\vss}}}}
+                                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:749:
+ LaTeX Error: Command \ddddot already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.749    \hbox{\,\normalfont....}\vss}}}}
+                                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package amsmath Warning: Unable to redefine math accent \hat.
+
+
+Package amsmath Warning: Unable to redefine math accent \check.
+
+
+Package amsmath Warning: Unable to redefine math accent \tilde.
+
+
+Package amsmath Warning: Unable to redefine math accent \acute.
+
+
+Package amsmath Warning: Unable to redefine math accent \grave.
+
+
+Package amsmath Warning: Unable to redefine math accent \dot.
+
+
+Package amsmath Warning: Unable to redefine math accent \ddot.
+
+
+Package amsmath Warning: Unable to redefine math accent \breve.
+
+
+Package amsmath Warning: Unable to redefine math accent \bar.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+
+Package amsmath Warning: Unable to redefine math accent \mathring.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:800:
+ LaTeX Error: Command \acc@check already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.800 \newcommand{\acc@check}{}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:801:
+ LaTeX Error: Command \acc@error already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \newcommand{\acc@error}{}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\macc@depth=\count367
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pod on input line 907.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \mod on input line 910.
+LaTeX Info: Redefining \cfrac on input line 912.
+LaTeX Info: Redefining \overset on input line 915.
+LaTeX Info: Redefining \underset on input line 917.
+LaTeX Info: Redefining \overunderset on input line 919.
+LaTeX Info: Redefining \sideset on input line 921.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:990:
+ LaTeX Error: Command \overleftrightarrow already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.990 ...palette{\overarrow@\leftrightarrowfill@}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1002
+: LaTeX Error: Command \underrightarrow already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1002 ...thpalette{\underarrow@\rightarrowfill@}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1004
+: LaTeX Error: Command \underleftarrow already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1004 ...athpalette{\underarrow@\leftarrowfill@}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1006
+: LaTeX Error: Command \underleftrightarrow already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1006 ...lette{\underarrow@\leftrightarrowfill@}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \xrightarrow on input line 1027.
+LaTeX Info: Redefining \xleftarrow on input line 1028.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1041
+: LaTeX Error: Command \subarray already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1041 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \substack on input line 1059.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1067
+: LaTeX Error: Command \smallmatrix already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1067 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@MaxMatrixCols=\count368
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1097
+: LaTeX Error: Command \bmatrix already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1097 ...x}{\left[\env@matrix}{\endmatrix\right]}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1102
+: LaTeX Error: Command \Bmatrix already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1102 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1103
+: LaTeX Error: Command \vmatrix already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1103 ...vert\env@matrix}{\endmatrix\right\rvert}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1104
+: LaTeX Error: Command \Vmatrix already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1104 ...Vert\env@matrix}{\endmatrix\right\rVert}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1107
+: LaTeX Error: Command \hdotsfor already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1107 ...xp\shdots@for\else\hdots@for\@ne{#1}\fi}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\dotsspace@=\muskip19
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1127
+: LaTeX Error: Command \c@parentequation already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1127 \newcounter{parentequation}
+                                  % Counter for ``parent equation''.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1141
+: LaTeX Error: Command \subequations already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1141 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \numberwithin on input line 1142.
+LaTeX Info: Redefining \eqref on input line 1149.
+\dspbrk@lvl=\count369
+LaTeX Info: Redefining \allowdisplaybreaks on input line 1153.
+LaTeX Info: Redefining \displaybreak on input line 1159.
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1192
+: LaTeX Error: Command \intertext already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1192 ...@amsmath@err{\Invalid@@\intertext}\@eha}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\tag@help=\toks41
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1225
+: LaTeX Error: Command \thetag already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1225 \newcommand{\thetag}{\leavevmode\tagform@}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1271
+: LaTeX Error: Command \raisetag already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1271 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1273
+: LaTeX Error: Command \notag already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1273 \newcommand{\notag}{\nonumber}
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\row@=\count370
+\column@=\count371
+\maxfields@=\count372
+\andhelp@=\toks42
+\eqnshift@=\dimen309
+\alignsep@=\dimen310
+\tagshift@=\dimen311
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1316
+: LaTeX Error: Command \mintagsep already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1316 ...{\mintagsep}{.5\fontdimen6\textfont\tw@}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1317
+: LaTeX Error: Command \minalignsep already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1317 \newcommand{\minalignsep}{10pt}
+                                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\tagwidth@=\dimen312
+\totwidth@=\dimen313
+\lineht@=\dimen314
+\@envbody=\toks43
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1493
+: LaTeX Error: Command \start@aligned already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1493 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1518
+: LaTeX Error: Command \aligned already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1518 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1519
+: LaTeX Error: Command \aligned@a already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1519 ...ligned@a}[1][c]{\start@aligned{#1}\m@ne}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1525
+: LaTeX Error: Command \alignedat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1525 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1526
+: LaTeX Error: Command \alignedat@a already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1526 ...{\alignedat@a}[1][c]{\start@aligned{#1}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1541
+: LaTeX Error: Command \gathered already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1541 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1559
+: LaTeX Error: Command \gather already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1559 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1565
+: LaTeX Error: Command \gather* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1565 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1770
+: LaTeX Error: Command \alignat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1770 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1775
+: LaTeX Error: Command \alignat* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1775 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1780
+: LaTeX Error: Command \xalignat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1780 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1785
+: LaTeX Error: Command \xalignat* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1785 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1790
+: LaTeX Error: Command \xxalignat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1790 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1805
+: LaTeX Error: Command \align already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1805 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1810
+: LaTeX Error: Command \align* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1810 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1815
+: LaTeX Error: Command \flalign already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1815 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:1820
+: LaTeX Error: Command \flalign* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1820 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:2400
+: LaTeX Error: Command \split already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2400 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\multlinegap=\skip83
+\multlinetaggap=\skip84
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:2559
+: LaTeX Error: Command \multline already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2559 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:2560
+: LaTeX Error: Command \multline* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2560 ...tart@multline\st@rredtrue}{\endmultline}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\mathdisplay@stack=\toks44
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty:2952
+: LaTeX Error: Command \equation* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2952 }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/07/10 version 6.3.0 text color boxes
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks45
+\pgfutil@tempdima=\dimen315
+\pgfutil@tempdimb=\dimen316
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box134
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks46
+\pgfkeys@temptoks=\toks47
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks48
+))
+\pgf@x=\dimen317
+\pgf@y=\dimen318
+\pgf@xa=\dimen319
+\pgf@ya=\dimen320
+\pgf@xb=\dimen321
+\pgf@yb=\dimen322
+\pgf@xc=\dimen323
+\pgf@yc=\dimen324
+\pgf@xd=\dimen325
+\pgf@yd=\dimen326
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count373
+\c@pgf@countb=\count374
+\c@pgf@countc=\count375
+\c@pgf@countd=\count376
+\t@pgf@toka=\toks49
+\t@pgf@tokb=\toks50
+\t@pgf@tokc=\toks51
+\pgf@sys@id@count=\count377
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count378
+)))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count379
+\pgfsyssoftpath@bigbuffer@items=\count380
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen327
+\pgfmath@count=\count381
+\pgfmath@box=\box135
+\pgfmath@toks=\toks52
+\pgfmath@stack@operand=\toks53
+\pgfmath@stack@operation=\toks54
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count382
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen328
+\pgf@picmaxx=\dimen329
+\pgf@picminy=\dimen330
+\pgf@picmaxy=\dimen331
+\pgf@pathminx=\dimen332
+\pgf@pathmaxx=\dimen333
+\pgf@pathminy=\dimen334
+\pgf@pathmaxy=\dimen335
+\pgf@xx=\dimen336
+\pgf@xy=\dimen337
+\pgf@yx=\dimen338
+\pgf@yy=\dimen339
+\pgf@zx=\dimen340
+\pgf@zy=\dimen341
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen342
+\pgf@path@lasty=\dimen343
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen344
+\pgf@shorten@start@additional=\dimen345
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box136
+\pgf@hbox=\box137
+\pgf@layerbox@main=\box138
+\pgf@picture@serial@count=\count383
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen346
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen347
+\pgf@pt@y=\dimen348
+\pgf@pt@temp=\dimen349
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen350
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen351
+\pgf@sys@shading@range@num=\count384
+\pgf@shadingcount=\count385
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box139
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box140
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen352
+\pgf@nodesepend=\dimen353
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen354
+\pgffor@skip=\dimen355
+\pgffor@stack=\toks55
+\pgffor@toks=\toks56
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count386
+\pgfplotmarksize=\dimen356
+)
+\tikz@lastx=\dimen357
+\tikz@lasty=\dimen358
+\tikz@lastxsaved=\dimen359
+\tikz@lastysaved=\dimen360
+\tikz@lastmovetox=\dimen361
+\tikz@lastmovetoy=\dimen362
+\tikzleveldistance=\dimen363
+\tikzsiblingdistance=\dimen364
+\tikz@figbox=\box141
+\tikz@figbox@bg=\box142
+\tikz@tempbox=\box143
+\tikz@tempbox@bg=\box144
+\tikztreelevel=\count387
+\tikznumberofchildren=\count388
+\tikznumberofcurrentchild=\count389
+\tikz@fig@count=\count390
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count391
+\pgfmatrixcurrentcolumn=\count392
+\pgf@matrix@numberofcolumns=\count393
+)
+\tikz@expandcount=\count394
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box145
+\tcb@upperbox=\box146
+\tcb@lowerbox=\box147
+\tcb@phantombox=\box148
+\c@tcbbreakpart=\count395
+\c@tcblayer=\count396
+\c@tcolorbox@number=\count397
+\l__tcobox_tmpa_box=\box149
+\l__tcobox_tmpa_dim=\dimen365
+\tcb@temp=\box150
+\tcb@temp=\box151
+\tcb@temp=\box152
+\tcb@temp=\box153
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box154
+\beforetitleunit=\skip85
+\aftertitleunit=\skip86
+\ttl@plus=\dimen366
+\ttl@minus=\dimen367
+\ttl@toksa=\toks57
+\titlewidth=\dimen368
+\titlewidthlast=\dimen369
+\titlewidthfirst=\dimen370
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/08/29 v24.9 The Babel package
+\babel@savecnt=\count398
+\U@D=\dimen371
+\l@unhyphenated=\language80
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count399
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/babel-greek\greek.ldf
+Language: greek 2023/10/13 1.15 Greek support for the babel system
+\bbl@monogreek=\count400
+\bbl@polygreek=\count401
+\bbl@ancientgreek=\count402
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\tuenc-gre
+ek.def
+File: tuenc-greek.def 2023-09-12 2.5 Greek LICRs for XeTeX and LuaTeX
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fon
+tenc.def
+File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
+))))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/el\babel
+-greek.tex
+Package babel Info: Importing font and identification data for greek
+(babel)             from babel-el.ini. Reported on input line 11.
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.callouts.code.tex))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box155
+\pgfnodeparttwobox=\box156
+\pgfnodepartthreebox=\box157
+\pgfnodepartfourbox=\box158
+\pgfnodeparttwentybox=\box159
+\pgfnodepartnineteenbox=\box160
+\pgfnodeparteighteenbox=\box161
+\pgfnodepartseventeenbox=\box162
+\pgfnodepartsixteenbox=\box163
+\pgfnodepartfifteenbox=\box164
+\pgfnodepartfourteenbox=\box165
+\pgfnodepartthirteenbox=\box166
+\pgfnodeparttwelvebox=\box167
+\pgfnodepartelevenbox=\box168
+\pgfnodeparttenbox=\box169
+\pgfnodepartninebox=\box170
+\pgfnodeparteightbox=\box171
+\pgfnodepartsevenbox=\box172
+\pgfnodepartsixbox=\box173
+\pgfnodepartfivebox=\box174
+)))
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryintersections.code.tex
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfpu.code.tex)
+\pgf@intersect@solutions=\count403
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks58
+\pgfopts@list@add@b@toks=\toks59
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/elocalloc\elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/inlinedef\inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks60
+\ID@count=\count404
+)
+\ID@usercommands=\toks61
+\safeloop@depth=\count405
+\safeRKloop@depth=\count406
+\forest@temp@dimen=\dimen372
+\forest@temp@count=\count407
+\forest@n=\count408
+\forest@temp@global@count=\count409
+\forest@temp@toks=\toks62
+\forest@temparray@M=\count410
+\forest@temparray@N=\count411
+\forest@global@temparray@M=\count412
+\forest@global@temparray@N=\count413
+\forest@isnum@count=\count414
+\forest@isdim@nonintpart=\count415
+\forest@isdim@dimen=\dimen373
+\forest@sort@m=\count416
+\forest@sort@k=\count417
+\forest@sort@p=\count418
+\bracket@content=\toks63
+\bracket@afterthought=\toks64
+\forest@node@maxid=\count419
+\forest@process@left@M=\count420
+\forest@process@left@N=\count421
+\forest@process@right@M=\count422
+\forest@process@right@N=\count423
+\forest@process@saved@M=\count424
+\forest@process@saved@N=\count425
+\forest@process@result@M=\count426
+\forest@process@result@N=\count427
+\forest@process@n=\count428
+\forest@nodewalk@branch@toks=\toks65
+\forest@nodewalk@shortsteps@resolution=\toks66
+\forest@do@dynamics=\toks67
+\forest@box=\box175
+\forest@xg=\dimen374
+\forest@yg=\dimen375
+\forest@xs=\dimen376
+\forest@ys=\dimen377
+\forest@pi@toks=\toks68
+\forest@segment@toks=\toks69
+\forest@PIi@toks=\toks70
+\forest@PIii@toks=\toks71
+\forest@copy@in=\read5
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count429
+\forest@externalize@inner@n=\count430
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/arabi\arabicore.sty
+  Arabi Core switching commands v1.0  2006/01/01   (may still change)  
+\n@everypar=\toks72
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 138 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 140 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 141 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 142 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 143 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 144 replaced by U+FFFD.
+\@Arabitempboxa=\box176
+\llahheight=\skip87
+\Decimalheight=\skip88
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titleps.sty
+Package: titleps 2023/10/27 v2.16 Page styles
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titleps.sty:314
+: LaTeX Error: Command \headrule already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \newcommand\headrule{\setheadrule{.4\p@}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titleps.sty:315
+: LaTeX Error: Command \footrule already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 \newcommand\footrule{\setfootrule{.4\p@}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen378
+\WF@size=\dimen379
+\c@WF@wrappedlines=\count431
+\WF@box=\box177
+\WF@everypar=\toks73
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+\c@blindtext=\count432
+\c@Blindtext=\count433
+\c@blind@countparstart=\count434
+\blind@countxx=\count435
+\blindtext@numBlindtext=\count436
+\blind@countyy=\count437
+\c@blindlist=\count438
+\c@blindlistlevel=\count439
+\c@blindlist@level=\count440
+\blind@listitem=\count441
+\c@blind@listcount=\count442
+\c@blind@levelcount=\count443
+\blind@mathformula=\count444
+\blind@Mathformula=\count445
+\c@blind@randomcount=\count446
+\c@blind@randommax=\count447
+\c@blind@pangramcount=\count448
+\c@blind@pangrammax=\count449
+) (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count450
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count451
+\c@listtotal=\count452
+\c@listcount=\count453
+\c@liststart=\count454
+\c@liststop=\count455
+\c@citecount=\count456
+\c@citetotal=\count457
+\c@multicitecount=\count458
+\c@multicitetotal=\count459
+\c@instcount=\count460
+\c@maxnames=\count461
+\c@minnames=\count462
+\c@maxitems=\count463
+\c@minitems=\count464
+\c@citecounter=\count465
+\c@maxcitecounter=\count466
+\c@savedcitecounter=\count467
+\c@uniquelist=\count468
+\c@uniquename=\count469
+\c@refsection=\count470
+\c@refsegment=\count471
+\c@maxextratitle=\count472
+\c@maxextratitleyear=\count473
+\c@maxextraname=\count474
+\c@maxextradate=\count475
+\c@maxextraalpha=\count476
+\c@abbrvpenalty=\count477
+\c@highnamepenalty=\count478
+\c@lownamepenalty=\count479
+\c@maxparens=\count480
+\c@parenlevel=\count481
+\blx@tempcnta=\count482
+\blx@tempcntb=\count483
+\blx@tempcntc=\count484
+\c@blx@maxsection=\count485
+\blx@maxsegment@0=\count486
+\blx@notetype=\count487
+\blx@parenlevel@text=\count488
+\blx@parenlevel@foot=\count489
+\blx@sectionciteorder@0=\count490
+\blx@sectionciteorderinternal@0=\count491
+\blx@entrysetcounter=\count492
+\blx@biblioinstance=\count493
+\labelnumberwidth=\skip89
+\labelalphawidth=\skip90
+\biblabelsep=\skip91
+\bibitemsep=\skip92
+\bibnamesep=\skip93
+\bibinitsep=\skip94
+\bibparsep=\skip95
+\bibhang=\skip96
+\blx@bcfin=\read6
+\blx@bcfout=\write5
+\blx@langwohyphens=\language81
+\c@mincomprange=\count494
+\c@maxcomprange=\count495
+\c@mincompwidth=\count496
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count497
+\c@savedafterword=\count498
+\c@annotator=\count499
+\c@savedannotator=\count500
+\c@author=\count501
+\c@savedauthor=\count502
+\c@bookauthor=\count503
+\c@savedbookauthor=\count504
+\c@commentator=\count505
+\c@savedcommentator=\count506
+\c@editor=\count507
+\c@savededitor=\count508
+\c@editora=\count509
+\c@savededitora=\count510
+\c@editorb=\count511
+\c@savededitorb=\count512
+\c@editorc=\count513
+\c@savededitorc=\count514
+\c@foreword=\count515
+\c@savedforeword=\count516
+\c@holder=\count517
+\c@savedholder=\count518
+\c@introduction=\count519
+\c@savedintroduction=\count520
+\c@namea=\count521
+\c@savednamea=\count522
+\c@nameb=\count523
+\c@savednameb=\count524
+\c@namec=\count525
+\c@savednamec=\count526
+\c@translator=\count527
+\c@savedtranslator=\count528
+\c@shortauthor=\count529
+\c@savedshortauthor=\count530
+\c@shorteditor=\count531
+\c@savedshorteditor=\count532
+\c@labelname=\count533
+\c@savedlabelname=\count534
+\c@institution=\count535
+\c@savedinstitution=\count536
+\c@lista=\count537
+\c@savedlista=\count538
+\c@listb=\count539
+\c@savedlistb=\count540
+\c@listc=\count541
+\c@savedlistc=\count542
+\c@listd=\count543
+\c@savedlistd=\count544
+\c@liste=\count545
+\c@savedliste=\count546
+\c@listf=\count547
+\c@savedlistf=\count548
+\c@location=\count549
+\c@savedlocation=\count550
+\c@organization=\count551
+\c@savedorganization=\count552
+\c@origlocation=\count553
+\c@savedoriglocation=\count554
+\c@origpublisher=\count555
+\c@savedorigpublisher=\count556
+\c@publisher=\count557
+\c@savedpublisher=\count558
+\c@language=\count559
+\c@savedlanguage=\count560
+\c@origlanguage=\count561
+\c@savedoriglanguage=\count562
+\c@pageref=\count563
+\c@savedpageref=\count564
+\shorthandwidth=\skip97
+\shortjournalwidth=\skip98
+\shortserieswidth=\skip99
+\shorttitlewidth=\skip100
+\shortauthorwidth=\skip101
+\shorteditorwidth=\skip102
+\locallabelnumberwidth=\skip103
+\locallabelalphawidth=\skip104
+\localshorthandwidth=\skip105
+\localshortjournalwidth=\skip106
+\localshortserieswidth=\skip107
+\localshorttitlewidth=\skip108
+\localshortauthorwidth=\skip109
+\localshorteditorwidth=\skip110
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-unicode.de
+f)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count565
+\c@textcitetotal=\count566
+\c@textcitemaxnames=\count567
+\c@biburlbigbreakpenalty=\count568
+\c@biburlbreakpenalty=\count569
+\c@biburlnumpenalty=\count570
+\c@biburlucpenalty=\count571
+\c@biburllcpenalty=\count572
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count573
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count574
+\c@bbx:relatedtotal=\count575
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cb
+x
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-08-16 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+
+setup.tex:37: Package biblatex Error: '\bibliographystyle' invalid for 'biblate
+x'.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \bibliographystyle{ieeetr}
+                               
+Use the package option 'style' instead.
+I'm ignoring this command.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'ConduitITCHelLight(0)' created for font
+(fontspec)             'Conduit ITC Hel Light' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Conduit ITC Hel
+(fontspec)             Light/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Conduit ITC Hel
+(fontspec)             Light/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Conduit ITC Hel
+(fontspec)             Light/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Conduit ITC
+(fontspec)             Hel
+(fontspec)             Light/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CFDinCondensed(0)' created for font 'CF
+(fontspec)             Din Condensed' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CF Din
+(fontspec)             Condensed/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"CF Din
+(fontspec)             Condensed/B/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CF Din
+(fontspec)             Condensed/I/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"CF Din
+(fontspec)             Condensed/BI/OT:script=DFLT;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CFDinLightCondensed(0)' created for font
+(fontspec)             'CF Din Light Condensed' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CF Din Light
+(fontspec)             Condensed/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"CF Din Light
+(fontspec)             Condensed/B/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CF Din Light
+(fontspec)             Condensed/I/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"CF Din
+(fontspec)             Light Condensed/BI/OT:script=DFLT;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CFDinMediumCondensed(0)' created for font
+(fontspec)             'CF Din Medium Condensed' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"CF Din Medium
+(fontspec)             Condensed/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"CF Din Medium
+(fontspec)             Condensed/B/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"CF Din Medium
+(fontspec)             Condensed/I/OT:script=DFLT;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"CF Din
+(fontspec)             Medium Condensed/BI/OT:script=DFLT;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Courier New scale = 0.8.
+
+
+Package fontspec Info: 
+(fontspec)             Courier New scale = 0.8.
+
+
+Package fontspec Info: 
+(fontspec)             Courier New/B scale = 0.8.
+
+
+Package fontspec Info: 
+(fontspec)             Courier New/I scale = 0.8.
+
+
+Package fontspec Info: 
+(fontspec)             Courier New/BI scale = 0.8.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'CourierNew(0)' created for font 'Courier
+(fontspec)             New' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Scale=0.8].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             New/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             New/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             New/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.8]"Courier
+(fontspec)             New/BI/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New Roman/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;"
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 136.
+
+\@float@every@table=\toks74
+) (00_credits.tex)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count576
+\@quotereset=\count577
+(W:/PycharmProjects\ceid-UniTaskThesis\out\main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: arabi babel package is loaded.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: arabi babel package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count578
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-4.73714pt
+* \headheight=14.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
+LaTeX Font Info:    Redeclaring math accent \check on input line 5.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/ConduitITCHelLight(0)/m/n on input l
+ine 5.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/ConduitITCHelLight(0)/m/n on input 
+line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/ConduitITCHelLight(0)/m/n --> TU/ConduitITCHelLight(
+0)/m/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/ConduitITCHelLight(0)/m/it on input
+ line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/ConduitITCHelLight(0)/b/n on input 
+line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/ConduitITCHelLight(0)/m/n --> TU/ConduitITCHelLight(
+0)/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/ConduitITCHelLight(0)/b/it on inpu
+t line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 5.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.s
+ty
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+)
+LaTeX Info: Command `\dddot' is already robust on input line 5.
+LaTeX Info: Command `\ddddot' is already robust on input line 5.
+LaTeX Info: Command `\overleftrightarrow' is already robust on input line 5.
+LaTeX Info: Command `\underrightarrow' is already robust on input line 5.
+LaTeX Info: Command `\underleftarrow' is already robust on input line 5.
+LaTeX Info: Command `\underleftrightarrow' is already robust on input line 5.
+Package biblatex Info: Trying to load language 'greek'...
+Package biblatex Info: ... file 'greek.lbx' found.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\greek.lbx
+File: greek.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' not found.
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 5.
+Package biblatex Info: Reference segment=0 on input line 5.
+(01_frontmatter.tex
+File: figures/logo-up-4color-landscape.jpg Graphic file (type bmp)
+<figures/logo-up-4color-landscape.jpg>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 1.
+
+
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+LaTeX Font Warning: Font shape `TU/ConduitITCHelLight(0)/m/sc' undefined
+(Font)              using `TU/ConduitITCHelLight(0)/m/n' instead on input line 
+1.
+
+
+LaTeX Font Warning: Font shape `TU/ConduitITCHelLight(0)/b/sc' undefined
+(Font)              using `TU/ConduitITCHelLight(0)/b/n' instead on input line 
+1.
+
+
+
+[1
+
+
+]
+
+[2
+
+]
+File: figures/logo-up-black.jpg Graphic file (type bmp)
+<figures/logo-up-black.jpg>
+
+Overfull \hbox (19.85754pt too wide) in paragraph at lines 1--1
+[]$[]$   $[]$
+ []
+
+
+
+[3]
+
+[4
+
+]
+File: figures/logo-up-black.jpg Graphic file (type bmp)
+<figures/logo-up-black.jpg>
+
+Overfull \hbox (19.85754pt too wide) in paragraph at lines 1--1
+[]$[]$   $[]$ 
+ []
+
+
+
+[5]
+
+[1]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.88203pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.88203pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.88203pt}.
+
+[1]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.88203pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.88203pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.88203pt}.
+
+[2]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.88203pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.88203pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.88203pt}.
+
+[3]
+
+[4
+
+] (W:/PycharmProjects\ceid-UniTaskThesis\out\main.toc
+Missing character: There is no ́ in font Conduit ITC Hel Medium/OT:script=latn;
+language=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Medium/OT:script=latn;
+language=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Medium/OT:script=latn;
+language=dflt;mapping=tex-text;!
+Missing character: There is no ́ in font Conduit ITC Hel Medium/OT:script=latn;
+language=dflt;mapping=tex-text;!
+)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[5]
+Missing character: There is no ́ in font CF Din Condensed/OT:script=DFLT;langua
+ge=dflt;!
+Missing character: There is no ́ in font CF Din Condensed/OT:script=DFLT;langua
+ge=dflt;!
+(W:/PycharmProjects\ceid-UniTaskThesis\out\main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+
+Missing character: There is no ́ in font CF Din Condensed/OT:script=DFLT;langua
+ge=dflt;!
+Missing character: There is no ́ in font CF Din Condensed/OT:script=DFLT;langua
+ge=dflt;!
+(W:/PycharmProjects\ceid-UniTaskThesis\out\main.lot)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.88203pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.88203pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.88203pt}.
+
+[6]
+\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
+extiota \textomicron  \textLR{1}.
+main.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.9     \chapter{ΕΙΣΑΓΩΓΗ}
+                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.9     \chapter{ΕΙΣΑΓΩΓΗ}
+                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+main.tex:11: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.11         \section{ΣΗΜΑΣΙΑ ΤΟΥ ΠΡΟΒΛΗΜΑΤΟΣ}
+                                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:11: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.11         \section{ΣΗΜΑΣΙΑ ΤΟΥ ΠΡΟΒΛΗΜΑΤΟΣ}
+                                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+main.tex:12: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.12         \section{ΣΤΟΧΟΙ ΤΗΣ ΕΡΓΑΣΙΑΣ}
+                                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:12: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.12         \section{ΣΤΟΧΟΙ ΤΗΣ ΕΡΓΑΣΙΑΣ}
+                                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+main.tex:13: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.13         \section{ΜΕΘΟΔΟΛΟΓΙΑ ΠΡΟΣΕΓΓΙΣΗΣ}
+                                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:13: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.13         \section{ΜΕΘΟΔΟΛΟΓΙΑ ΠΡΟΣΕΓΓΙΣΗΣ}
+                                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+main.tex:14: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.14 ...ction{ΔΙΑΡΘΡΩΣΗ ΤΗΣ ΔΙΠΛΩΜΑΤΙΚΗΣ ΕΡΓΑΣΙΑΣ}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:14: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.14 ...ction{ΔΙΑΡΘΡΩΣΗ ΤΗΣ ΔΙΠΛΩΜΑΤΙΚΗΣ ΕΡΓΑΣΙΑΣ}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
+extiota \textomicron  \textLR{2}.
+main.tex:16: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.16     \chapter{LOW CODE}
+                           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+main.tex:16: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.16     \chapter{LOW CODE}
+                           
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.89404pt}.
+
+[1
+
+] (W:/PycharmProjects\ceid-UniTaskThesis\out\main.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-16>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 45202 strings out of 409029
+ 1033532 string characters out of 5756742
+ 1928612 words of memory out of 5000000
+ 67247 multiletter control sequences out of 15000+600000
+ 563624 words of font info for 131 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 103i,12n,105p,1638b,5077s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on W:/PycharmProjects\ceid-UniTaskThesis\out\main.pdf (13 pages)
+.
