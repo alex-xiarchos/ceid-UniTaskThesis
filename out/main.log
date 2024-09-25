@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  25 SEP 2024 06:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  25 SEP 2024 06:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1461,12 +1461,6 @@ Package biblatex Info: Reference segment=0 on input line 2.
 (body_matter/2_taskmanagement.tex
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  1.
-
-Overfull \hbox (39.1858pt too wide) in paragraph at lines 11--11
-[]\TU/GFSDidot(0)/b/n/14.4 <Designing A Time Management App For And With Inform
-atics
- []
-
 ) (body_matter/3_lowcode.tex
 
 [1
@@ -1575,18 +1569,25 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 36691066CF1883E9E6B8B2909D0BED11;2266.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 65F0223D34F9F9297281E4BA66A73C55;2314
+(rerunfilecheck)             After:  7087DD79F121F4FAE727D1FE46D90E5A;2738.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38477 strings out of 409029
- 771118 string characters out of 5756741
- 1639870 words of memory out of 5000000
- 60594 multiletter control sequences out of 15000+600000
- 566093 words of font info for 106 fonts, out of 8000000 for 9000
+ 38482 strings out of 409029
+ 771298 string characters out of 5756741
+ 1640954 words of memory out of 5000000
+ 60597 multiletter control sequences out of 15000+600000
+ 566109 words of font info for 108 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  104i,8n,110p,1199b,4787s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
