@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  26 SEP 2024 00:36
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  26 SEP 2024 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1515,11 +1515,11 @@ extiota \textomicron  1.
 ]
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  2.
-
+) (body_matter/3_lowcode.tex
 
 [2
 
-]) (body_matter/3_lowcode.tex
+]
 
 LaTeX Font Info:    Font shape `TU/GFSDidot(0)/m/sl' in size <10.95> not availa
 ble
@@ -1582,7 +1582,7 @@ L3 programming layer <2024-08-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D6F276A55BA898444D73DF61A869E1DF;4248.
+(rerunfilecheck)             Checksum: 2348241421C1522865BEB90C4A9BC25A;3582.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1595,7 +1595,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  39147 strings out of 409029
  783508 string characters out of 5756741
- 1665915 words of memory out of 5000000
+ 1665231 words of memory out of 5000000
  61240 multiletter control sequences out of 15000+600000
  566109 words of font info for 108 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
