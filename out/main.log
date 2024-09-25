@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  24 SEP 2024 23:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.5)  25 SEP 2024 03:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2994,26 +2994,70 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-)
-LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 9.60004pt on input line 13.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+) (30_lowcode.tex
+\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
+extiota \textomicron  \textLR{2}.
+30_lowcode.tex:1: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.1 \chapter{LOW CODE}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
- (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+30_lowcode.tex:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.1 \chapter{LOW CODE}
+                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+(C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
-.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
+
 
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+30_lowcode.tex:5: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.5     \section{Ορισμός LCAP}
+                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+30_lowcode.tex:5: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.5     \section{Ορισμός LCAP}
+                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+)
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
+(Font)              scaled to size 9.60004pt on input line 13.
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -3025,22 +3069,37 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [1
 
-] (W:/PycharmProjects\ceid-UniTaskThesis\out\main.aux)
+]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.96603pt}.
+
+[2] (W:/PycharmProjects\ceid-UniTaskThesis\out\main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45351 strings out of 409029
- 1036009 string characters out of 5756742
- 1927612 words of memory out of 5000000
- 67413 multiletter control sequences out of 15000+600000
- 563576 words of font info for 125 fonts, out of 8000000 for 9000
+ 45390 strings out of 409029
+ 1036950 string characters out of 5756742
+ 1931612 words of memory out of 5000000
+ 67442 multiletter control sequences out of 15000+600000
+ 565617 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,12n,105p,1638b,4843s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,105p,1638b,4756s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\ceid-UniTaskThesis\out\main.pdf (1 page).
+Output written on W:/PycharmProjects\ceid-UniTaskThesis\out\main.pdf (2 pages).
+

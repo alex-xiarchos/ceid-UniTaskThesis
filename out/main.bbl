@@ -19,6 +19,48 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Bock2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a26ac925eb1d9bfb395d3d581a03cfa8}{%
+           family={Bock},
+           familyi={B\bibinitperiod},
+           given={Alexander\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=43491d959efef545ddfa346dfe7063be}{%
+           family={Frank},
+           familyi={F\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Gabler}%
+      }
+      \strng{namehash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{fullhash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{fullhashraw}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{bibnamehash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{authorbibnamehash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{authornamehash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{authorfullhash}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \strng{authorfullhashraw}{1af6863a264c3b2cfaecfb229b4f3d9f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{18670202}
+      \field{issue}{6}
+      \field{journaltitle}{Business and Information Systems Engineering}
+      \field{month}{12}
+      \field{title}{Low-Code Platform}
+      \field{volume}{63}
+      \field{year}{2021}
+      \field{pages}{733\bibrangedash 740}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s12599-021-00726-8
+      \endverb
+      \keyw{Citizen developer,Conceptual modeling,Low-code,Organizational agility,Software development environment,Software development productivity}
+    \endentry
     \entry{Fukuzawa2015}{article}{}{}
       \name{author}{3}{}{%
         {{hash=1a4d075822072396d5d45cbb34743a81}{%
