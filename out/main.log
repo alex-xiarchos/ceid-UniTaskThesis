@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  25 SEP 2024 06:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  25 SEP 2024 06:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1008,42 +1008,42 @@ t;"
 
 
 Package fontspec Info: 
-(fontspec)             Courier New scale = 0.8.
+(fontspec)             Courier New scale = 0.9.
 
 
 Package fontspec Info: 
-(fontspec)             Courier New scale = 0.8.
+(fontspec)             Courier New scale = 0.9.
 
 
 Package fontspec Info: 
-(fontspec)             Courier New/B scale = 0.8.
+(fontspec)             Courier New/B scale = 0.9.
 
 
 Package fontspec Info: 
-(fontspec)             Courier New/I scale = 0.8.
+(fontspec)             Courier New/I scale = 0.9.
 
 
 Package fontspec Info: 
-(fontspec)             Courier New/BI scale = 0.8.
+(fontspec)             Courier New/BI scale = 0.9.
 
 
 Package fontspec Info: 
 (fontspec)             Font family 'CourierNew(0)' created for font 'Courier
 (fontspec)             New' with options
 (fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
-Space,Scale=0.8].
+Space,Scale=0.9].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[0.9]"Courier
 (fontspec)             New/OT:script=latn;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.9]"Courier
 (fontspec)             New/B/OT:script=latn;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[0.8]"Courier
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[0.9]"Courier
 (fontspec)             New/I/OT:script=latn;language=dflt;"
 (fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[0.8]"Courier
+(fontspec)             <->s*[0.9]"Courier
 (fontspec)             New/BI/OT:script=latn;language=dflt;"
 
 \c@proposition=\count367
@@ -1055,13 +1055,13 @@ Space,Scale=0.8].
 \c@notation=\count373
 \c@law=\count374
 
-setup.tex:68: LaTeX Error: Command \thedefinition undefined.
+setup.tex:67: LaTeX Error: Command \thedefinition undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \renewcommand{\thedefinition}
+l.67 \renewcommand{\thedefinition}
                                   {\arabic{chapter}.\arabic{definition}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1304,14 +1304,14 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 
-setup.tex:86: Package biblatex Error: '\bibliographystyle' invalid for 'biblate
+setup.tex:85: Package biblatex Error: '\bibliographystyle' invalid for 'biblate
 x'.
 
 See the biblatex package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.86 \bibliographystyle{ieeetr}
+l.85 \bibliographystyle{ieeetr}
                                
 Use the package option 'style' instead.
 I'm ignoring this command.
@@ -1561,7 +1561,7 @@ extiota \textomicron  3.
 
 ]
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
-(Font)              scaled to size 8.76003pt on input line 15.
+(Font)              scaled to size 9.85492pt on input line 15.
 
 
 [7] (W:/PycharmProjects\ceid-UniTaskThesis\out\main.aux)
@@ -1569,15 +1569,8 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 65F0223D34F9F9297281E4BA66A73C55;2314
-(rerunfilecheck)             After:  7087DD79F121F4FAE727D1FE46D90E5A;2738.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7087DD79F121F4FAE727D1FE46D90E5A;2738.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1585,7 +1578,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  38482 strings out of 409029
  771298 string characters out of 5756741
- 1640954 words of memory out of 5000000
+ 1641387 words of memory out of 5000000
  60597 multiletter control sequences out of 15000+600000
  566109 words of font info for 108 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
