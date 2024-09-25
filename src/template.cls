@@ -1,18 +1,25 @@
+% Class Information
+\def\filename{thesis}
+\def\fileversion{1.0}
+\def\filedate{2014/10/25}
+\NeedsTeXFormat{LaTeX2e}[1996/12/01]
+\ProvidesClass{thesis}[%
+    \filedate\space\fileversion\space LaTeX document class.]
+
+% Required Packages
 \RequirePackage{ifthen}
 \RequirePackage{graphicx}
 \RequirePackage{amsmath}
 \RequirePackage{fancyhdr}
-\RequirePackage{amsthm}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions
-\LoadClass[a4paper,12pt,oneside]{book}
+\LoadClass[a4paper,11pt]{book}
 
-\theoremstyle{definition}
-\newtheorem{definition}{ΟΡΙΣΜΟΣ}
+%\theoremstyle{definition}
+%\newtheorem{definition}{ΟΡΙΣΜΟΣ}
 
 \pagestyle{fancy}
-
 % Title Page and Front Matter
 \def\@supervisor{}              \def\supervisor#1{\gdef\@supervisor{#1}}
 \def\@covisor{}    	 	        \def\covisor#1{\gdef\@covisor{#1}}
@@ -39,39 +46,49 @@
 \def\@trftp{}             \def\trftp#1{\gdef\@trftp{\texttt{#1}}}
 
 \def\new@tpage{\newpage\thispagestyle{empty}\null}
-
 % Measurements
-\setlength{\oddsidemargin}{0mm}
+\setlength{\oddsidemargin}{7mm}
 \setlength{\evensidemargin}{0mm}
-\setlength{\textwidth}{147mm}
+\setlength{\textwidth}{150mm}
 
-%\setlength{\topmargin}{0mm}
-%\setlength{\textheight}{235mm}
-%\advance \topmargin by -\headheight
-%\advance \topmargin by -\headsep
+\setlength{\topmargin}{0mm}
+\setlength{\textheight}{235mm}
+\advance \topmargin by -\headheight
+\advance \topmargin by -\headsep
 
-\renewcommand{\maketitle} {
+% Maketitle
+\renewcommand{\maketitle}{
     \begin{titlepage}
         \let\footnotesize\small
         \let\footnoterule\relax
         \renewcommand{\thefootnote}{\fnsymbol{footnote}}
-        %\new@tpage
-
+        \new@tpage
+        
         \begin{center}
 
-        \begin{minipage}{\textwidth}\centering \vspace{-25pt}
-            \includegraphics[width=5cm]{figures/logo-up-4color-landscape.jpg}
-		\vspace{15pt}
+        \begin{minipage}{6cm}
+            \includegraphics[width=6cm]{logo-up-4color-landscape.jpg}
+		\vspace{3pt}
         \end{minipage}
-
-        \begin{minipage}{\textwidth}
+        
+        \begin{minipage}{15cm}
         \begin{center}
-            \textsc{\@division} \\ \large{\textsc{\@department}} \vspace{20pt}
+            \textsc{
+           % \Large{\@institution} \\
+            \@division \\
+            \large{\@department \\
+            %\@other
+            }}
         \end{center}
         \end{minipage}
 
-            \begin{center}
-                \LARGE \bfseries \@title
+        %\hfill %\hspace{0.5cm}
+        %
+        \vfill
+        %
+                %
+                \begin{center}
+                    \LARGE \bfseries \@title
                 \end{center}
                 \ifx\@subtitle\@empty\else
                 \begin{center}
@@ -79,14 +96,14 @@
                 \end{center}
                 \fi
                 %
-                \vspace{2mm}
+                \vspace{5mm}
                 %
                 \begin{center}
                     \huge{\textsc{\@translator}}\\
-                    \vspace{2mm}
+                    \vspace{3mm}
                     \normalsize{\toutis}\\
-                    \vspace{1mm}
-                    \Large{\textbf{\textsc{\authorNameCapital}}}
+                    \vspace{3mm}
+                    \large{\textbf{\textsc{\authorNameCapital}}}
                 \end{center}
                 %
                 \vspace{5mm}
@@ -94,7 +111,9 @@
                 \hspace{1mm}
            \end{center}
 
-           \begin{minipage}{15cm}
+           \vfill
+
+                \begin{minipage}{15cm}
                 \begin{tabbing}
                     \large \textbf{\supervisorname :}\hspace{2em} \=\@supervisor\\
                     \>\supervisorTitle\\
@@ -103,38 +122,53 @@
                     \large \textbf{\covisorSname :} \>\@covisorS\\
                     \>\covisorSTitle\\
                 \end{tabbing}
-           \end{minipage}
+                \end{minipage}
+                \vspace{1mm}
+   
+            %
+            \vfill
+            %
 
             \begin{center}
                 \textsc{\@lab}\\
                 \thesisPlaceDate
             \end{center}
-
-            \cleardoublepage \new@tpage \newpage
-
-            \thispagestyle{empty}
-            \noindent
-            \begin{minipage}{\textwidth}
-                \vspace{-50pt}
-                \@uppertitleback
-                \vspace{5mm}
-                \begin{center}
+            %
+            \cleardoublepage
+            
+            \if@twoside\new@tpage
+                \noindent
+                \begin{minipage}[t]{\textwidth}
+                    \@uppertitleback
+                \end{minipage}
+                \par
+                \vfill
+               \begin{center}
                     \LARGE \bfseries \@title
                 \end{center}
+                \ifx\@subtitle\@empty\else
+                \begin{center}
+                    \LARGE \@subtitle
+                \end{center}
+                \fi
+                %
                 \vspace{5mm}
-            \end{minipage}
+                %
+                \begin{center}
+                    \huge{\textsc{\@translator}}\\
+                    \vspace{3mm}
+                    \normalsize{\toutis}\\
+                    \vspace{3mm}
+                    \large{\textbf{\authorNameCapital}}
+                \end{center}
+                %
+                \vspace{5mm}
+                %
+                \hspace{1mm}
 
-            \begin{center}
-                \huge{\textsc{\@translator}}\\
-                \vspace{3mm}
-                \normalsize{\toutis}\\
-                \vspace{3mm}
-                \large{\textbf{\authorNameCapital}}
-            \end{center}
+           \vfill
 
-            \vspace{10mm}
-
-            \begin{minipage}{15cm}
+                \begin{minipage}{15cm}
                 \begin{tabbing}
                     \large \textbf{\supervisorname :}\hspace{2em} \=\@supervisor\\
                     \>\supervisorTitle\\
@@ -143,94 +177,61 @@
                     \large \textbf{\covisorSname :} \>\@covisorS\\
                     \>\covisorSTitle\\
                 \end{tabbing}
-            \end{minipage}
+                \end{minipage}
+                \vspace{1mm}
+           \vfill
 
-            \vspace{5mm}
-            \@approval
-            \center{\thesisPlaceDate}
+                \begin{minipage}{\textwidth}
+                    \@approval
+                \end{minipage}
 
-            \cleardoublepage \new@tpage \newpage
-            \thispagestyle{empty}
+            \vfill
+            \begin{center}
+                \thesisPlaceDate
+            \end{center}
+            %
+            \fi
+           \new@tpage
+           \begin{minipage}[b]{\textwidth}
+             \@mysig
+           \end{minipage}
 
-            \begin{minipage}[t]{\textwidth}
-            \@uppertitleback
-            \end{minipage}
-            \begin{minipage}{\textwidth}
-            \@middletitleback
-            \end{minipage}
-
-
+            \cleardoublepage
+            \if@twoside\new@tpage
+                \noindent
+                \begin{minipage}[t]{\textwidth}
+                    \@uppertitleback
+                \end{minipage}
+                \par
+                \vfill
+                \noindent
+                \begin{minipage}{\textwidth}
+                    \@middletitleback
+                \end{minipage}
+                \par
+                \vfill
+                \noindent
+                \begin{minipage}[b]{\textwidth}
+                    \@lowertitleback
+                \end{minipage}
+            \fi
     \end{titlepage}
-
+    %
     \renewcommand{\thefootnote}{\arabic{footnote}}
     \setcounter{footnote}{0}
-
+    %
     \gdef\@thanks{}\gdef\@author{}\gdef\@translator{}\gdef\@institution{}
     \gdef\@department{}\gdef\@division{}\gdef\@lab{}\gdef\@other{}
-    \gdef\@uppertitleback{}\gdef\@lowertitleback{}\gdef\@dedication{}%
-    \gdef\@title{}\gdef\@subtitle{}\let\maketitle\relax%
+  \gdef\@uppertitleback{}\gdef\@lowertitleback{}\gdef\@dedication{}%
+  \gdef\@title{}\gdef\@subtitle{}\let\maketitle\relax%
 
-    \mbox{}
-    \thispagestyle{empty}
-    \newpage
+\mbox{}
+\thispagestyle{empty}
+\newpage
 }
 
-\usepackage{graphics}
-\usepackage{epstopdf}
-\usepackage{indentfirst}
-\usepackage{verbatim}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{latexsym}
-\bibliographystyle{hellas}
-\usepackage{hyphenat}
-\usepackage{makeidx}
-\usepackage{algpseudocode}
-\usepackage{algorithm}
-\usepackage[hyphens]{url}
-%\usepackage[hyphenbreaks]{breakurl}
-\usepackage{enumitem}
-\usepackage{xspace}
-\usepackage{booktabs}
-\usepackage{multirow}
-\usepackage{subfig}
-\usepackage{tabularx}
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{bbding}
-\usepackage{footmisc}
-\captionsetup{belowskip=10pt,aboveskip=15pt}
-\addto\captionsgreek{%
-  \renewcommand{\indexname}{Ευρετήριο όρων}%
-}
 
-% 1.5 spacing
-\renewcommand{\baselinestretch}{1.2}
-% typeset short english phrases
-\newcommand{\en}[1]{\foreignlanguage{english}{#1}}
-% typeset source code
-\newcommand{\src}[1]{{\tt\en{#1}}}
-% typeset a backslash
-\newcommand{\bkslash}{\en{\symbol{92}}}
 
-\lst@AddToHook{Output}{%
-  \ifcolonfoundonthisline%
-    \ifnum\lst@mode=\lst@Pmode%
-      \def\lst@thestyle{\JSONnumbervaluestyle}%
-    \fi
-  \fi
-  %override by keyword style if a keyword is detected!
-  \lsthk@DetectKeywords%
-}
-
-% reset the switch at the end of line
-\lst@AddToHook{EOL}%
-  {\global\colonfoundonthislinefalse}
-
-\renewcommand\lstlistingname{\tg{Κώδικας}}
-\renewcommand\lstlistlistingname{\tg{Παραδείγματα Κώδικα}}
-\renewcommand{\listalgorithmname}{Λίστα Αλγορίθμων}
 
 % Names
 \newcommand{\keywordsname}{Λέξεις Κλειδιά}
@@ -248,45 +249,44 @@
 \translator{Διπλωματική Εργασία}
 \institution{Πανεπιστήμιο Πατρών}
 \department{Πολυτεχνική Σχολή}
-\division{\textsc{Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής}}
+\division{Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής}
 \other{Πανεπιστημιούπολη, Τ.Κ 26504, Ρίο Αχαΐα}
+
 
 \uppertitleback{
     \begin{minipage}{2.8cm}
-        \includegraphics[width=2.7cm]{figures/logo-up-black.jpg}
+        \includegraphics[width=2.7cm]{img/logo-up-black.jpg}
     \end{minipage}
     \hspace{0.5cm}
     \begin{minipage}{12cm}
         \@institution \\
         \@department \\
-        \@division
+        \@division 
     \end{minipage}
 }
 
 \approval{
-    \noindent Εγκρίθηκε από την τριμελή εξεταστική επιτροπή την \examinationDate.
-    \vspace{-20pt}
+    Εγκρίθηκε από την διμελή εξεταστική επιτροπή την \examinationDate.\\
+    
     \begin{tabbing}
-    \=\hspace*{.35\linewidth}\=\hspace{.35\linewidth}\=\kill \\
-
-    %aaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\=\kill%
-    \> \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\\\\\\
-    \> .............................\>  .............................\>  .............................\\
-    \> \@supervisor\>         \@covisor\>         \@covisorS\\
-    \> \supervisorTitle\>    \covisorTitle\>    \covisorSTitle
+    aaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\=\kill
+    \> \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\\\\\\
+    \> .............................\>  .............................\\
+    \> \@supervisor\>         \@epitropiF\\
+    \> \supervisorTitle\>    \epitropiFTitle\\\\\\\\
     \end{tabbing}
+
 }
 
 \middletitleback{
-    \vspace{20mm}
-    \noindent
-    All rights reserved\ \@author, \copyrightYear.\\
+    \vspace{3cm}
+    \en{Copyright} \en{\copyright}\en{--All rights reserved}\ \ \@author, \copyrightYear.\\
     Με την επιφύλαξη παντός δικαιώματος.\\[12pt]
     Απαγορεύεται η αντιγραφή, αποθήκευση και διανομή της παρούσας εργασίας, εξ
     ολοκλήρου ή τμήματος αυτής, για εμπορικό σκοπό.  Επιτρέπεται η ανατύπωση,
     αποθήκευση και διανομή για σκοπό μη κερδοσκοπικό, εκπαιδευτικής ή
     ερευνητικής φύσης, υπό την προϋπόθεση να αναφέρεται η πηγή προέλευσης και να
-    διατηρείται το παρόν μήνυμα.
+    διατηρείται το παρόν μήνυμα.  
     \\[24pt]
     Το περιεχόμενο αυτής της εργασίας δεν απηχεί απαραίτητα τις απόψεις του Τμήματος, του Επιβλέποντα, ή της επιτροπής που την ενέκρινε.
     \\[24pt]
@@ -308,7 +308,7 @@
 
 % Redefining Commands
 \renewcommand{\frontmatter}{
-
+    \cleardoublepage
     \@mainmatterfalse \pagenumbering{roman}
 }
 \renewcommand{\mainmatter}{
@@ -342,10 +342,9 @@
 }
 %
 \renewcommand{\chaptermark}[1]{
-    \markboth{\ \ \ #1}{}
+    \markboth{\mbox{\selectlanguage{greek}\@chapapp}\ \thechapter.\ \ #1}{}
 %        \markboth{\mbox{\@chapapp}\ \thechapter.\ \ #1}{}
 }
-
 \renewcommand{\sectionmark}[1]{
     \markright{\thesection\ \ #1}{}
 }
@@ -362,7 +361,7 @@
 \let\finik@lof\listoffigures
 \renewcommand{\listoffigures}{
     \finik@lof
-    \addcontentsline{toc}{chapter}{\listfigurename}
+    \addcontentsline{toc}{chapter}{\selectlanguage{greek}\listfigurename}
 }
 
 
@@ -418,129 +417,130 @@
 
 %% CD covers and labels
 
-%\usepackage{tikz} % allows drawing shapes
-%\usetikzlibrary{decorations.text}
-%\usepgflibrary{shapes}
-%\usepackage{calculator}
+\usepackage{tikz} % allows drawing shapes
+\usetikzlibrary{decorations.text}
+\usepgflibrary{shapes}
+\usepackage{calculator}
 
-%\newcommand{\definecdlabeloffsets}[4]{
-%	\edef\upperlabelxoffset{#1}
-%	\edef\upperlabelyoffset{#2}
-%	\edef\lowerlabelxoffset{#3}
-%	\edef\lowerlabelyoffset{#4}
-%}
 
-%\newcommand{\createcdlabel}[5]{
-%	\cleardoublepage
-%	\thispagestyle{empty}
-%	% Zero page margins
-%		\setlength{\oddsidemargin}{0mm}
-%		\setlength{\evensidemargin}{0mm}
-%		\setlength{\textwidth}{\paperwidth}
-%		\setlength{\topmargin}{0mm}
-%		\setlength{\textheight}{\paperheight}
-%	\fontsize{7}{8.4}\selectfont
-%	\begin{tikzpicture}[remember picture, overlay]
-%	    \ADD{-10.5}{\upperlabelxoffset}{\x} \ADD{-7.4}{\upperlabelyoffset}{\y}
-%	    \node [shift={(\x cm,\y cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%	            \draw(0,0) % circle's center (relative)
-%				circle (2cm) % circle #1 radius
-%				circle (5.6cm);
-%                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ} \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
-%                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-%			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
-%	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS }}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
-%	        \end{tikzpicture}
-%	        };
-%	     \ADD{-13.5}{\upperlabelxoffset}{\xx} \ADD{-12}{\upperlabelyoffset}{\yy}
-%	     \node [shift={(\xx cm,\yy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%	             \draw(0,0) % rectangle's center (relative)
-%				  rectangle (6cm,2.5cm);
-%           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
-%	        \end{tikzpicture}
-%	        };
-%	\end{tikzpicture}
-%
-%	%% lower copy:
-%	\fontsize{7}{8.4}\selectfont
-%	\begin{tikzpicture}[remember picture, overlay]
-%	    \ADD{-10.5}{\lowerlabelxoffset}{\xxx} \ADD{-22.2}{\lowerlabelyoffset}{\yyy}
-%	    \node [shift={(\xxx cm,\yyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%	            \draw(0,0) % circle's center (relative)
-%				circle (2cm) % circle #1 radius
-%				circle (5.6cm);
-%                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ}  \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
-%                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-%			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
-%	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS}}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
-%	        \end{tikzpicture}
-%	        };
-%	     \ADD{-13.5}{\lowerlabelxoffset}{\xxxx} \ADD{-26.8}{\lowerlabelyoffset}{\yyyy}
-%	     \node [shift={(\xxxx cm,\yyyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%	             \draw(0,0) % rectangle's center (relative)
-%				  rectangle (6cm,2.5cm);
-%           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
-%	        \end{tikzpicture}
-%	        };
-%	\end{tikzpicture}
-%	%
-%	\pagebreak
-%}
+\newcommand{\definecdlabeloffsets}[4]{
+	\edef\upperlabelxoffset{#1}
+	\edef\upperlabelyoffset{#2}
+	\edef\lowerlabelxoffset{#3}
+	\edef\lowerlabelyoffset{#4}
+}
 
-%\newcommand{\createcdcover}[5]{
-%	\cleardoublepage
-%	\thispagestyle{empty}
-%	% Zero page margins
-%%		\setlength{\oddsidemargin}{0mm}
-%%		\setlength{\evensidemargin}{0mm}
-%%		\setlength{\textwidth}{\paperwidth}
-%%		\setlength{\topmargin}{0mm}
-%%		\setlength{\textheight}{\paperheight}
-%	\fontsize{9}{10.8}\selectfont
-%	\begin{tikzpicture}[remember picture, overlay]
-%	    \node [shift={(-10.5cm,-8.4cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
-%			\draw[dashed] (-6,-6) rectangle (6,6);
-%			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
-%                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
-%                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-%			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
-%                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
-%                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
-%                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
-%	        \end{tikzpicture}
-%	        };
-%	\end{tikzpicture}
-%
-%	%% lower copy:
-%	\fontsize{9}{10.8}\selectfont
-%	\begin{tikzpicture}[remember picture, overlay]
-%	    \node [shift={(-10.5cm,-21.9cm)}]  at (current page.north east) % slightly change y value for finer adjustment
-%	        {%
-%	        \begin{tikzpicture}[remember picture, overlay]
-%			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
-%			\draw[dashed] (-6,-6) rectangle (6,6);
-%			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{figures/logo-up-4color-stam.eps}};
-%                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
-%                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-%			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
-%                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
-%                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
-%                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
-%	        \end{tikzpicture}
-%	        };
-%	\end{tikzpicture}
-%	%
-%}
+\newcommand{\createcdlabel}[5]{
+	\cleardoublepage
+	\thispagestyle{empty}
+	% Zero page margins
+		\setlength{\oddsidemargin}{0mm}
+		\setlength{\evensidemargin}{0mm}
+		\setlength{\textwidth}{\paperwidth}	
+		\setlength{\topmargin}{0mm}
+		\setlength{\textheight}{\paperheight}
+	\fontsize{7}{8.4}\selectfont
+	\begin{tikzpicture}[remember picture, overlay]
+	    \ADD{-10.5}{\upperlabelxoffset}{\x} \ADD{-7.4}{\upperlabelyoffset}{\y}
+	    \node [shift={(\x cm,\y cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+	            \draw(0,0) % circle's center (relative)
+				circle (2cm) % circle #1 radius
+				circle (5.6cm);
+                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ} \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
+                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
+			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};   
+	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS }}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
+	        \end{tikzpicture}
+	        };
+	     \ADD{-13.5}{\upperlabelxoffset}{\xx} \ADD{-12}{\upperlabelyoffset}{\yy}
+	     \node [shift={(\xx cm,\yy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+	             \draw(0,0) % rectangle's center (relative)
+				  rectangle (6cm,2.5cm);
+           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};     
+	        \end{tikzpicture}
+	        };		
+	\end{tikzpicture}
+
+	%% lower copy:
+	\fontsize{7}{8.4}\selectfont
+	\begin{tikzpicture}[remember picture, overlay]
+	    \ADD{-10.5}{\lowerlabelxoffset}{\xxx} \ADD{-22.2}{\lowerlabelyoffset}{\yyy}
+	    \node [shift={(\xxx cm,\yyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+	            \draw(0,0) % circle's center (relative)
+				circle (2cm) % circle #1 radius
+				circle (5.6cm);
+                	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ}  \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
+                   \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
+			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};   
+	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS}}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
+	        \end{tikzpicture}
+	        };
+	     \ADD{-13.5}{\lowerlabelxoffset}{\xxxx} \ADD{-26.8}{\lowerlabelyoffset}{\yyyy}
+	     \node [shift={(\xxxx cm,\yyyy cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+	             \draw(0,0) % rectangle's center (relative)
+				  rectangle (6cm,2.5cm);
+           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};      
+	        \end{tikzpicture}
+	        };		
+	\end{tikzpicture}
+	%
+	\pagebreak
+}
+
+\newcommand{\createcdcover}[5]{
+	\cleardoublepage
+	\thispagestyle{empty}
+	% Zero page margins
+		\setlength{\oddsidemargin}{0mm}
+		\setlength{\evensidemargin}{0mm}
+		\setlength{\textwidth}{\paperwidth}	
+		\setlength{\topmargin}{0mm}
+		\setlength{\textheight}{\paperheight}
+	\fontsize{9}{10.8}\selectfont 
+	\begin{tikzpicture}[remember picture, overlay]
+	    \node [shift={(-10.5cm,-8.4cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
+			\draw[dashed] (-6,-6) rectangle (6,6); 
+			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{logo-up-4color-stam.eps}};
+                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
+                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
+			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
+                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
+                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
+                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
+	        \end{tikzpicture}
+	        };	
+	\end{tikzpicture}
+
+	%% lower copy:
+	\fontsize{9}{10.8}\selectfont 
+	\begin{tikzpicture}[remember picture, overlay]
+	    \node [shift={(-10.5cm,-21.9cm)}]  at (current page.north east) % slightly change y value for finer adjustment
+	        {%
+	        \begin{tikzpicture}[remember picture, overlay]
+			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
+			\draw[dashed] (-6,-6) rectangle (6,6);
+			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{logo-up-4color-stam.eps}};
+                   \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
+                   \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
+			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
+                   \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
+                   \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
+                   \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
+	        \end{tikzpicture}
+	        };	
+	\end{tikzpicture}
+	%
+}
 
 \endinput
