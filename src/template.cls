@@ -231,8 +231,6 @@
 }
 
 
-
-
 % Names
 \newcommand{\keywordsname}{Λέξεις Κλειδιά}
 \newcommand{\keywordsnameeng}{\en{Keywords}}
@@ -251,7 +249,6 @@
 \department{Πολυτεχνική Σχολή}
 \division{Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής}
 \other{Πανεπιστημιούπολη, Τ.Κ 26504, Ρίο Αχαΐα}
-
 
 \uppertitleback{
     \begin{minipage}{2.8cm}
@@ -350,9 +347,12 @@
 }
 %
 \fancyhf{}
-\fancyhead[LE,RO]{\thepage}
-\fancyhead[LO]{\slshape\nouppercase{{\rightmark}}}
-\fancyhead[RE]{\slshape\nouppercase{{\leftmark}}}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[LO]{\slshape\nouppercase{{\rightmark}}}
+%\fancyhead[RE]{\slshape\nouppercase{{\leftmark}}}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\slshape\nouppercase{{\leftmark}}}
+
 \addtolength{\headheight}{2pt}
 \setlength{\headwidth}{\textwidth}
 \addtolength{\topmargin}{-2pt}

@@ -1,4 +1,6 @@
-\documentclass[11pt,a4paper,english,greek,twoside]{template}
+\documentclass[11pt,a4paper,english,greek,oneside]{template}
+\usepackage[greek,english]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{epstopdf}
 \usepackage{indentfirst}
 \usepackage{verbatim}
@@ -22,8 +24,8 @@
 \usepackage{footmisc}
 \usepackage{fontspec}
 \usepackage{hyperref}
-\usepackage[greek,english]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{dirtytalk} % Say
 \captionsetup{belowskip=10pt,aboveskip=15pt}
 \addto\captionsgreek{%
   \renewcommand{\indexname}{Ευρετήριο όρων}%
@@ -77,16 +79,17 @@
 \renewcommand\lstlistlistingname{\tg{Παραδείγματα Κώδικα}}
 \renewcommand{\listalgorithmname}{Λίστα Αλγορίθμων}
 
-\hyphenation{ο-ποί-α}
-
 % Εισαγωγή βιβλιογραφίας
 \usepackage[backend=biber]{biblatex}
 \addbibresource{References.bib}
-\bibliographystyle{ieeetr}
-%\bibliographystyle{hellas}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{hellas}
 
 % Αρίθμηση subsubsections
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{3}
+
+\hyphenation{ο-ποί-α}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% THESIS INFO 
