@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  26 SEP 2024 16:18
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  4 OCT 2024 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,11 +8,7 @@ entering extended mode
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
 (setup.tex (template.cls
-
-LaTeX Warning: You have requested document class `template',
-               but the document class provides `thesis'.
-
-Document Class: thesis 2014/10/25 1.0 LaTeX document class.
+Document Class: template 2014/10/25 1.0 LaTeX document class.
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
@@ -526,6 +522,11 @@ Package: babel 2024/08/29 v24.9 The Babel package
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
+Package babel Info: Main language set with 'main='. Except if you have
+(babel)             problems, prefer the default mechanism for setting
+(babel)             the main language, ie, as the last declared.
+(babel)             Reported on input line 4178.
+
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
 df
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -549,15 +550,7 @@ File: tuenc-greek.def 2023-09-12 2.5 Greek LICRs for XeTeX and LuaTeX
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\greek-fon
 tenc.def
 File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
-)))
-
-Package babel Warning: Last declared language option is 'english',
-(babel)                but the last processed one was 'greek'.
-(babel)                The main language can't be set as both a global
-(babel)                and a package option. Use 'main=english' as
-(babel)                option. Reported on input line 4239.
-
-)
+))))
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/el\babel
 -greek.tex
 Package babel Info: Importing font and identification data for greek
@@ -1332,21 +1325,7 @@ Package biblatex Info: ... and expl3
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
 .sty
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
-))
-
-setup.tex:86: Package biblatex Error: '\bibliographystyle' invalid for 'biblate
-x'.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \bibliographystyle{hellas}
-                               
-Use the package option 'style' instead.
-I'm ignoring this command.
-
-)
+)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1584,10 +1563,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39151 strings out of 409029
- 783649 string characters out of 5756741
- 1666864 words of memory out of 5000000
- 61244 multiletter control sequences out of 15000+600000
+ 39153 strings out of 409029
+ 783674 string characters out of 5756741
+ 1666963 words of memory out of 5000000
+ 61246 multiletter control sequences out of 15000+600000
  566109 words of font info for 108 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  104i,12n,110p,1485b,4959s stack positions out of 10000i,1000n,20000p,200000b,200000s
