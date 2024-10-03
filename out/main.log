@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  4 OCT 2024 00:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.25)  4 OCT 2024 00:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1077,18 +1077,6 @@ Space,Scale=0.9].
 \c@remark=\count379
 \c@notation=\count380
 \c@law=\count381
-
-setup.tex:69: LaTeX Error: Command \thedefinition undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 \renewcommand{\thedefinition}
-                                  {\arabic{chapter}.\arabic{definition}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 (C:\Users\alexx\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
@@ -1563,10 +1551,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39153 strings out of 409029
- 783674 string characters out of 5756741
- 1666963 words of memory out of 5000000
- 61246 multiletter control sequences out of 15000+600000
+ 39151 strings out of 409029
+ 783659 string characters out of 5756741
+ 1666872 words of memory out of 5000000
+ 61244 multiletter control sequences out of 15000+600000
  566109 words of font info for 108 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  104i,12n,110p,1485b,4959s stack positions out of 10000i,1000n,20000p,200000b,200000s

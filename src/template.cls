@@ -67,7 +67,7 @@
         \begin{center}
 
         \begin{minipage}{6cm}
-            \includegraphics[width=6cm]{logo-up-4color-landscape.jpg}
+            \includegraphics[width=6cm]{img/logo-up-4color-landscape.jpg}
 		\vspace{3pt}
         \end{minipage}
         
@@ -511,7 +511,7 @@
 	        \begin{tikzpicture}[remember picture, overlay]
 			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
 			\draw[dashed] (-6,-6) rectangle (6,6); 
-			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{logo-up-4color-stam.eps}};
+			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{img/logo-up-4color-stam.eps}};
                    \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
                    \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
 			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
@@ -530,7 +530,7 @@
 	        \begin{tikzpicture}[remember picture, overlay]
 			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
 			\draw[dashed] (-6,-6) rectangle (6,6);
-			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{logo-up-4color-stam.eps}};
+			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{img/logo-up-4color-stam.eps}};
                    \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
                    \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
 			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
