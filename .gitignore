@@ -1,1 +1,14 @@
 /auxil/
+/out/main.aux
+/out/main.bcf
+/out/main.idx
+/out/main.ilg
+/out/main.ind
+/out/main.log
+/out/main.out
+/out/main.run.xml
+/out/main.toc
+/out/main.synctex.gz
+.qodo
+/out/main.blg
+/out/main.bbl
