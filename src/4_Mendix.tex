@@ -123,7 +123,7 @@
                     \setlength\itemsep{-0.25em}
                     \item Events -- τα σημεία εκκίνησης και λήξης του Microflow.
                     \item Decisions -- συνθήκες που καθορίζουν τη ροή του Microflow.
-                    \item Activities -- οι ενέργειες που πραγματοποιούνται στο Microflow.
+                    \item Activities -- οι ενέργειες που πραγματοποιούνται στο Microflow. Για παράδειγμα, δημιουργία αντικειμένων (Create object), ενημέρωση αντικειμένων (Change object), διαγραφή αντικειμένων (Delete object), εμφάνιση σελίδων (Show page) κ.α.
                     \item Loops -- επαναλαμβανόμενες ενέργειες.
                     \item Parameter - δεδομένα εισόδου του Microflow.
                 \end{itemize}
@@ -140,4 +140,13 @@
                     \caption{\centering Όταν επεξεργαζόμαστε ένα Microflow, to Toolbox panel περιλαμβάνει τα διαθέσιμα activities.}
             \end{figure}
 
+        \subsection{Εκφράσεις}
+
+
         \subsection{Domain Model} \label{sec:MendixDomainModel}
+
+            Το domain model είναι ένα μοντέλο δεδομένων που αναπαριστά τη δομή των δεδομένων κάποιου module στην πλατφόρμα Mendix. Τα δεδομένα που περιγράφονται από το domain model αποθηκεύονται στη συνέχεια σε ένα σχεσιακό σύστημα βάσεων δεδομένων του Mendix.
+
+            Το domain model αποτελεί κεντρικό πυλώνα της αρχιτεκτονικής κάθε εφαρμογής. Κάθε module έχει το δικό του domain model, και όλα τα modules μπορούν να χρησιμοποιούν δεδομένα από όλα υπόλοιπα domain modules μέσω συσχετίσεων.
+
+
