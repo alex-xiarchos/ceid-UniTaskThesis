@@ -36,9 +36,13 @@
         \subsubsection{Επιλογές για deployment} \label{sec:MendixDeployment}
             Το Mendix παρέχει διάφορες επιλογές για το deployment των εφαρμογών που αναπτύσσονται στην πλατφόρμα.
 
-            Με το Mendix Free μπορούμε να κάνουμε deploy την εφαρμογή στο διαδίκτυο σε ένα URL της μορφής \texttt{<όνομα εφαρμογής>-sandbox.mxapps.io}, και είναι αυτό που έχει χρησιμοποιηθεί για την υλοποίηση της εφαρμογής μας στο κεφάλαιο \ref{ch:unitask}. Το Mendix Free είναι κατάλληλο για την ανάπτυξη μικρών εφαρμογών και την εξοικείωση με την πλατφόρμα, αλλά δεν προσφέρει την απαιτούμενη ασφάλεια και ευελιξία για την ανάπτυξη μεγάλων επιχειρησιακύν εφαρμογών καθώς οι εφαρμογές παύουν να λειτουργούν μετά από λίγες ώρες αδράνειας (sleep mode), δεν μπορούν να κλιμακωθούν, υπάρχει όριο στην υπολογιστική ισχύ και το μέγεθος της βάσης δεδομένων, δεν τρέχουν προγραμματιζόμενα γεγονότα, δεν υποστηρίζονται custom domains κ.α. Παρόλα αυτά είναι μια πολύ καλή επιλογή που εξυπηρετεί τις ανάγκες των αρχάριων χρηστών και μικρών εφαρμογών. \cite{mendixCloud}
+            Με το Mendix Free μπορούμε να κάνουμε deploy την εφαρμογή στο διαδίκτυο σε ένα URL της μορφής \texttt{<όνομα εφαρμογής>-sandbox.mxapps.io}, και είναι αυτό που έχει χρησιμοποιηθεί για την υλοποίηση της εφαρμογής μας στο κεφάλαιο \ref{ch:unitask}. Το Mendix Free είναι κατάλληλο για την ανάπτυξη μικρών εφαρμογών και την εξοικείωση με την πλατφόρμα, αλλά δεν προσφέρει την απαιτούμενη ασφάλεια και ευελιξία για την ανάπτυξη μεγάλων επιχειρησιακύν εφαρμογών καθώς οι εφαρμογές παύουν να λειτουργούν μετά από λίγες ώρες αδράνειας (sleep mode), δεν μπορούν να κλιμακωθούν, υπάρχει όριο στην υπολογιστική ισχύ και το μέγεθος της βάσης δεδομένων, δεν τρέχουν προγραμματιζόμενα γεγονότα, δεν υποστηρίζονται custom domains κ.α. Παρόλα αυτά είναι μια πολύ καλή επιλογή που εξυπηρετεί τις ανάγκες των αρχάριων χρηστών και μικρών εφαρμογών. Για χρήστες ή επιχειρήσεις με αυξανόμενες ανάγκες, το Mendix προσφέρει λύσεις επί πληρωμή που άρουν τους περιορισμούς που αναφέρθηκαν νωρίτερα. \cite{mendixCloud}
 
-            Για χρήστες ή επιχειρήσεις με αυξανόμενες ανάγκες, το Mendix προσφέρει λύσεις επί πληρωμή που άρουν τους περιορισμούς που αναφέρθηκαν νωρίτερα.
+            Το Mendix προφίλ κάθε χρήστη περιλαμβάνει dashboards για κάθε εφαρμογή που αναπτύσσει όπου περιλαμβάνονται ρυθμίσεις και πληροφορίες όσον αφορά το deployment.
+            \begin{figure}[h!] \noindent \centering
+                \includegraphics[width=0.9\textwidth]{Mendix/Environments}
+                \caption{\centering Σελίδα Environments της εφαρμογής UniTask (κεφ. \ref{ch:unitask})}
+            \end{figure}
 
 
     \section{Δομή εφαρμογών του Mendix}
@@ -94,7 +98,7 @@
             Η σελίδα είναι ο κεντρικός τρόπος αλληλεπίδρασης του χρήστη με την εφαρμογή. Η δημιουργία μιας σελίδας μπορεί να βασιστεί σε \textit{πόρους} που προέρχονται από έγγραφα, όπως οι Εικόνες (Images), τα Layouts τα οποία καθορίζουν τη διάταξη της σελίδας, τα Μενού (Menus) που διαμορφώνουν την πλοήγηση, ή τα Snippets, τα οποία αποτελούν επαναχρησιμοποιήσιμα τμήματα διεπαφής.\footnote{Το Mendix είναι μια Εφαρμογή Μίας Σελίδας (Single-page application -- SPA) που σημαίνει ότι όλη η αλληλεπίδραση πραγματοποιείται σε μία μόνο καρτέλα ή παράθυρο του προγράμματος περιήγησης που φορτώνεται μία φορά και στη συνέχεια ενημερώνεται δυναμικά χωρίς να χρειάζεται να φορτωθεί ξανά. Ως αποτέλεσμα, δεν είναι δυνατή η ανοίγματος νέων σελίδων σε διαφορετική καρτέλα ή παράθυρο.}
 
                 \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.8\textwidth]{Mendix/CreateNewPage}
+                    \includegraphics[width=0.7\textwidth]{Mendix/CreateNewPage}
                     \caption{\centering Το παράθυρο δημιουργίας μιας νέας σελίδας.}
                     \label{fig:MendixCreateNewPage}
                 \end{figure}
@@ -118,19 +122,28 @@
                 \end{itemize}
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.3\textwidth]{Mendix/ToolboxPage}
+                    \includegraphics[width=0.4\textwidth]{Mendix/ToolboxPage}
                     \caption{\centering Τα Widgets περιλαμβάνονται στο Toolbox panel.}
             \end{figure}
 
-                Τέλος, το Mendix προσφέρει προκαθορισμένα σύνολα από widgets, γνωστά ως \textit{Building blocks}, τα οποία δημιουργούν στοιχεία όπως επικεφαλίδες (headers), φόρμες και ειδοποιήσεις (notifications). Αυτά τα Building blocks διευκολύνουν και επιταχύνουν τη διαδικασία ανάπτυξης, παρέχοντας στους χρήστες έτοιμες λύσεις που μπορούν να ενσωματωθούν απευθείας στις εφαρμογές.
+                Tο Mendix προσφέρει προκαθορισμένα σύνολα από widgets, γνωστά ως \textit{Building blocks}, τα οποία δημιουργούν στοιχεία όπως επικεφαλίδες (headers), φόρμες και ειδοποιήσεις (notifications). Αυτά τα Building blocks διευκολύνουν και επιταχύνουν τη διαδικασία ανάπτυξης, παρέχοντας στους χρήστες έτοιμες λύσεις που μπορούν να ενσωματωθούν απευθείας στις εφαρμογές.
+
+                \begin{figure}[h!] \noindent \centering
+                        \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel1}
+                        \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel2}
+                        \caption{\centering Το panel Properties.}
+                \end{figure}
+
+                Τέλος, για κάθε widget (όπως και για κάθε σελίδα) μπορούν να επεξεργαστούν οι ιδιότητές του. Το panel Properties (σχήμα) είναι ένα δυναμικό panel στο οποίο αλλάζει το περιεχόμενό του ανάλογα με το στοιχείο που έχουμε επιλεγμένο.
+
 
         \subsubsection{Εμφάνιση σελίδων} \label{sec:MendixPageView}
             Στο Mendix Studio Pro, μια σελίδα μπορεί να προβληθεί είτε σε Structure Mode είτε σε Design Mode, προσφέροντας στους χρήστες διαφορετικές οπτικές για τη διαχείριση και τον σχεδιασμό των σελίδων.
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.32\textwidth]{Mendix/PageView2}
-                    \includegraphics[width=0.32\textwidth]{Mendix/PageView1}
-                    \includegraphics[width=0.32\textwidth]{Mendix/PageView3}
+                    \includegraphics[width=0.6\textwidth]{Mendix/PageView2} \\
+                    \includegraphics[width=0.6\textwidth]{Mendix/PageView1} \\
+                    \includegraphics[width=0.6\textwidth]{Mendix/PageView3}
                     \caption{\centering Διαφορετικές εμφανίσεις της ίδιας σελίδας από αριστερά \\ προς τα δεξιά: Structure Mode, Design Mode, X-Ray Mode.}
             \end{figure}
 
@@ -142,12 +155,13 @@
 
         \subsubsection{Παράδειγμα δομής σελίδας}
             \begin{figure}[h!] \noindent \centering
-                \includegraphics[width=0.8\textwidth]{Mendix/PageExplorer}
-                \caption{\centering }
+                \includegraphics[width=\textwidth]{Mendix/PageExplorer}
+                \caption{\centering Page Explorer και Working area της σελίδας \texttt{Course\_Overview}.}
                 \label{fig:MendixPageExplorer}
             \end{figure}
 
-            Στο σχήμα \ref{fig:MendixPageExplorer} εμφανίζεται o Page Explorer και το Working area της σελίδας \verb|Course_Overview| της εφαρμογής RapidDeveloper. Παρατηρούμε πως όλη η σελίδα είναι δομημένη γύρω από ένα Layout Grid, το οποίο αποτελείται από δύο Rows (γραμμές). Το \texttt{Row 1} δημιουργεί το Header της σελίδας μαζί με το Supporting text τα οποία είναι τοποθετημένα σε ένα container, και το \Texttt{Row 2} δημιουργεί ένα List View το οποίο επαναλαμβάνεται. Το List View αποτελείται και αυτό από ένα Layout Grid το οποίο δημιουργεί τα δύο texts τα οποία βλέπουμε στη λίστα όπως επίσης και ένα κουμπί (το οποίο εμφανίζεται εκτός οθόνης). Οι μπλε οριζόντια μπάρα και η μπλε κάθετη μπάρα στα αριστερά αποτελούν κομμάτι του Layout της σελίδας, το οποίο είναι το \verb|Atlas_Default|.
+            Στο σχήμα \ref{fig:MendixPageExplorer} εμφανίζεται o Page Explorer και το Working area της σελίδας \verb|Course_Overview| της εφαρμογής RapidDeveloper. Παρατηρούμε πως όλη η σελίδα είναι δομημένη γύρω από ένα Layout Grid, το οποίο αποτελείται από δύο Rows (γραμμές). Το \texttt{Row 1} δημιουργεί το Header της σελίδας μαζί με το Supporting text τα οποία είναι τοποθετημένα σε ένα container\footnote{Τα containers χρησιμοποιούνται καθώς είναι ένας βολικός τρόπος ομαδοποίσης κοινών στοιχείων της σελίδας. Έτσι μπορούν να δωθούν εύκολα κανόνες για αυτά τα στοιχεία όπως για παράδειγμα το visability, συγκεκριμένα events ή και custom CSS κλάσεις.}, και το \Texttt{Row 2} δημιουργεί ένα List View το οποίο επαναλαμβάνεται. Το List View αποτελείται και αυτό από ένα Layout Grid το οποίο δημιουργεί τα δύο texts τα οποία βλέπουμε στη λίστα όπως επίσης και ένα κουμπί (το οποίο εμφανίζεται εκτός οθόνης). Οι μπλε οριζόντια μπάρα και η μπλε κάθετη μπάρα στα αριστερά αποτελούν κομμάτι του Layout της σελίδας, το οποίο είναι το \verb|Atlas_Default|.
+
 
         \subsection{Microflows} \label{sec:MendixMicroflows}
             Τα Microflows (όπως και τα Nanoflows και τα Workflows)\footnote{Η βασική διαφορά μεταξύ Microflows και Nanoflows έγκειται στη λειτουργικότητα και τον τρόπο εκτέλεσής τους. Τα Microflows βασίζονται σε βιβλιοθήκες της Java, εκτελούνται στον διακομιστή (runtime server) και, ως εκ τούτου, δεν είναι διαθέσιμα για εφαρμογές που λειτουργούν εκτός σύνδεσης. Από την άλλη πλευρά, τα Nanoflows χρησιμοποιούν βιβλιοθήκες της JavaScript, εκτελούνται στην πλευρά του client, γεγονός που τα καθιστά εν δυνάμει γρηγορότερα.
@@ -224,13 +238,14 @@
                         \caption{\centering Προσθήκη κανόνα επικύρωσης (βλ. κεφ. \ref{ch:unitask})}
                 \end{figure}
 
-                Η καρτέλα Event handlers (Χειριστές Συμβάντων) είναι ένας τρόπος για να εκτελεστούν συγκεκριμένες ενέργειες (microflows) όταν συμβεί κάποιο συγκεκριμένο συμβάν στην οντότητα. Τα συμβάντα μπορεί να είναι η δημιουργία (create), η ενημέρωση (commit ή save), η διαγραφή (delete) ή η ακύρωση (rollback ή cancel) μιας οντότητας. Μπορεί να επιλεγεί η εκτέλεση του microflow πριν ή μετά την εκτέλεση των παρακάτω συμβάντων.
-
-                Η καρτέλα Access Rules (Κανόνες Πρόσβασης) ορίζει τα δικαιώματα χρήστης από κάθε ρόλο χρήστη όσον αφορά την αλληλεπίδραση με τα γνωρίσματα της οντότητας. Μπορεί να επιλεγεί ποιος ρόλος χρήστη μπορεί να δημιουργήσει ή να διαγράψει στιγμιότυπα από οντότητες και να διαβάσει ή να τροποποιήσει τα γνωρίσματά τους.
-
                 \begin{figure}[h!] \noindent \centering
                         \includegraphics[width=0.6\textwidth]{Mendix/AccessRuleEntity}
                         \caption{\centering Επεξεργασία κανόνων πρόσβασης της οντότητας Task (βλ. κεφ. \ref{ch:unitask})}
                 \end{figure}
+
+                Η καρτέλα Event handlers (Χειριστές Συμβάντων) είναι ένας τρόπος για να εκτελεστούν συγκεκριμένες ενέργειες (microflows) όταν συμβεί κάποιο συγκεκριμένο συμβάν στην οντότητα. Τα συμβάντα μπορεί να είναι η δημιουργία (create), η ενημέρωση (commit ή save), η διαγραφή (delete) ή η ακύρωση (rollback ή cancel) μιας οντότητας. Μπορεί να επιλεγεί η εκτέλεση του microflow πριν ή μετά την εκτέλεση των παρακάτω συμβάντων.
+
+                Η καρτέλα Access Rules (Κανόνες Πρόσβασης) ορίζει τα δικαιώματα χρήστης από κάθε ρόλο χρήστη όσον αφορά την αλληλεπίδραση με τα γνωρίσματα της οντότητας. Μπορεί να επιλεγεί ποιος ρόλος χρήστη μπορεί να δημιουργήσει ή να διαγράψει στιγμιότυπα από οντότητες και να διαβάσει ή να τροποποιήσει τα γνωρίσματά τους.
+
 
                 Τέλος, μπορούν να προστεθούν breakpoints στα Microflows ώστε να γίνουν debug πιθανά σφάλματα κατά την εκτέλεση τους.
