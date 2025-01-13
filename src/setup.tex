@@ -16,7 +16,6 @@
 \usepackage{multirow}
 \usepackage{subfig}
 \usepackage{tabularx}
-\usepackage{graphicx}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{bbding}
@@ -38,6 +37,8 @@
 % Γραμματοσειρές
 \setmainfont{GFS Didot}
 \setmonofont[Scale=0.9]{Courier New}
+\newfontfamily\Zona[Scale=0.9]{ZonaPro}
+\newfontfamily\ZonaSB[Scale=0.9]{ZonaPro-SemiBold}
 
 % 1.5 spacing
 \renewcommand{\baselinestretch}{1.2}
@@ -56,8 +57,6 @@
     numbersep=5pt,
 }
 \lstset{style=mystyle}
-
-\makeatother
 
 \newtheorem{proposition}{Πρόταση}
 \newtheorem{theorem}{Θεώρημα}
@@ -80,7 +79,6 @@
 \renewcommand\lstlistlistingname{\tg{Παραδείγματα Κώδικα}}
 \renewcommand{\listalgorithmname}{Λίστα Αλγορίθμων}
 
-
 % Εισαγωγή βιβλιογραφίας
 \usepackage[backend=biber]{biblatex}
 \addbibresource{References.bib}
@@ -88,6 +86,7 @@
 % Αρίθμηση subsubsections
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
+
 
 \hyphenation{ο-ποί-α}
 
