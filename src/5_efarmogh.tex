@@ -179,6 +179,9 @@
         \subsection{Module \texttt{Administrator}}
             Το \texttt{Administrator} περιλαμβάνει τη λειτουργικότητα που αφορά τη διαχείριση των χρηστών της εφαρμογής.
             \subsubsection{Domain model του Administrator}
+                \begin{center}
+                    \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Administrator_DomainModel}
+                \end{center}
 
             \subsubsection{Σελίδες του Administrator}
                 Στο \texttt{Administrator} περιλαμβάνονται οι εξής σελίδες:
@@ -198,7 +201,7 @@
 
                     Η σελίδα χρησιμοποιείται για τη δημιουργία νέων χρηστών της εφαρμογής.
 
-                    Χρησιμοποιείται το \texttt{PopupLayout} layout του \texttt{Atlas\_Core} module. Η σελίδα περιλαμβάνει δύο Parameters, το \texttt{Student} και \texttt{AccountPasswordData} του module \texttt{Administrator}. Η σελίδα αποτελείται από δύο εμφωλευμένα Data Views, το εξωτερικό έχει ως Data source το \texttt{AccountPasswordData}, ενώ το εσωτερικό έχει ως Data source τη συσχέτιση του \texttt{AccountPasswordData} με το \texttt{Student}. Η χρήση του \texttt{AccountPasswordData} είναι απαραίτητη καθώς η δημιουργία ενός νέου χρήστη χρειάζεται την αποθήκευση του κωδικού πρόσβασής του.
+                    Χρησιμοποιείται το \texttt{PopupLayout} layout του \texttt{Atlas\_Core} module. Η σελίδα περιλαμβάνει δύο Parameters, το \texttt{Student} και \texttt{AccountPasswordData} του module \linebreak \texttt{Administrator}. Η σελίδα αποτελείται από δύο εμφωλευμένα Data Views, το εξωτερικό έχει ως Data source το \texttt{AccountPasswordData}, ενώ το εσωτερικό έχει ως Data source τη συσχέτιση του \texttt{AccountPasswordData} με το \texttt{Student}. Η χρήση του \texttt{AccountPasswordData} είναι απαραίτητη καθώς η δημιουργία ενός νέου χρήστη χρειάζεται την αποθήκευση του κωδικού πρόσβασής του.
 
                     Στο εσωτερικό Data View περιλαμβάνει Text Boxes, Radio Buttons και Input \linebreak Reference Set Selectors όπου εισάγονται τιμές για τα \texttt{Username}, \texttt{Blocked}, \texttt{Active}, \texttt{User role}, \texttt{Language}, \texttt{Time zone}, \texttt{New password} και \texttt{Confirm password}. Έχει σημασία να σημειωθεί πως οι ιδιότητες (γνωρίσματα) που αποθηκεύουμε στην πραγματικότητα δεν είναι ιδιότητες του \texttt{Student} αλλά του \texttt{System.User} του οποίου αποτελεί παιδί. Το Input Reference Set Selector χρησιμοποιείται για την επιλογή του \texttt{UserRole}, που αποτελεί διαφορετική σελίδα που θα αναλυθεί στη συνέχεια.
 
@@ -231,4 +234,58 @@
 
                     Η σελίδα χρησιμοποιείται για την επιλογή του ρόλου του χρήστη κατά τη δημιουργία νέου χρήστη.
 
-                    Χρησιμοποιείται το \texttt{PopupLayout}.
+                    Χρησιμοποιείται το \texttt{PopupLayout}. Η σελίδα αποτελείται από ένα Data Grid με Data source το \texttt{UserRole} του \texttt{System}.
+
+            \subsubsection{Microflows του Administrator}
+                \paragraph{\texttt{VAL\_Account}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/VAL_Account}
+                    \end{center}
+
+                    To microflow καλείται από το microflow \texttt{ACT\_Account\_Save} για να επικυρώσει το λογαριασμό του χρήστη πριν αποθηκευτούν οι τιμές του.\footnote{Το πρόθεμα \texttt{VAL} χρησιμοποιείται στην ονομασία των microflows για να δηλώσει επικύρωση (validation).}
+
+                    Αρχικά δημιουργείται μια boolean μεταβλητή \texttt{Valid} με αρχική τιμή \texttt{True} η οποία θα επιστραφεί από το microflow. Στη συνέχεια ελέγχεται αν για το αντικείμενο \texttt{Account} τύπου \texttt{Student} ισχύει η συνθήκη (\verb|trim($Account/Name) != ''|). Η έκφραση στη συνθήκη αφού καθαρίσει τα κενά (whitespaces) από το \texttt{Name} του \texttt{Account}, ελέγχει αν είναι διαφορετικό από το κενό string. Αν η συνθήκη δεν ισχύει, τότε η μεταβλητή \texttt{Valid} γίνεται \texttt{False}, η οποία επιστρέφεται μαζί με ένα popout μήνυμα. Αν η συνθήκη ισχύει, δηλαδή αν υπάρχει όνομα, τότε επιστρέφεται \texttt{True}.
+
+                \paragraph{\texttt{ACT\_Account\_New}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_New}
+                    \end{center}
+
+                    To microflow καλείται από τη σελίδα \texttt{Account\_Overview} με σκοπό τη δημιουργία ενός νέου χρήστη.\footnote{Το πρόθεμα \texttt{ACT} χρησιμοποιείται στην ονομασία των microflows για να δηλώσει μια ενέργεια (action).}
+
+                    Αρχικά δημιουργούνται δύο στιγμιότυπα τύπου \texttt{Student} και \texttt{AccountPasswordData} με ονόματα \texttt{NewAccount} και \texttt{NewAccountPasswordData} αντίστοιχα. Να σημειωθεί πως το \texttt{NewAccountPasswordData} συσχετίζεται με το \texttt{Student}. Τα αντικείμενα δε γίνονται commit ακόμα στη βάση, καθώς είναι κενά. Στη συνέχεια εμφανίζεται η σελίδα \texttt{Account\_New} με τα αντικείμενα \texttt{NewAccount} και \texttt{NewAccountPasswordData} ως Parameters.
+
+                \paragraph{\texttt{ACT\_Account\_Save}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_Save}
+                    \end{center}
+
+                    To microflow καλείται από τη σελίδα \texttt{Account\_New} με σκοπό την αποθήκευση των τιμών του νέου χρήστη.
+
+                    Το microflow έχει ως Parameter το \texttt{AccountPasswordData}. Μαζί με αυτό, ανακτάται το \texttt{Student} αφού συσχετίζονται, και καλείται το microflow \texttt{VAL\_Account} το οποίο ελέγχει αν το \texttt{Name} του \texttt{Student} είναι κενό. Αν το \texttt{Name} είναι κενό, τότε εμφανίζεται ένα popout μήνυμα και το microflow τερματίζεται. Αν το \texttt{Name} δεν είναι κενό, τότε ελέγχεται αν το \texttt{NewPassword} του \texttt{AccountPasswordData} είναι ίσο με το \texttt{ConfirmPassword}, όπως έχουν δοθεί στη φόρμα \texttt{Account\_New}. Αν η συνθήκη δεν ισχύει, τότε εμφανίζεται ένα popout μήνυμα και το microflow τερματίζεται. Αν η συνθήκη ισχύει, τότε το \texttt{NewPassword} γίνεται commit στο \texttt{Account} τύπου \texttt{Student} στο γνώρισμα \texttt{Password} το οποίο είναι Hashed string. Στη συνέχεια το αντικείμενο \texttt{AccountPasswordData} διαγράφεται και κλείνει η σελίδα.
+
+                \paragraph{\texttt{ACT\_Account\_Edit}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_Edit}
+                    \end{center}
+
+                    To microflow καλείται από τη σελίδα \texttt{Account\_Overview} με σκοπό την επεξεργασία ενός υπάρχοντος χρήστη.
+
+                    Το microflow εμφανίζει τη σελίδα \texttt{Account\_Edit} με το \texttt{Account} τύπου \texttt{Student} ως Parameter.
+
+                \paragraph{\texttt{VAL\_Password}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/VAL_Password}
+                    \end{center}
+
+                    To microflow καλείται από το microflow \texttt{ChangePassword}
+
+                \paragraph{\texttt{ChangePassword}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ChangePassword}
+                    \end{center}
+
+                \paragraph{\texttt{ACT\_Password\_Change}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Password_Change}
+                    \end{center}
