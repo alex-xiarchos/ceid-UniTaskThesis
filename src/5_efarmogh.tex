@@ -8,28 +8,28 @@
 %
 %        Σχεδιαστικά θεωρείται σημαντική η τήρηση σύγχρονων σχεδιαστικών κανόνων με ένα καθαρό interface και συνοχή στο σχεδιασμό για τη δημιουργία μιας λειτουργικής, αισθητικά ευχάριστης και ευκολόχρηστης εμπειρίας χρήστη ώστε να εξασφαλιστεί ότι η εφαρμογή μπορεί να ανταποκριθεί στις ανάγκες διαφορετικών τύπων χρηστών, αλλά και να παρουσιαστεί ως ένα προϊόν έτοιμο για χρήση σε πραγματικά περιβάλλοντα.
 %
-%        Στα σχήματα \ref{fig:unitaskMockupCalendar}, \ref{fig:unitaskMockupDashboard} και \ref{fig:unitaskMockupKanban} παρουσιάζονται κάποια αρχικά mockups που χρησιμοποιήθηκαν για το σχεδιασμό της εφαρμογής.
+%        Στα σχήματα \ref{fig:unitaskMockupCalendar}, \ref{fig:unitaskMockupDashboard} και \ref{fig:unitaskMockupKanban} παρουσιάζονται κάποια αρχικά mockups που χρησιμοποιήθηκαν για τον σχεδιασμό της εφαρμογής.
 %
-%        \begin{figure}[h!] \noindent \centering
+%        \begin{figure}[p!] \noindent \centering
 %            \includegraphics[width=0.65\textwidth]{mockups/Calendar}
 %            \caption{\centering Mockup Calendar σελίδας}
 %            \label{fig:unitaskMockupCalendar}
 %        \end{figure}
 %
-%        \begin{figure}[h!] \noindent \centering
+%        \begin{figure}[p!] \noindent \centering
 %            \includegraphics[width=0.65\textwidth]{mockups/Dashboard}
 %            \caption{\centering Mockup Dashboard σελίδας}
 %            \label{fig:unitaskMockupDashboard}
 %        \end{figure}
 %
-%        \begin{figure}[h!] \noindent \centering
+%        \begin{figure}[p!] \noindent \centering
 %            \includegraphics[width=0.65\textwidth]{mockups/Kanban}
 %            \caption{\centering Mockup Kanban σελίδας}
 %            \label{fig:unitaskMockupKanban}
 %        \end{figure}
 %
 %    \pagebreak
-
+%
 %    \section{Η εφαρμογή}
 %        Κατά την εκτέλεση της εφαρμογής, είτε τοπικά είτε μέσω της απομακρυσμένης πρόσβασης στο cloud, στη διεύθυνση \texttt{https://unitask-sandbox.mxapps.io/}, εμφανίζεται αρχικά η \textbf{σελίδα σύνδεσης}, όπως φαίνεται στο σχήμα \ref{fig:unitask_Login}. Στη συγκεκριμένη σελίδα, οι χρήστες καλούνται να εισάγουν τα στοιχεία σύνδεσής τους για να αποκτήσουν πρόσβαση στις λειτουργίες της εφαρμογής.
 %
@@ -177,27 +177,37 @@
         Πέρα από τα προκατασκευασμένα modules του Mendix, η λειτουργικότητα της εφαρμογής έχει οργανωθεί σε τρία modules, το \texttt{Administrator}, το \texttt{TaskManager} και το \texttt{UniTask}.
 
         \subsection{Module \texttt{Administrator}}
-            Το \texttt{Administrator} περιλαμβάνει τη λειτουργικότητα που αφορά τη διαχείριση των χρηστών της εφαρμογής.
-            \subsubsection{Domain model του Administrator}
+            Το \texttt{Administrator} περιλαμβάνει τη λειτουργικότητα που αφορά τη διαχείριση των χρηστών της εφαρμογής. Όλες οι οντότητες του domain model, οι σελίδες και τα microflows του module έχουν δικαιώματα ανάγνωσης και εγγραφής από τον \texttt{Administrator} ρόλο, όπως ορίζεται στο \texttt{Security} της εφαρμογής.
+
+            \subsubsection{Domain model του \texttt{Administrator}}
                 \begin{center}
                     \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Administrator_DomainModel}
                 \end{center}
 
-            \subsubsection{Σελίδες του Administrator}
+                Το domain model του \texttt{Administrator} περιλαμβάνει την οντότητα \texttt{Student} που κληρονομεί την οντότητα \texttt{System.User} του Mendix. Η οντότητα περιγράφει τον κάθε χρήστη της εφαρμογής και περιλαμβάνει την Boolean ιδιότητα \texttt{buttonQuickDelete} αρχικοποιημένη σε \texttt{False} η οποία χρησιμοποιείται για την ενεργοποίηση της λειτουργίας γρήγορης διαγραφής εργασιών. Η οντότητα \texttt{Student} συσχετίζεται με την οντότητα \texttt{Account} του \texttt{System.User} με σχέση 1-προς-1, η οντότητα \texttt{Task} του \texttt{TaskManager} με σχέση ένα-προς-πολλά (ένα Student συσχετίζεται με πολλά Tasks) και την οντότητα \texttt{AccountPasswordData} με σχέση 1-προς-πολλά (ένα Student συσχετίζεται με πολλά AccountPasswordData).
+
+                Η οντότητα \texttt{AccountPasswordData} είναι μη-διατηρήσιμη οντότητα (δεν αποθηκεύεται στη βάση δεδομένων αλλά μόνο στη μνήμη) και περιλαμβάνει τις ιδιότητες \texttt{OldPassword}, \texttt{NewPassword} και \texttt{ConfirmPassword} και χρησιμοποιείται για την αλλαγή του κωδικού πρόσβασης του χρήστη.
+
+            \subsubsection{Σελίδες του \texttt{Administrator}}
                 Στο \texttt{Administrator} περιλαμβάνονται οι εξής σελίδες:
-                \paragraph{\texttt{Account\_Overview}}
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{Account\_Overview}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Account_Overview}
                     \end{center}
+                \end{figure}
 
                     Η σελίδα χρησιμοποιείται για τη διαχείριση των χρηστών της εφαρμογής από την πλευρά των διαχειριστών.
 
                     Χρησιμοποιείται το \texttt{UniTask\_SideBar} layout του \texttt{UniTaskDesignSystem} module. Το κύριο μέρος της σελίδας αποτελείται από ένα Data Grid με Data source την οντότητα \texttt{Student} και με στήλες τις ιδιότητες \texttt{Name}, \texttt{Last login}, \texttt{Blocked}, \texttt{Blocked since}, \texttt{Active}, \texttt{Web service user} και \texttt{Is anonymous}.
 
-                \paragraph{\texttt{Account\_New}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{Account\_New}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Account_New}
                     \end{center}
+                \end{figure}
 
                     Η σελίδα χρησιμοποιείται για τη δημιουργία νέων χρηστών της εφαρμογής.
 
@@ -207,10 +217,12 @@
 
                     Τέλος, περιλαμβάνεται κουμπί για την αποθήκευση, το οποίο καλεί το microflow \texttt{ACT\_Account\_Save} του \texttt{Administrator} για την αποθήκευση των τιμών, και κουμπί για την ακύρωση της διαδικασίας.
 
-                \paragraph{\texttt{Account\_Edit}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{Account\_Edit}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Account_Edit}
                     \end{center}
+                \end{figure}
 
                     Η σελίδα χρησιμοποιείται για την επεξεργασία υπαρχόντων χρηστών της εφαρμογής.
 
@@ -218,74 +230,146 @@
 
                     Τέλος, περιλαμβάνεται κουμπί για την αποθήκευση και κουμπί για την ακύρωση της διαδικασίας. Τα κουμπιά καλούν προεπιλεγμένες ενέργειες του Mendix.
 
-                \paragraph{\texttt{Change\_Password}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{Change\_Password}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Change_Password}
                     \end{center}
+                \end{figure}
 
                     Η σελίδα χρησιμοποιείται για την αλλαγή του κωδικού πρόσβασης υπάρχοντος χρήστη.
 
                     Χρησιμοποιείται το \texttt{PopupLayout}. Η σελίδα περιλαμβάνει το Parameter \linebreak \texttt{AccountPasswordData}, ένα Data View με Data source το \texttt{Student} με τα απαραίτητα Text Boxes για την αλλαγή των τιμών. Τέλος, περιλαμβάνεται κουμπί για την αποθήκευση που καλεί το microflow \texttt{ChangePassword} του \texttt{Administrator} και κουμπί για την ακύρωση της διαδικασίας.
 
-                \paragraph{\texttt{UserRole\_Select}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{UserRole\_Select}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/UserRole_Select}
                     \end{center}
+                \end{figure}
 
                     Η σελίδα χρησιμοποιείται για την επιλογή του ρόλου του χρήστη κατά τη δημιουργία νέου χρήστη.
 
                     Χρησιμοποιείται το \texttt{PopupLayout}. Η σελίδα αποτελείται από ένα Data Grid με Data source το \texttt{UserRole} του \texttt{System}.
 
-            \subsubsection{Microflows του Administrator}
-                \paragraph{\texttt{VAL\_Account}}
+            \subsubsection{Microflows του \texttt{Administrator}}
+                Στο \texttt{Administrator} περιλαμβάνονται τα εξής microflows:
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{VAL\_Account}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/VAL_Account}
                     \end{center}
+                \end{figure}
 
                     To microflow καλείται από το microflow \texttt{ACT\_Account\_Save} για να επικυρώσει το λογαριασμό του χρήστη πριν αποθηκευτούν οι τιμές του.\footnote{Το πρόθεμα \texttt{VAL} χρησιμοποιείται στην ονομασία των microflows για να δηλώσει επικύρωση (validation).}
 
                     Αρχικά δημιουργείται μια boolean μεταβλητή \texttt{Valid} με αρχική τιμή \texttt{True} η οποία θα επιστραφεί από το microflow. Στη συνέχεια ελέγχεται αν για το αντικείμενο \texttt{Account} τύπου \texttt{Student} ισχύει η συνθήκη (\verb|trim($Account/Name) != ''|). Η έκφραση στη συνθήκη αφού καθαρίσει τα κενά (whitespaces) από το \texttt{Name} του \texttt{Account}, ελέγχει αν είναι διαφορετικό από το κενό string. Αν η συνθήκη δεν ισχύει, τότε η μεταβλητή \texttt{Valid} γίνεται \texttt{False}, η οποία επιστρέφεται μαζί με ένα popout μήνυμα. Αν η συνθήκη ισχύει, δηλαδή αν υπάρχει όνομα, τότε επιστρέφεται \texttt{True}.
 
-                \paragraph{\texttt{ACT\_Account\_New}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ACT\_Account\_New}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_New}
                     \end{center}
+                \end{figure}
 
                     To microflow καλείται από τη σελίδα \texttt{Account\_Overview} με σκοπό τη δημιουργία ενός νέου χρήστη.\footnote{Το πρόθεμα \texttt{ACT} χρησιμοποιείται στην ονομασία των microflows για να δηλώσει μια ενέργεια (action).}
 
                     Αρχικά δημιουργούνται δύο στιγμιότυπα τύπου \texttt{Student} και \texttt{AccountPasswordData} με ονόματα \texttt{NewAccount} και \texttt{NewAccountPasswordData} αντίστοιχα. Να σημειωθεί πως το \texttt{NewAccountPasswordData} συσχετίζεται με το \texttt{Student}. Τα αντικείμενα δε γίνονται commit ακόμα στη βάση, καθώς είναι κενά. Στη συνέχεια εμφανίζεται η σελίδα \texttt{Account\_New} με τα αντικείμενα \texttt{NewAccount} και \texttt{NewAccountPasswordData} ως Parameters.
 
-                \paragraph{\texttt{ACT\_Account\_Save}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ACT\_Account\_Save}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_Save}
                     \end{center}
+                \end{figure}
 
                     To microflow καλείται από τη σελίδα \texttt{Account\_New} με σκοπό την αποθήκευση των τιμών του νέου χρήστη.
 
                     Το microflow έχει ως Parameter το \texttt{AccountPasswordData}. Μαζί με αυτό, ανακτάται το \texttt{Student} αφού συσχετίζονται, και καλείται το microflow \texttt{VAL\_Account} το οποίο ελέγχει αν το \texttt{Name} του \texttt{Student} είναι κενό. Αν το \texttt{Name} είναι κενό, τότε εμφανίζεται ένα popout μήνυμα και το microflow τερματίζεται. Αν το \texttt{Name} δεν είναι κενό, τότε ελέγχεται αν το \texttt{NewPassword} του \texttt{AccountPasswordData} είναι ίσο με το \texttt{ConfirmPassword}, όπως έχουν δοθεί στη φόρμα \texttt{Account\_New}. Αν η συνθήκη δεν ισχύει, τότε εμφανίζεται ένα popout μήνυμα και το microflow τερματίζεται. Αν η συνθήκη ισχύει, τότε το \texttt{NewPassword} γίνεται commit στο \texttt{Account} τύπου \texttt{Student} στο γνώρισμα \texttt{Password} το οποίο είναι Hashed string. Στη συνέχεια το αντικείμενο \texttt{AccountPasswordData} διαγράφεται και κλείνει η σελίδα.
 
-                \paragraph{\texttt{ACT\_Account\_Edit}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ACT\_Account\_Edit}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Account_Edit}
                     \end{center}
+                \end{figure}
 
                     To microflow καλείται από τη σελίδα \texttt{Account\_Overview} με σκοπό την επεξεργασία ενός υπάρχοντος χρήστη.
 
                     Το microflow εμφανίζει τη σελίδα \texttt{Account\_Edit} με το \texttt{Account} τύπου \texttt{Student} ως Parameter.
 
-                \paragraph{\texttt{VAL\_Password}}
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{VAL\_Password}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/VAL_Password}
                     \end{center}
+                \end{figure}
 
-                    To microflow καλείται από το microflow \texttt{ChangePassword}
+                    To microflow καλείται από το microflow \texttt{ChangePassword} με σκοπό τον έλεγχο των συνθηκών για την αλλαγή του κωδικού πρόσβασης.
 
-                \paragraph{\texttt{ChangePassword}}
+                    Αρχικά δημιουργείται μια boolean μεταβλητή \texttt{Valid} με αρχική τιμή \texttt{True}. Στη συνέχεια ελέγχεται αν για το \texttt{NewPassword} του αντικειμένου \texttt{AccountPasswordData} ισχύει η συνθήκη (\verb|trim($AccountPasswordData/NewPassword) != ''|). Η έκφραση στη συνθήκη ελέγχει αν έχει δοθεί όντως νέος κωδικός στη φόρμα της σελίδας \texttt{Change\_Password}. Αν η συνθήκη ισχύει, ελέγχεται με παρόμοιο τρόπο και το \texttt{ConfirmPassword} όπως επίσης και το αν είναι ίσο με το \texttt{NewPassword}. Αν κάποια συνθήκη από τις προαναφερθείσες δεν ισχύει, η μεταβλητή \texttt{Valid} γίνεται \texttt{False} και εμφανίζεται κατάλληλο popout μήνυμα. Αν όλες οι συνθήκες ισχύουν, τότε η μεταβλητή \texttt{Valid} παραμένει \texttt{True} και επιστρέφεται από το microflow.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ChangePassword}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ChangePassword}
                     \end{center}
+                \end{figure}
 
-                \paragraph{\texttt{ACT\_Password\_Change}}
+                    To microflow καλείται από τη σελίδα \texttt{Change\_Password} με σκοπό την αποθήκευση του νέου κωδικού πρόσβασης για έναν υπάρχων χρήστη.
+
+                    Το microflow έχει ως Parameter το \texttt{AccountPasswordData}. Στην αρχή καλείται το microflow \texttt{VAL\_Password} για τον έλεγχο των συνθηκών. Αν η μεταβλητή \texttt{Valid} που επιστρέφεται από το microflow είναι \texttt{False}, τότε το microflow τερματίζεται. Αν είναι \texttt{True}, τότε γίνεται retrieve και το αντικείμενο \texttt{Student} ως συσχέτιση, γίνεται commit το \texttt{NewPassword} ως Hashed string \texttt{Password} στο \texttt{Student}, εμφανίζεται κατάλληλο popout μήνυμα, διαγράφεται το \texttt{AccountPasswordData} και κλείνει η σελίδα.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ACT\_Password\_Change}}
                     \begin{center}
                         \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ACT_Password_Change}
                     \end{center}
+                \end{figure}
+
+                    To microflow καλείται από τη σελίδα \texttt{Account\_Edit} με σκοπό την αλλαγή του κωδικού πρόσβασης ενός υπάρχοντος χρήστη.
+
+                    Με Parameter το \texttt{Account} τύπου \texttt{Student}, αρχικά ελέγχεται αν υπάρχει όντως κάποιο υπαρκτό \texttt{Account}. Αν δεν υπάρχει, εμφανίζεται popout μήνυμα και το microflow τερματίζεται. Αν υπάρχει, τότε δημιουργείται ένα νέο αντικείμενο \texttt{AccountPasswordData} συσχετισμένο με το \texttt{Account} και εμφανίζεται η σελίδα \texttt{Change\_Password} με το \linebreak \texttt{AccountPasswordData} και \texttt{Account} ως Parameters.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{ASU\_Administrator\_Create}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/ASU_Administrator_Create}
+                    \end{center}
+                \end{figure}
+
+                    Microflow που καλείται κατά την αρχικοποίηση της εφαρμογής για τη δημιουργία του διαχειριστή της εφαρμογής. \footnote{Το πρόθεμα \texttt{ASU} (After Startup) χρησιμοποιείται στην ονομασία των microflows για να δηλώσει ότι καλείται αμέσως μετά την εκκίνηση της εφαρμογής.}
+
+                    Αρχικά δημιουργείται το String \texttt{AccountName} με τιμή \texttt{'admin'} με το username του διαχειριστή. Στη συνέχεια γίνεται retrieve από τη βάση δεδομένων το \texttt{Student} που έχει ως \texttt{Name} το \texttt{AccountName}. Αν δεν υπάρχει τέτοιος λογαριασμός, τότε γίνονται retrieve τα \texttt{System.UserRoles} και δημιουργείται ένα νέο αντικείμενο \texttt{Student} με \texttt{Name} το \texttt{AccountName}, \texttt{Password} η τιμή \texttt{'admin'} και \texttt{UserRole} το \texttt{UserRole}. Αν υπάρχει ήδη λογαριασμός με το \texttt{AccountName}, τότε αλλάζει ο κωδικός σε \texttt{'admin'}. Είναι προφανές ότι τα στοιχεία σύνδεσης του διαχειριστή έχουν οριστεί ως \texttt{'admin'} και \texttt{'admin'}.
+
+        \subsection{Module \texttt{TaskManager}}
+            Το \texttt{TaskManager} περιλαμβάνει τη λειτουργικότητα που αφορά τη διαχείριση των εργασιών της εφαρμογής. Όλες οι οντότητες του domain model, οι σελίδες και τα microflows του module έχουν δικαιώματα ανάγνωσης και εγγραφής από τον \texttt{User} ρόλο, όπως ορίζεται στο \texttt{Security} της εφαρμογής, με εξαίρεση το \texttt{Custom\_LogIn\_Page} που έχει δικαίωμα ο \texttt{Guest}.
+
+            \subsubsection{Domain model του \texttt{TaskManager}}
+                \begin{center}
+                    \includegraphics[width=0.9\textwidth]{UniTask_Mendix/TaskManager_DomainModel}
+                \end{center}
+
+                Το domain model του \texttt{TaskManager} περιλαμβάνει την οντότητα \texttt{Task} και τη μη-διατηρήσιμη οντότητα \texttt{PageHelper}.
+
+                Η οντότητα \texttt{Task} αναπαριστά την εκάστοτε εργασία του χρήστη της εφαρμογής. Περιλαμβάνει τις ιδιότητες \texttt{Title} τύπου String ως 200 χαρακτήρες με το όνομα της εργασίας, \texttt{Notes} τύπου String με απεριόριστους χαρακτήρες όπου μπορούν να προστεθούν σημειώσεις για αυτή και \texttt{DueDate} τύπου Date and time με την ημερομηνία λήξης. Επίσης, περιλαμβάνει τη \texttt{StartDate} τύπου Date and time με την ημερομηνία έναρξης, η οποία αρχικοποιείται με την τιμή \verb|'%CurrentDateTime%]'| (Token που επιστρέφει την τρέχουσα ημερομηνία και ώρα) και τη \texttt{CalendarColor} τύπου String που αποθηκεύει το χρώμα της εργασίας στο ημερολόγιο. Λόγω της φύσης του widget του ημερολογίου, το String θα έχει πάντα τη μορφή \texttt{'rgb(<0-255>, <0-255>, <0-255>)'} και στην οντότητα αρχικοποιείται με την τιμή \texttt{'rgb(38,74,229)'} που αντιστοιχεί στο μπλε χρώμα.
+
+                Επιπλέον, η οντότητα περιλαμβάνει τις ιδιότητες \texttt{TaskStatus} και \texttt{TaskPriority} όπου είναι Enumeration ιδιότητες των Enumeration εγγράφων \texttt{TaskStatus} και \linebreak \texttt{TaskPriority}, αρχικοποιημένες με \texttt{To\_Do} και \texttt{Low} αντίστοιχα και με την ιδιότητα \texttt{CreationDateBubble} τύπου Boolean που αρχικοποιείται με \texttt{True}. Η ιδιότητα αυτή χρησιμοποιείται για την εμφάνιση ενός επεξηγηματικού μηνύματος στον χρήστη όταν δημιουργεί μια νέα εργασία. Να σημειωθεί επίσης πως το \texttt{DateDue} περιλαμβάνει ένα Validation rule που ελέγχει αν η ημερομηνία λήξης είναι μετά την ημερομηνία έναρξης \texttt{StartDate}, και αν δεν ισχύει, τότε εμφανίζεται κατάλληλο μήνυμα.
+
+                Η οντότητα \texttt{PageHelper} περιλαμβάνει τις ιδιότητες \texttt{CounterTaskDoing}, \linebreak \texttt{CounterTaskDone} και \texttt{CounterTaskToDo} τύπου Integer, των οποίων οι τιμές καθορίζονται από τα microflows \texttt{CounterTaskDoing}, \texttt{CounterTaskDone} και \texttt{CounterTaskToDo} αντίστοιχα. Οι ιδιότητες αυτές χρησιμοποιούνται για την εμφάνιση των τριών μετρητών. Επίσης, περιλαμβάνει την Boolean ιδιότητα \texttt{AreThereTasks} που καθορίζεται από το microflow \texttt{AreThereTasks} και χρησιμεύει για την εμφάνιση του επεξηγηματικού παραθύρου στο Dashboard, την Boolean ιδιότητα \texttt{Confetti} που αρχικοποιείται με \texttt{False} και χρησιμοποιείται για την εμφάνιση του κομφετί (σύστημα επιβράβευσης), και τέλος την ιδιότητα \texttt{openedTab} τύπου Integer αρχικοποιημένη με μηδέν που χρησιμεύει για την αποθήκευση της τρέχουσας καρτέλας του Dashboard που έχει ανοίξει ο χρήστης.
+
+            \subsubsection{Σελίδες του \texttt{TaskManager}}
+                Στο \texttt{TaskManager} περιλαμβάνονται οι εξής σελίδες:
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{Account\_Overview}}
+                    \begin{center}
+                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Account_Overview}
+                    \end{center}
+                \end{figure}
+
+
+            \subsubsection{Microflows του \texttt{TaskManager}}
+
+            \subsubsection{Έγγραφα του \texttt{TaskManager}}
