@@ -1,177 +1,177 @@
 \chapter{Υλοποίηση εφαρμογής} \label{ch:unitask}
     Σε αυτό το κεφάλαιο...
 
-%    \section{Σχεδίαση}
-%        Στην ενότητα \ref{sec:student_preferences}, παρουσιάστηκε μια έρευνα με τα βασικά χαρακτηριστικά που θεωρήθηκαν απαραίτητα από τους φοιτητές για μια εφαρμογή τους. Λαμβάνοντας υπόψιν τις προτιμήσεις αυτές δόθηκε βάση στην υλοποίηση τους ώστε η εφαρμογή να ανταποκρίνεται στις ανάγκες της ακαδημαϊκής κοινότητας.
-%
-%        Αρχικά, ως μια εφαρμογή διαχείρισης εργασιών, θα περιλαμβάνει προφανώς ένα σύστημα δημιουργίας, τροποποίησης και διαγραφής εργασιών, καθορισμού του χρόνου έναρξης και λήξεώς τους, και η κατηγοροποίηση των εργασιών σε κατηγορίες ανάλογα με το αν έχουν πραγματοποιηθεί, αν πραγματοποιούνται και αν έχουν σκοπό να πραγματοποιηθούν μελλοντικά. Επιπλέον, με βάση την έρευνα, είναι σημαντική η ενσωμάτωση ενός ημερολογίου, η δυνατότητα χρωματικής ταξινόμησης (color-coding) και η υλοποίηση ενός συστήματος ανταμοιβής για την ενίσχυση της παρακίνησης των χρηστών. Επίσης, θα ήταν εξίσου σημαντική η δημιουργία ενός Kanban πίνακα για την άμεση οπτικοποίηση των εργασιών και την ευκολότερη διαχείρισή τους.
-%
-%        Σχεδιαστικά θεωρείται σημαντική η τήρηση σύγχρονων σχεδιαστικών κανόνων με ένα καθαρό interface και συνοχή στο σχεδιασμό για τη δημιουργία μιας λειτουργικής, αισθητικά ευχάριστης και ευκολόχρηστης εμπειρίας χρήστη ώστε να εξασφαλιστεί ότι η εφαρμογή μπορεί να ανταποκριθεί στις ανάγκες διαφορετικών τύπων χρηστών, αλλά και να παρουσιαστεί ως ένα προϊόν έτοιμο για χρήση σε πραγματικά περιβάλλοντα.
-%
-%        Στα σχήματα \ref{fig:unitaskMockupCalendar}, \ref{fig:unitaskMockupDashboard} και \ref{fig:unitaskMockupKanban} παρουσιάζονται κάποια αρχικά mockups που χρησιμοποιήθηκαν για τον σχεδιασμό της εφαρμογής.
-%
-%        \begin{figure}[p!] \noindent \centering
-%            \includegraphics[width=0.65\textwidth]{mockups/Calendar}
-%            \caption{\centering Mockup Calendar σελίδας}
-%            \label{fig:unitaskMockupCalendar}
-%        \end{figure}
-%
-%        \begin{figure}[p!] \noindent \centering
-%            \includegraphics[width=0.65\textwidth]{mockups/Dashboard}
-%            \caption{\centering Mockup Dashboard σελίδας}
-%            \label{fig:unitaskMockupDashboard}
-%        \end{figure}
-%
-%        \begin{figure}[p!] \noindent \centering
-%            \includegraphics[width=0.65\textwidth]{mockups/Kanban}
-%            \caption{\centering Mockup Kanban σελίδας}
-%            \label{fig:unitaskMockupKanban}
-%        \end{figure}
-%
-%    \pagebreak
-%
-%    \section{Η εφαρμογή}
-%        Κατά την εκτέλεση της εφαρμογής, είτε τοπικά είτε μέσω της απομακρυσμένης πρόσβασης στο cloud, στη διεύθυνση \texttt{https://unitask-sandbox.mxapps.io/}, εμφανίζεται αρχικά η \textbf{σελίδα σύνδεσης}, όπως φαίνεται στο σχήμα \ref{fig:unitask_Login}. Στη συγκεκριμένη σελίδα, οι χρήστες καλούνται να εισάγουν τα στοιχεία σύνδεσής τους για να αποκτήσουν πρόσβαση στις λειτουργίες της εφαρμογής.
-%
-%        Ανάλογα με τα στοιχεία σύνδεσης που παρέχονται, το σύστημα διακρίνει δύο επίπεδα πρόσβασης: δικαιώματα διαχειριστή (Administrator) και δικαιώματα χρήστη (User), όπου εκπροσωπούν τους φοιτητές. Οι χρήστες με δικαιώματα Administrator έχουν πρόσβαση σε επιπλέον προηγμένες λειτουργίες διαχείρισης όπως η διαχείριση των χρηστών.
-%
-%       \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/Login}
-%            \caption{\centering Σελίδα σύνδεσης}
-%            \label{fig:unitask_Login}
-%        \end{figure}
-%
-%        Αρχικά, πραγματοποιείται σύνδεση με τον λογαριασμό διαχειριστή (Administrator) προκειμένου να παρουσιαστούν οι λειτουργίες διαχείρισης χρηστών, συμπεριλαμβανομένης της δυνατότητας προσθήκης νέου χρήστη. Μετά την επιτυχή εισαγωγή των διαπιστευτηρίων του διαχειριστή, τα οποία έχουν οριστεί προκαταβολικά κατά την ανάπτυξη της εφαρμογής (βλ. ενότητα \ref{sec:unitask_mendix}), εμφανίζεται η \textbf{σελίδα διαχείρισης χρηστών}, όπως απεικονίζεται στο σχήμα \ref{fig:unitask_AccountOverview}. Η σελίδα αυτή παρέχει στους διαχειριστές μια ολοκληρωμένη επισκόπηση της λίστας χρηστών της εφαρμογής, καθώς και εργαλεία για τη διαχείρισή τους. Το layout της σελίδας αποτελείται από μια κάθετη μπάρα μενού η οποία περιλαμβάνει τις ίδιες δυνατότητες με τους απλούς χρήστες η οποίες θα αναλυθούν στη συνέχεια.
-%
-%       \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 12cm 0 0}, clip, width=\textwidth]{UniTask/AccountOverview}
-%            \caption{\centering Σελίδα διαχείρισης χρηστών}
-%            \label{fig:unitask_AccountOverview}
-%        \end{figure}
-%
-%        Πατώντας στο κουμπί {\Zona New}, εμφανίζεται η popout σελίδα του σχήματος \ref{fig:unitask_NewAccount} με μια \textbf{φόρμα για την προσθήκη νέου χρήστη}. Η φόρμα περιλαμβάνει πεδία για την εισαγωγή του ονόματος χρήστη ({\Zona Username}), του ρόλου του χρήστη ({\Zona User role}) όπου επιλέγεται αν πρόκειται για προσθήκη διαχειριστή ή χρήστη, του κωδικού πρόσβασης ({\Zona New password} και {\Zona Confirm password}). Λόγω του ότι ο χρήστης User έχει κληρονομήσει γνωρίσματα από την κλάση \texttt{System.User} του Mendix, έχουν προστεθεί πεδία όπως το {\Zona Blocked}, η οποία γίνεται αληθής μετά από κάποιες αποτυχημένες προσπάθειες σύνδεσης, το {\Zona Active} που γίνεται αληθές όταν ο χρήστης συνδεθεί, το {\Zona Time zone} όπου ορίζεται η ζώνη ώρας του χρήστη και το {\Zona Language} όπου ορίζεται η γλώσσα του χρήστη.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/NewAccount}
-%            \caption{\centering Φόρμα προσθήκης νέου χρήστη}
-%            \label{fig:unitask_NewAccount}
-%        \end{figure}
-%
-%        Δημιουργούμε έναν χρήστη με όνομα \texttt{Foithths}, ο οποίος εμφανίζεται στη λίστα των χρηστών (σχήμα \ref{fig:unitask_AccountOverview_WithStudent}. Πατώντας στο όνομά του, εμφανίζεται η σελίδα επεξεργασίας του χρήστη, όπως φαίνεται στο σχήμα \ref{fig:unitask_EditAccount}. Στη λίστα των χρηστών υπάρχει η δυνατότητα αναζήτησης χρηστών βάσει όλων των στοιχείων τους (σχήμα \ref{fig:unitask_SearchAccounts}), όπως επίσης και η δυνατότητα διαγραφής τους.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 17cm 0 0}, clip, width=\textwidth]{UniTask/AccountOverview_WithStudent}
-%            \caption{\centering Λίστα χρηστών με τον χρήστη \texttt{Foithths}}
-%            \label{fig:unitask_AccountOverview_WithStudent}
-%        \end{figure}
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 3cm 0 0}, clip, width=\textwidth]{UniTask/EditAccount}
-%            \caption{\centering Επεξεργασία στοιχείων χρήστη}
-%            \label{fig:unitask_EditAccount}
-%        \end{figure}
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 7cm 0 0}, clip, width=\textwidth]{UniTask/SearchAccounts}
-%            \caption{\centering Αναζήτηση χρήστη}
-%            \label{fig:unitask_SearchAccounts}
-%        \end{figure}
-%
-%        Αφού αποσυνδεθούμε και συνδεθούμε ως \texttt{Foithths}, μας υποδέχεται η \textbf{αρχική σελίδα} της εφαρμογής (σχήμα \ref{fig:unitask_Home}). Η σελίδα περιλαμβάνει ένα κεντρικό call to action κουμπί ({\Zona όλες οι εργασίες}) το οποίο οδηγεί στο {\Zona dashboard}.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/Home}
-%            \caption{\centering Αρχική σελίδα εφαρμογής}
-%            \label{fig:unitask_Home}
-%        \end{figure}
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/TaskDashboard}
-%            \caption{\centering Dashboard εργασιών}
-%            \label{fig:unitask_TaskDashboard}
-%        \end{figure}
-%
-%        Στο σχήμα \ref{fig:unitask_TaskDashboard} εμφανίζεται η σελίδα {\ZonaSB dashboard}. Πρόκειται για την κεντρική σελίδα προβολής, δημιουργίας και επεξεργασίας των εργασιών του χρήστη. Περιλαμβάνονται τρεις καρτέλες ({\Zona Επόμενες εργασίες}, {\Zona Εργασίες σε εξέλιξη}, {\Zona Ολοκληρωμένες εργασίες}). Οι επόμενες εργασίες αφορούν εργασίες που έχουν σκοπό να πραγματοποιηθούν στο άμεσο μέλλον αλλά όχι τη δεδομένη χρονική στιγμή, οι εργασίες σε εξέλιξη αφορούν εργασίες που βρίσκονται σε εξέλιξη και οι ολοκληρωμένες εργασίες αφορούν εργασίες που έχουν ολοκληρωθεί.
-%
-%        Στη σελίδα επίσης περιλαμβάνεται ένα επεξηγηματικό παράθυρο που εμφανίζεται μόνο όταν ο χρήστης δεν έχει δημιουργήσει κάποια εργασία και του εξηγεί το τρόπο λειτουργίας της εφαρμογής. Στο {\Zona dashboard} επίσης περιλαμβάνονται μετρητές για το σύνολο των εργασιών που υπάρχουν ανά κατηγορία, όπως επίσης και ένα κεντρικό κουμπί δημιουργίας εργασιών ({\Zona Νέα εργασία}).
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/NewTask_Default}
-%            \includegraphics[width=\textwidth]{UniTask/NewTask_Finished}
-%            \caption{\centering Δημιουργία νέας εργασίας}
-%            \label{fig:unitask_NewTask}
-%        \end{figure}
-%
-%        Πατώντας το, εμφανίζεται ένα popout παράθυρο (σχήμα \ref{fig:unitask_NewTask}.1) με μια φόρμα για τη δημιουργία μιας νέας εργασίας. Η φόρμα αυτή περιλαμβάνει πεδία για την εισαγωγή του τίτλου της εργασίας ({\Zona Τίτλος}), της ημερομηνίας έναρξης ({\Zona Εκκίνηση}) και λήξης ({\Zona Λήξη}), της κατάστασης της εργασίας ({\Zona Κατάσταση}), της προτεραιότητας της εργασίας ({\Zona Προτεραιότητα}) όπως επίσης και του χρώματος της εργασίας ({\Zona Χρώμα}), όπως θα αποτυπωθεί μετέπειτα στο ημερολόγιο. Στο popout παράθυρο ορίζεται προεπιλεγμένα ως ημερομηνία λήξης της εργασίας μια εβδομάδα μετέπειτα από την ημερομηνία δημιουργίας της, ενώ η κατάσταση της εργασίας έχει προκαθοριστεί (γίνεται να τροποποιηθεί φυσικά) ανάλογα με το ποια καρτέλα ήταν ανοιχτή στο dashboard. Αφού επεξεργαστούμε το παράθυρο όπως επιθυμούμε (σχήμα \ref{fig:unitask_NewTask}.2), πατάμε αποθήκευση για την αποθήκευση της εργασίας.
-%
-%        Να σημειωθεί πως οι επιλογές που αφορούν την κατάσταση και την προτεραιότητα της εργασίας είναι χρωματικά ταξινομημένες (color-coded) με το δικό τους γραφικό σύμβολο, όπως φαίνεται στο σχήμα \ref{fig:unitask_NewTask_AllOptions}, με σκοπό να διευκολύνει τον χρήστη για την άμεση αναγνώριση τους.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=0.7\textwidth]{UniTask/NewTask_AllOptions}
-%            \caption{\centering Επιλογές κατάστασης και προτεραιότητας εργασίας}
-%            \label{fig:unitask_NewTask_AllOptions}
-%        \end{figure}
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/TaskDashboard_WithTask}
-%            \caption{\centering Dashboard με δημιουργημένη εργασία}
-%            \label{fig:unitask_TaskDashboard_WithTask}
-%        \end{figure}
-%
-%        Στη σελίδα πλέον είναι δημιουργημένη η κάρτα με την πρώτη μας εργασία (σχήμα \ref{fig:unitask_TaskDashboard_WithTask}). Στο πλαίσιο {\Zona σύντομη σημείωση} μπορούμε να προσθέσουμε μια σύντομη περιγραφή της εργασίας, στα αριστερά εμφανίζεται ο τίτλος της εργασίας, μια μπάρα προόδου (progress bar) η οποία δυναμικά αυξάνεται όσο πλησιάζουμε στη λήξη της εργασίας, όπως επίσης η προτεραιότητα της εργασίας και οι ημερομηνίες και ώρες εκκίνησης και λήξης της εργασίας, ενώ στο δεξί μέρος της κάρτας εμφανίζονται το εικονίδιο για την επεξεργασία της εργασίας.
-%
-%        Ο τρόπος εμφάνισης των εργασιών στο dashboard λαμβάνει υπόψη του την προτεραιότητα τους και τον χρόνο λήξης τους. Έτσι μια εργασία με υψηλή προτεραιότητα θα εμφανίζεται ψηλότερα από μια εργασία με χαμηλή προτεραιότητα που δε λήγει σύντομα.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/EditTask}
-%            \caption{\centering Επεξεργασία εργασίας}
-%            \label{fig:unitask_EditTask}
-%        \end{figure}
-%
-%        Πατώντας στο εικονίδιο επεξεργασίας, εμφανίζεται το popout παράθυρο του σχήματος \ref{fig:unitask_EditTask} όπου μπορούν να επεξεργαστούν τα στοιχεία της εργασίας μαζί με το πλαίσιο σύντομης σημείωσης. Το ίδιο παράθυρο περιλαμβάνει και το κουμπί διαγραφής της εργασίας.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/Kanban_WithTask}
-%            \caption{\centering Σελίδα Kanban}
-%            \label{fig:unitask_Kanban_WithTask}
-%        \end{figure}
-%
-%        Η σελίδα {\ZonaSB Kanban} του σχήματος \ref{fig:unitask_Kanban_WithTask} εμφανίζει μια διαφορετική παρουσίαση στις εργασίες με τον τρόπο που έχει εξηγηθεί στην ενότητα \ref{subsec:Kanban}. Στον πίνακα Kanban οι εργασίες χωρίζονται σε τρεις κατηγορίες: τις εργασίες που έχουν ολοκληρωθεί, τις εργασίες που βρίσκονται σε εξέλιξη και τις εργασίες που έχουν σκοπό να πραγματοποιηθούν στο μέλλον. Κάθε στήλη περιλαμβάνει ένα κουμπί δημιουργίας νέας εργασίας που αυτόματα καθορίζει και την κατηγορία της.
-%
-%        Οι εργασίες εμφανίζονται σε κάρτες με τον τίτλο της εργασίας, την προτεραιότητα της, την ημερομηνία έναρξης και λήξης της, ενώ πατώντας πάνω στην κάρτα μιας εργασίας, εμφανίζεται το popout παράθυρο επεξεργασίας της εργασίας του σχήματος \ref{fig:unitask_EditTask}.
-%
-%        Στη σελίδα {\ZonaSB ημερολόγιο} (σχήμα \ref{fig:unitask_Calendar_WithTask}) εμφανίζεται ένα ημερολόγιο με τις εργασίες του χρήστη. Οι εργασίες εμφανίζονται στο ημερολόγιο με το χρώμα που έχει οριστεί στην επιλογή του χρήστη κατά τη δημιουργία της εργασίας, υπάρχουν προβολές ανά ημέρα, εβδομάδα ή μήνα ενώ εμφανίζεται και ένα σύντομο παράρτημα στα δεξιά με την λίστα των εργασιών.
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[width=\textwidth]{UniTask/Calendar_WithTask}
-%            \caption{\centering Σελίδα Calendar}
-%            \label{fig:unitask_Calendar_WithTask}
-%        \end{figure}
-%
-%        Τέλος, στη σελίδα {\ZonaSB ρυθμίσεις} (σχήμα \ref{fig:unitask_Settings}) μπορούμε με ένα κουμπί να διαγράψουμε όλες τις εργασίες μας, ή να επιλέξουμε τη λειτουργία γρήγορης διαγραφής εργασιών. Αυτή η λειτουργία εισάγει ένα κουμπί διαγραφής στις κάρτες εργασιών στο dashboard, επιτρέποντας την άμεση διαγραφή των εργασιών που θέλουμε χωρίς να χρειάζεται να μεταβούμε στη σελίδα επεξεργασίας κάθε εργασίας (σχήμα \ref{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}.1). Τέλος, παρέχεται η δυνατότητα αρχικοποίησης των εργασιών. Στην αρχικοποίηση διαγράφονται οι υπάρχουσες εργασίες του χρήστη και δημιουργούνται κάποιες προκαθορισμένες οι οποίες λειτουργούν ως ένα demo (σχήμα \ref{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}).
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 20cm 0 0}, clip, width=\textwidth]{UniTask/Settings_1}
-%            \includegraphics[width=\textwidth]{UniTask/Settings_2}
-%            \caption{\centering Σελίδα ρυθμίσεων}
-%            \label{fig:unitask_Settings}
-%        \end{figure}
-%
-%        Σε κάθε ρύθμιση εμφανίζονται επιβεβαιωτικά popout μηνύματα προκειμένου να αποφευχθούν ακούσιες διαγραφές εργασιών (σχήμα \ref{fig:unitask_InitializationPopUp}).
-%
-%        \begin{figure}[h!] \noindent \centering
-%            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/InitializationPopUp}
-%            \caption{\centering Σελίδα ρυθμίσεων}
-%            \label{fig:unitask_InitializationPopUp}
-%        \end{figure}
-%
-%        \begin{figure}[p!] \noindent \centering
-%            \includegraphics[trim={0 5cm 0 0}, clip, width=\textwidth]{UniTask/TaskDashboard_QuickDelete}
-%            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/Kanban_WithTasks}
-%            \includegraphics[width=\textwidth]{UniTask/Calendar_WithTasks}
-%            \caption{\centering Οι σελίδες Dashboard, Kanban και Calendar μετά την αρχικοποίηση των εργασιών. Στο Dashboard φαίνεται η λειτουργία γρήγορης διαγραφής εργασιών.}
-%            \label{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}
-%        \end{figure}
+    \section{Σχεδίαση}
+        Στην ενότητα \ref{sec:student_preferences}, παρουσιάστηκε μια έρευνα με τα βασικά χαρακτηριστικά που θεωρήθηκαν απαραίτητα από τους φοιτητές για μια εφαρμογή τους. Λαμβάνοντας υπόψιν τις προτιμήσεις αυτές δόθηκε βάση στην υλοποίηση τους ώστε η εφαρμογή να ανταποκρίνεται στις ανάγκες της ακαδημαϊκής κοινότητας.
+
+        Αρχικά, ως μια εφαρμογή διαχείρισης εργασιών, θα περιλαμβάνει προφανώς ένα σύστημα δημιουργίας, τροποποίησης και διαγραφής εργασιών, καθορισμού του χρόνου έναρξης και λήξεώς τους, και η κατηγοροποίηση των εργασιών σε κατηγορίες ανάλογα με το αν έχουν πραγματοποιηθεί, αν πραγματοποιούνται και αν έχουν σκοπό να πραγματοποιηθούν μελλοντικά. Επιπλέον, με βάση την έρευνα, είναι σημαντική η ενσωμάτωση ενός ημερολογίου, η δυνατότητα χρωματικής ταξινόμησης (color-coding) και η υλοποίηση ενός συστήματος ανταμοιβής για την ενίσχυση της παρακίνησης των χρηστών. Επίσης, θα ήταν εξίσου σημαντική η δημιουργία ενός Kanban πίνακα για την άμεση οπτικοποίηση των εργασιών και την ευκολότερη διαχείρισή τους.
+
+        Σχεδιαστικά θεωρείται σημαντική η τήρηση σύγχρονων σχεδιαστικών κανόνων με ένα καθαρό interface και συνοχή στον σχεδιασμό για τη δημιουργία μιας λειτουργικής, αισθητικά ευχάριστης και ευκολόχρηστης εμπειρίας χρήστη ώστε να εξασφαλιστεί ότι η εφαρμογή μπορεί να ανταποκριθεί στις ανάγκες διαφορετικών τύπων χρηστών, αλλά και να παρουσιαστεί ως ένα προϊόν έτοιμο για χρήση σε πραγματικά περιβάλλοντα.
+
+        Στα σχήματα \ref{fig:unitaskMockupCalendar}, \ref{fig:unitaskMockupDashboard} και \ref{fig:unitaskMockupKanban} παρουσιάζονται κάποια αρχικά mockups που χρησιμοποιήθηκαν για τον σχεδιασμό της εφαρμογής.
+
+        \begin{figure}[p!] \noindent \centering
+            \includegraphics[width=0.65\textwidth]{mockups/Calendar}
+            \caption{\centering Mockup Calendar σελίδας}
+            \label{fig:unitaskMockupCalendar}
+        \end{figure}
+
+        \begin{figure}[p!] \noindent \centering
+            \includegraphics[width=0.65\textwidth]{mockups/Dashboard}
+            \caption{\centering Mockup Dashboard σελίδας}
+            \label{fig:unitaskMockupDashboard}
+        \end{figure}
+
+        \begin{figure}[p!] \noindent \centering
+            \includegraphics[width=0.65\textwidth]{mockups/Kanban}
+            \caption{\centering Mockup Kanban σελίδας}
+            \label{fig:unitaskMockupKanban}
+        \end{figure}
+
+    \pagebreak
+
+    \section{Η εφαρμογή}
+        Κατά την εκτέλεση της εφαρμογής, είτε τοπικά είτε μέσω της απομακρυσμένης πρόσβασης στο cloud, στη διεύθυνση \texttt{https://unitask-sandbox.mxapps.io/}, εμφανίζεται αρχικά η \textbf{σελίδα σύνδεσης}, όπως φαίνεται στο σχήμα \ref{fig:unitask_Login}. Στη συγκεκριμένη σελίδα, οι χρήστες καλούνται να εισάγουν τα στοιχεία σύνδεσής τους για να αποκτήσουν πρόσβαση στις λειτουργίες της εφαρμογής.
+
+        Ανάλογα με τα στοιχεία σύνδεσης που παρέχονται, το σύστημα διακρίνει δύο επίπεδα πρόσβασης: δικαιώματα διαχειριστή (Administrator) και δικαιώματα χρήστη (User), όπου εκπροσωπούν τους φοιτητές. Οι χρήστες με δικαιώματα Administrator έχουν πρόσβαση σε επιπλέον προηγμένες λειτουργίες διαχείρισης όπως η διαχείριση των χρηστών.
+
+       \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/Login}
+            \caption{\centering Σελίδα σύνδεσης}
+            \label{fig:unitask_Login}
+        \end{figure}
+
+        Αρχικά, πραγματοποιείται σύνδεση με τον λογαριασμό διαχειριστή (Administrator) προκειμένου να παρουσιαστούν οι λειτουργίες διαχείρισης χρηστών, συμπεριλαμβανομένης της δυνατότητας προσθήκης νέου χρήστη. Μετά την επιτυχή εισαγωγή των διαπιστευτηρίων του διαχειριστή, τα οποία έχουν οριστεί προκαταβολικά κατά την ανάπτυξη της εφαρμογής (βλ. ενότητα \ref{sec:unitask_mendix}), εμφανίζεται η \textbf{σελίδα διαχείρισης χρηστών}, όπως απεικονίζεται στο σχήμα \ref{fig:unitask_AccountOverview}. Η σελίδα αυτή παρέχει στους διαχειριστές μια ολοκληρωμένη επισκόπηση της λίστας χρηστών της εφαρμογής, καθώς και εργαλεία για τη διαχείρισή τους. Το layout της σελίδας αποτελείται από μια κάθετη μπάρα μενού η οποία περιλαμβάνει τις ίδιες δυνατότητες με τους απλούς χρήστες η οποίες θα αναλυθούν στη συνέχεια.
+
+       \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 12cm 0 0}, clip, width=\textwidth]{UniTask/AccountOverview}
+            \caption{\centering Σελίδα διαχείρισης χρηστών}
+            \label{fig:unitask_AccountOverview}
+        \end{figure}
+
+        Πατώντας στο κουμπί {\Zona New}, εμφανίζεται η popout σελίδα του σχήματος \ref{fig:unitask_NewAccount} με μια \textbf{φόρμα για την προσθήκη νέου χρήστη}. Η φόρμα περιλαμβάνει πεδία για την εισαγωγή του ονόματος χρήστη ({\Zona Username}), του ρόλου του χρήστη ({\Zona User role}) όπου επιλέγεται αν πρόκειται για προσθήκη διαχειριστή ή χρήστη, του κωδικού πρόσβασης ({\Zona New password} και {\Zona Confirm password}). Λόγω του ότι ο χρήστης User έχει κληρονομήσει γνωρίσματα από την κλάση \texttt{System.User} του Mendix, έχουν προστεθεί πεδία όπως το {\Zona Blocked}, η οποία γίνεται αληθής μετά από κάποιες αποτυχημένες προσπάθειες σύνδεσης, το {\Zona Active} που γίνεται αληθές όταν ο χρήστης συνδεθεί, το {\Zona Time zone} όπου ορίζεται η ζώνη ώρας του χρήστη και το {\Zona Language} όπου ορίζεται η γλώσσα του χρήστη.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/NewAccount}
+            \caption{\centering Φόρμα προσθήκης νέου χρήστη}
+            \label{fig:unitask_NewAccount}
+        \end{figure}
+
+        Δημιουργούμε έναν χρήστη με όνομα \texttt{Foithths}, ο οποίος εμφανίζεται στη λίστα των χρηστών (σχήμα \ref{fig:unitask_AccountOverview_WithStudent}. Πατώντας στο όνομά του, εμφανίζεται η σελίδα επεξεργασίας του χρήστη, όπως φαίνεται στο σχήμα \ref{fig:unitask_EditAccount}. Στη λίστα των χρηστών υπάρχει η δυνατότητα αναζήτησης χρηστών βάσει όλων των στοιχείων τους (σχήμα \ref{fig:unitask_SearchAccounts}), όπως επίσης και η δυνατότητα διαγραφής τους.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 17cm 0 0}, clip, width=\textwidth]{UniTask/AccountOverview_WithStudent}
+            \caption{\centering Λίστα χρηστών με τον χρήστη \texttt{Foithths}}
+            \label{fig:unitask_AccountOverview_WithStudent}
+        \end{figure}
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 3cm 0 0}, clip, width=\textwidth]{UniTask/EditAccount}
+            \caption{\centering Επεξεργασία στοιχείων χρήστη}
+            \label{fig:unitask_EditAccount}
+        \end{figure}
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 7cm 0 0}, clip, width=\textwidth]{UniTask/SearchAccounts}
+            \caption{\centering Αναζήτηση χρήστη}
+            \label{fig:unitask_SearchAccounts}
+        \end{figure}
+
+        Αφού αποσυνδεθούμε και συνδεθούμε ως \texttt{Foithths}, μας υποδέχεται η \textbf{αρχική σελίδα} της εφαρμογής (σχήμα \ref{fig:unitask_Home}). Η σελίδα περιλαμβάνει ένα κεντρικό call to action κουμπί ({\Zona όλες οι εργασίες}) το οποίο οδηγεί στο {\Zona dashboard}.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/Home}
+            \caption{\centering Αρχική σελίδα εφαρμογής}
+            \label{fig:unitask_Home}
+        \end{figure}
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/TaskDashboard}
+            \caption{\centering Dashboard εργασιών}
+            \label{fig:unitask_TaskDashboard}
+        \end{figure}
+
+        Στο σχήμα \ref{fig:unitask_TaskDashboard} εμφανίζεται η σελίδα {\ZonaSB dashboard}. Πρόκειται για την κεντρική σελίδα προβολής, δημιουργίας και επεξεργασίας των εργασιών του χρήστη. Περιλαμβάνονται τρεις καρτέλες ({\Zona Επόμενες εργασίες}, {\Zona Εργασίες σε εξέλιξη}, {\Zona Ολοκληρωμένες εργασίες}). Οι επόμενες εργασίες αφορούν εργασίες που έχουν σκοπό να πραγματοποιηθούν στο άμεσο μέλλον αλλά όχι τη δεδομένη χρονική στιγμή, οι εργασίες σε εξέλιξη αφορούν εργασίες που βρίσκονται σε εξέλιξη και οι ολοκληρωμένες εργασίες αφορούν εργασίες που έχουν ολοκληρωθεί.
+
+        Στη σελίδα επίσης περιλαμβάνεται ένα επεξηγηματικό παράθυρο που εμφανίζεται μόνο όταν ο χρήστης δεν έχει δημιουργήσει κάποια εργασία και του εξηγεί το τρόπο λειτουργίας της εφαρμογής. Στο {\Zona dashboard} επίσης περιλαμβάνονται μετρητές για το σύνολο των εργασιών που υπάρχουν ανά κατηγορία, όπως επίσης και ένα κεντρικό κουμπί δημιουργίας εργασιών ({\Zona Νέα εργασία}).
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/NewTask_Default}
+            \includegraphics[width=\textwidth]{UniTask/NewTask_Finished}
+            \caption{\centering Δημιουργία νέας εργασίας}
+            \label{fig:unitask_NewTask}
+        \end{figure}
+
+        Πατώντας το, εμφανίζεται ένα popout παράθυρο (σχήμα \ref{fig:unitask_NewTask}.1) με μια φόρμα για τη δημιουργία μιας νέας εργασίας. Η φόρμα αυτή περιλαμβάνει πεδία για την εισαγωγή του τίτλου της εργασίας ({\Zona Τίτλος}), της ημερομηνίας έναρξης ({\Zona Εκκίνηση}) και λήξης ({\Zona Λήξη}), της κατάστασης της εργασίας ({\Zona Κατάσταση}), της προτεραιότητας της εργασίας ({\Zona Προτεραιότητα}) όπως επίσης και του χρώματος της εργασίας ({\Zona Χρώμα}), όπως θα αποτυπωθεί μετέπειτα στο ημερολόγιο. Στο popout παράθυρο ορίζεται προεπιλεγμένα ως ημερομηνία λήξης της εργασίας μια εβδομάδα μετέπειτα από την ημερομηνία δημιουργίας της, ενώ η κατάσταση της εργασίας έχει προκαθοριστεί (γίνεται να τροποποιηθεί φυσικά) ανάλογα με το ποια καρτέλα ήταν ανοιχτή στο dashboard. Αφού επεξεργαστούμε το παράθυρο όπως επιθυμούμε (σχήμα \ref{fig:unitask_NewTask}.2), πατάμε αποθήκευση για την αποθήκευση της εργασίας.
+
+        Να σημειωθεί πως οι επιλογές που αφορούν την κατάσταση και την προτεραιότητα της εργασίας είναι χρωματικά ταξινομημένες (color-coded) με το δικό τους γραφικό σύμβολο, όπως φαίνεται στο σχήμα \ref{fig:unitask_NewTask_AllOptions}, με σκοπό να διευκολύνει τον χρήστη για την άμεση αναγνώριση τους.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=0.7\textwidth]{UniTask/NewTask_AllOptions}
+            \caption{\centering Επιλογές κατάστασης και προτεραιότητας εργασίας}
+            \label{fig:unitask_NewTask_AllOptions}
+        \end{figure}
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/TaskDashboard_WithTask}
+            \caption{\centering Dashboard με δημιουργημένη εργασία}
+            \label{fig:unitask_TaskDashboard_WithTask}
+        \end{figure}
+
+        Στη σελίδα πλέον είναι δημιουργημένη η κάρτα με την πρώτη μας εργασία (σχήμα \ref{fig:unitask_TaskDashboard_WithTask}). Στο πλαίσιο {\Zona σύντομη σημείωση} μπορούμε να προσθέσουμε μια σύντομη περιγραφή της εργασίας, στα αριστερά εμφανίζεται ο τίτλος της εργασίας, μια μπάρα προόδου (progress bar) η οποία δυναμικά αυξάνεται όσο πλησιάζουμε στη λήξη της εργασίας, όπως επίσης η προτεραιότητα της εργασίας και οι ημερομηνίες και ώρες εκκίνησης και λήξης της εργασίας, ενώ στο δεξί μέρος της κάρτας εμφανίζονται το εικονίδιο για την επεξεργασία της εργασίας.
+
+        Ο τρόπος εμφάνισης των εργασιών στο dashboard λαμβάνει υπόψη του την προτεραιότητα τους και τον χρόνο λήξης τους. Έτσι μια εργασία με υψηλή προτεραιότητα θα εμφανίζεται ψηλότερα από μια εργασία με χαμηλή προτεραιότητα που δε λήγει σύντομα.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/EditTask}
+            \caption{\centering Επεξεργασία εργασίας}
+            \label{fig:unitask_EditTask}
+        \end{figure}
+
+        Πατώντας στο εικονίδιο επεξεργασίας, εμφανίζεται το popout παράθυρο του σχήματος \ref{fig:unitask_EditTask} όπου μπορούν να επεξεργαστούν τα στοιχεία της εργασίας μαζί με το πλαίσιο σύντομης σημείωσης. Το ίδιο παράθυρο περιλαμβάνει και το κουμπί διαγραφής της εργασίας.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/Kanban_WithTask}
+            \caption{\centering Σελίδα Kanban}
+            \label{fig:unitask_Kanban_WithTask}
+        \end{figure}
+
+        Η σελίδα {\ZonaSB Kanban} του σχήματος \ref{fig:unitask_Kanban_WithTask} εμφανίζει μια διαφορετική παρουσίαση στις εργασίες με τον τρόπο που έχει εξηγηθεί στην ενότητα \ref{subsec:Kanban}. Στον πίνακα Kanban οι εργασίες χωρίζονται σε τρεις κατηγορίες: τις εργασίες που έχουν ολοκληρωθεί, τις εργασίες που βρίσκονται σε εξέλιξη και τις εργασίες που έχουν σκοπό να πραγματοποιηθούν στο μέλλον. Κάθε στήλη περιλαμβάνει ένα κουμπί δημιουργίας νέας εργασίας που αυτόματα καθορίζει και την κατηγορία της.
+
+        Οι εργασίες εμφανίζονται σε κάρτες με τον τίτλο της εργασίας, την προτεραιότητα της, την ημερομηνία έναρξης και λήξης της, ενώ πατώντας πάνω στην κάρτα μιας εργασίας, εμφανίζεται το popout παράθυρο επεξεργασίας της εργασίας του σχήματος \ref{fig:unitask_EditTask}.
+
+        Στη σελίδα {\ZonaSB ημερολόγιο} (σχήμα \ref{fig:unitask_Calendar_WithTask}) εμφανίζεται ένα ημερολόγιο με τις εργασίες του χρήστη. Οι εργασίες εμφανίζονται στο ημερολόγιο με το χρώμα που έχει οριστεί στην επιλογή του χρήστη κατά τη δημιουργία της εργασίας, υπάρχουν προβολές ανά ημέρα, εβδομάδα ή μήνα ενώ εμφανίζεται και ένα σύντομο παράρτημα στα δεξιά με την λίστα των εργασιών.
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/Calendar_WithTask}
+            \caption{\centering Σελίδα Calendar}
+            \label{fig:unitask_Calendar_WithTask}
+        \end{figure}
+
+        Τέλος, στη σελίδα {\ZonaSB ρυθμίσεις} (σχήμα \ref{fig:unitask_Settings}) μπορούμε με ένα κουμπί να διαγράψουμε όλες τις εργασίες μας, ή να επιλέξουμε τη λειτουργία γρήγορης διαγραφής εργασιών. Αυτή η λειτουργία εισάγει ένα κουμπί διαγραφής στις κάρτες εργασιών στο dashboard, επιτρέποντας την άμεση διαγραφή των εργασιών που θέλουμε χωρίς να χρειάζεται να μεταβούμε στη σελίδα επεξεργασίας κάθε εργασίας (σχήμα \ref{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}.1). Τέλος, παρέχεται η δυνατότητα αρχικοποίησης των εργασιών. Στην αρχικοποίηση διαγράφονται οι υπάρχουσες εργασίες του χρήστη και δημιουργούνται κάποιες προκαθορισμένες οι οποίες λειτουργούν ως ένα demo (σχήμα \ref{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}).
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 20cm 0 0}, clip, width=\textwidth]{UniTask/Settings_1}
+            \includegraphics[width=\textwidth]{UniTask/Settings_2}
+            \caption{\centering Σελίδα ρυθμίσεων}
+            \label{fig:unitask_Settings}
+        \end{figure}
+
+        Σε κάθε ρύθμιση εμφανίζονται επιβεβαιωτικά popout μηνύματα προκειμένου να αποφευχθούν ακούσιες διαγραφές εργασιών (σχήμα \ref{fig:unitask_InitializationPopUp}).
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/InitializationPopUp}
+            \caption{\centering Σελίδα ρυθμίσεων}
+            \label{fig:unitask_InitializationPopUp}
+        \end{figure}
+
+        \begin{figure}[p!] \noindent \centering
+            \includegraphics[trim={0 5cm 0 0}, clip, width=\textwidth]{UniTask/TaskDashboard_QuickDelete}
+            \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/Kanban_WithTasks}
+            \includegraphics[width=\textwidth]{UniTask/Calendar_WithTasks}
+            \caption{\centering Οι σελίδες Dashboard, Kanban και Calendar μετά την αρχικοποίηση των εργασιών. Στο Dashboard φαίνεται η λειτουργία γρήγορης διαγραφής εργασιών.}
+            \label{fig:unitask_Dashboard_Kanban_Calendar_WithTasks}
+        \end{figure}
 
     \section{Δομή της εφαρμογής} \label{sec:unitask_mendix}
         Πέρα από τα προκατασκευασμένα modules του Mendix, η λειτουργικότητα της εφαρμογής έχει οργανωθεί σε τρία modules, το \texttt{Administrator}, το \texttt{TaskManager} και το \texttt{UniTask}.
@@ -355,7 +355,7 @@
 
                 Η οντότητα \texttt{Task} αναπαριστά την εκάστοτε εργασία του χρήστη της εφαρμογής. Περιλαμβάνει τις ιδιότητες \texttt{Title} τύπου String ως 200 χαρακτήρες με το όνομα της εργασίας, \texttt{Notes} τύπου String με απεριόριστους χαρακτήρες όπου μπορούν να προστεθούν σημειώσεις για αυτή και \texttt{DueDate} τύπου Date and time με την ημερομηνία λήξης. Επίσης, περιλαμβάνει τη \texttt{StartDate} τύπου Date and time με την ημερομηνία έναρξης, η οποία αρχικοποιείται με την τιμή \verb|'%CurrentDateTime%]'| (Token που επιστρέφει την τρέχουσα ημερομηνία και ώρα) και τη \texttt{CalendarColor} τύπου String που αποθηκεύει το χρώμα της εργασίας στο ημερολόγιο. Λόγω της φύσης του widget του ημερολογίου, το String θα έχει πάντα τη μορφή \texttt{'rgb(<0-255>, <0-255>, <0-255>)'} και στην οντότητα αρχικοποιείται με την τιμή \texttt{'rgb(38,74,229)'} που αντιστοιχεί στο μπλε χρώμα.
 
-                Επιπλέον, η οντότητα περιλαμβάνει τις ιδιότητες \texttt{TaskStatus} και \texttt{TaskPriority} όπου είναι Enumeration ιδιότητες των Enumeration εγγράφων \texttt{TaskStatus} και \linebreak \texttt{TaskPriority}, αρχικοποιημένες με \texttt{To\_Do} και \texttt{Low} αντίστοιχα και με την ιδιότητα \texttt{CreationDateBubble} τύπου Boolean που αρχικοποιείται με \texttt{True}. Η ιδιότητα αυτή χρησιμοποιείται για την εμφάνιση ενός επεξηγηματικού μηνύματος στον χρήστη όταν δημιουργεί μια νέα εργασία. Να σημειωθεί επίσης πως το \texttt{DateDue} περιλαμβάνει ένα Validation rule που ελέγχει αν η ημερομηνία λήξης είναι μετά την ημερομηνία έναρξης \texttt{StartDate}, και αν δεν ισχύει, τότε εμφανίζεται κατάλληλο μήνυμα.
+                Επιπλέον, η οντότητα περιλαμβάνει τις ιδιότητες \texttt{TaskStatus} και \texttt{TaskPriority} όπου είναι Enumeration ιδιότητες των Enumeration εγγράφων \texttt{TaskStatus} και \linebreak \texttt{TaskPriority}, αρχικοποιημένες με \texttt{To\_Do} και \texttt{Low} αντίστοιχα. Το \texttt{TaskStatus} καθορίζει την κατάσταση της εργασίας με τις δυνατές καταστάσεις να είναι \texttt{'To\_Do'}, \texttt{'Doing'} και \texttt{'Done'} ενώ το \texttt{TaskPriority} καθορίζει αν η προτεραιότητα της εργασίας είναι χαμηλή, μεσαία ή υψηλή. Επίσης, περιλαμβάνεται η ιδιότητα \texttt{CreationDateBubble} τύπου Boolean που αρχικοποιείται με \texttt{True}. Η ιδιότητα αυτή χρησιμοποιείται για την εμφάνιση ενός επεξηγηματικού μηνύματος στον χρήστη όταν δημιουργεί μια νέα εργασία. Να σημειωθεί επίσης πως το \texttt{DateDue} περιλαμβάνει ένα Validation rule που ελέγχει αν η ημερομηνία λήξης είναι μετά την ημερομηνία έναρξης \texttt{StartDate}, και αν δεν ισχύει, τότε εμφανίζεται κατάλληλο μήνυμα.
 
                 Η οντότητα \texttt{PageHelper} περιλαμβάνει τις ιδιότητες \texttt{CounterTaskDoing}, \linebreak \texttt{CounterTaskDone} και \texttt{CounterTaskToDo} τύπου Integer, των οποίων οι τιμές καθορίζονται από τα microflows \texttt{CounterTaskDoing}, \texttt{CounterTaskDone} και \texttt{CounterTaskToDo} αντίστοιχα. Οι ιδιότητες αυτές χρησιμοποιούνται για την εμφάνιση των τριών μετρητών. Επίσης, περιλαμβάνει την Boolean ιδιότητα \texttt{AreThereTasks} που καθορίζεται από το microflow \texttt{AreThereTasks} και χρησιμεύει για την εμφάνιση του επεξηγηματικού παραθύρου στο Dashboard, την Boolean ιδιότητα \texttt{Confetti} που αρχικοποιείται με \texttt{False} και χρησιμοποιείται για την εμφάνιση του κομφετί (σύστημα επιβράβευσης), και τέλος την ιδιότητα \texttt{openedTab} τύπου Integer αρχικοποιημένη με μηδέν που χρησιμεύει για την αποθήκευση της τρέχουσας καρτέλας του Dashboard που έχει ανοίξει ο χρήστης.
 
@@ -363,11 +363,55 @@
                 Στο \texttt{TaskManager} περιλαμβάνονται οι εξής σελίδες:
 
                 \begin{figure}[H] \noindent
-                    \paragraph{\texttt{Account\_Overview}}
+                    \paragraph{\texttt{Custom\_LogIn\_Overview}}
                     \begin{center}
-                        \includegraphics[width=0.9\textwidth]{UniTask_Mendix/Account_Overview}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/Custom_LogIn_Page}
                     \end{center}
                 \end{figure}
+
+                Η σελίδα χρησιμοποιείται για την είσοδο του χρήστη στην εφαρμογή. Πρόσβαση στη σελίδα έχουν μόνο οι \texttt{Guest} χρήστες.
+
+                Χρησιμοποιείται το \texttt{Layout\_LogIn} layout του \texttt{UniTaskDesignSystem} module, με μια φόρμα που περιλαμβάνει τα Text Boxes για το \texttt{Username} και \texttt{Password} του χρήστη και το κουμπί για την είσοδο. Τα κουμπιά καλούν προεπιλεγμένες ενέργειες του Mendix.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{PAGE\_Home\_Page}}
+                    \begin{center}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/PAGE_Home_Page}
+                    \end{center}
+                \end{figure}
+
+                Η αρχική σελίδα της εφαρμογής που εμφανίζεται μετά την είσοδο του χρήστη.
+
+                Η σελίδα χρησιμοποιεί το \texttt{UniTask\_TopBar} layout του \texttt{UniTaskDesignSystem} module, το οποίο εμφανίζει το κεντρικό μενού της εφαρμογής στο πάνω μέρος της σελίδας. Περιλαμβάνει το τίτλο {\ZonaSB UniTask} με ένα call to action κουμπί που καλεί το microflow \texttt{ShowPage\_TasksOverview}.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{PAGE\_Tasks\_Overview}}
+                    \begin{center}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/PAGE_Tasks_Overview}
+                    \end{center}
+                \end{figure}
+
+                Η σελίδα χρησιμοποιείται για την εμφάνιση και διαχείριση των εργασιών του χρήστη. Χρησιμοποιεί το \texttt{Layout\_TasksOverview} layout του \texttt{UniTaskDesignSystem} module και έχει ως Parameters το \texttt{Student} και το \texttt{PageHelper}.
+
+                Η σελίδα αποτελείται από ένα Layout Grid με διαφορετικά rows. To πρώτο row χρησιμοποιείται για το καλωσόρισμα του χρήστη. Για την εμφάνιση του ονόματός του έχει χρησιμοποιηθεί ένα Data View με Data source το \texttt{Student}. Πίσω από το text widget που εμφανίζει το μήνυμα καλωσορίσματος υπάρχει στην πραγματικότητα η έκφραση \verb|καλώς όρισες, {1}|. Τα \verb|{X}| αποτελούν placeholders για μεταβλητές· στη συγκεκριμένη περίπτωση το \verb|{1}| αντιστοιχεί στο \texttt{Name} του \texttt{Student}.
+
+                Το δεύτερο row του Layout Grid περιλαμβάνει ένα εσωτερικό Layout Grid που δημιουργεί δύο στήλες (9 και 3)\footnote{Χρησιμοποιώντας παρόμοια λογική όπως το Bootstrap, το Mendix χρησιμοποιεί ένα σύστημα 12 στηλών ώστε να καθορίσουμε το πλάτος των στηλών.}. Στην αριστερή στήλη περιλαμβάνονται οι κάρτες με τις εργασίες. Για να επιτευχθεί αυτό έχουν δημιουργηθεί δύο εμφωλευμένα Data Views με Data sources τα \texttt{Student} και \texttt{PageHelper}. Μέσα στο Data View περιλαμβάνεται ένα Tab Container με τρία tabs που αντιστοιχούν στις τρεις καταστάσεις των εργασιών. Σε κάθε tab αντιστοιχίζεται ένα ξεχωριστό πράσινο κουμπί ({\Zona Νέα εργασία}) που, ανάλογα με το tab που είναι ενεργό, καλεί το microflow \texttt{CreateNewTask\_ToDo}, \texttt{CreateNewTask\_Doing} ή \texttt{CreateNewTask\_Done}. Το περιεχόμενο της καρτέλας είναι ένα List View με τις κάρτες εργασιών. Το περιεχόμενο των καρτών γίνεται populate (έχει δηλαδή Data source) από το microflow \texttt{DSL\_TaskToDo}, \texttt{DSL\_TaskDoing} ή \texttt{DSL\_TaskDone} αντίστοιχα. Για την καλύτερη οργάνωση, η κάρτα ουσιαστικά αποτελεί ένα Snippet που επαναχρησιμοποιείται. Έχουν δημιουργηθεί τα Snippets \texttt{TaskCard\_Overview\_Doing}, \texttt{TaskCard\_Overview\_ToDo} και \texttt{TaskCard\_Overview\_Done} που θα αναλυθούν στη συνέχεια.
+
+                Η δεξιά στήλη με τους μετρητές περιλαμβάνει ένα Data View με Data source το \texttt{PageHelper}. Εσωτερικά περιλαμβάνονται containers με text widgets με τις μεταβλητές \texttt{CounterTaskToDo}, \texttt{CounterTaskDoing} και \texttt{CounterTaskDone}.
+
+                Όσον αφορά για το σύστημα επιβράβευσης, το κομφετί αποτελεί ένα add-on widget από το Marketplace του Mendix. Το widget αυτό βρίσκεται τοποθετημένο μέσα σε ένα Data View με Data source το \texttt{PageHelper} και εμφανίζεται μόνο όταν η μεταβλητή \texttt{Confetti} γίνεται \texttt{True}.
+
+                Στο κάτω μέρος του Tab container υπάρχει ένα επεξηγηματικό μπλε παράθυρο (βλέπε σχήμα \ref{fig:unitask_TaskDashboard}) που εμφανίζεται μόνο όταν δεν έχουν δημιουργηθεί εργασίες. Αυτό επιτυγχάνεται με την έκφραση \verb|not($PageHelper/AreThereTasks)| στην συνθήκη Visibility του container που αντιπροσωπεύει το παράθυρο. Αξίζει επίσης να σημειωθεί πως τα call-to-action κουμπιά για τη νέα εργασία και τη σελίδα Kanban είναι και αυτά clickable και έχουν χρησιμοποιηθεί custom CSS κλάσεις για την εμφάνισή τους.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{POPOUT\_Task\_NewEdit}}
+                    \begin{center}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/POPOUT_Task_NewEdit}
+                    \end{center}
+                \end{figure}
+
+                Η σελίδα καλείται από και χρησιμοποιείται για τη δημιουργία νέων εργασιών. Χρησιμοποιεί το \texttt{Popout\_Layout} layout του \texttt{Atlas\_Core} και έχει ως Parameters το \texttt{Task} και το \texttt{PageHelper}.
+
 
 
             \subsubsection{Microflows του \texttt{TaskManager}}
