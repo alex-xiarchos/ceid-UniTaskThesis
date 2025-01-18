@@ -130,6 +130,23 @@
 
         Με την επιλογή του εικονιδίου επεξεργασίας, εμφανίζεται το αναδυόμενο παράθυρο (σχήμα \ref{fig:unitask_EditTask}), το οποίο επιτρέπει την τροποποίηση των στοιχείων της εργασίας, συμπεριλαμβανομένου του πλαισίου {\Zona σύντομη σημείωση}. Το ίδιο παράθυρο περιλαμβάνει και το κουμπί διαγραφής της εργασίας.
 
+        Για την καλύτερη διευκόλυνση του χρήστη, την τελευταία εβδομάδα πριν λήξη της προθεσμίας εμφανίζεται ενημερωτικό κείμενο στην κάρτα (σχήμα \ref{fig:unitask_cardInfo}.1), ενώ όταν η εργασία έχει λήξει, εμφανίζεται call-to-action κουμπί που μπορεί να μετακινήσει αυτήν την εργασία στις ολοκληρωμένες εργασίες (σχήμα \ref{fig:unitask_cardInfo}.2).
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=\textwidth]{UniTask/προθεσμία λήγει}
+            \includegraphics[width=\textwidth]{UniTask/προθεσμία έληξε}
+            \caption{\centering Ενημερωτικό κείμενο κάρτας εργασίας}
+            \label{fig:unitask_cardInfo}
+        \end{figure}
+
+        Επίσης, κατά την αλλαγή κατηγορίας της εργασίας σε ολοκληρωμένη, εμφανίζονται κομφετί ως ένα σύστημα ανταμοιβής για τον χρήστη (σχήμα \ref{fig:unitask_confetti}).
+
+        \begin{figure}[h!] \noindent \centering
+            \includegraphics[width=0.7\textwidth]{UniTask/κομφετί}
+            \caption{\centering Επιβράβευση όταν ολοκληρωθεί μια εργασία}
+            \label{fig:unitask_confetti}
+        \end{figure}
+
         \begin{figure}[h!] \noindent \centering
             \includegraphics[trim={0 10cm 0 0}, clip, width=\textwidth]{UniTask/Kanban_WithTask}
             \caption{\centering Σελίδα Kanban}
@@ -687,12 +704,20 @@ else ''         \end{lstlisting}
                     \end{center}
                 \end{figure}
 
+                Το microflow καλείται από τις αναδυόμενες σελίδες \texttt{POPOUT\_Task\_NewEdit} και \texttt{POPOUT\_Task\_NewEdit\_Edit} για την αποθήκευση των αλλαγών που έγιναν στις ιδιότητες της εργασίας.
+
+                Γίνεται commit στο αντικείμενο \texttt{Task}, κλείνει η σελίδα, γίνεται ένα Change Object στο \texttt{PageHelper} για να ανανεωθούν οι τιμές του, όπως υπολογίζονται από τα microflows και καλείται το microflow \texttt{ConfettiNotTriggering} για την επαναφορά της τιμής της Boolean ιδιότητας \texttt{Confetti} του \texttt{PageHelper} σε \texttt{false}.
+
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{EditTask}}
                     \begin{center}
                         \includegraphics[width=\textwidth]{UniTask_Mendix/EditTask}
                     \end{center}
                 \end{figure}
+
+                Το microflow καλείται από τα κουμπιά των καρτών στην Dashboard σελίδα και τις κάρτες οτυ πίνακα Kanban και του ημερολογίου για την επεξεργασία μιας εργασίας.
+
+                Το microflow εμφανίζει την αναδυόμενη σελίδα \texttt{POPOUT\_Task\_NewEdit\_Edit}, κάνει commit στο αντικείμενο \texttt{Task} και ανανεώνει το \texttt{PageHelper}.
 
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{DeleteTask}}
@@ -701,12 +726,20 @@ else ''         \end{lstlisting}
                     \end{center}
                 \end{figure}
 
+                Το microflow καλείται από το κουμπί της αναδυόμενης σελίδας \texttt{POPOUT\_Task\_NewEdit\_Edit} για τη διαγραφή μιας εργασίας.
+
+                Γίνεται delete το αντικείμενο \texttt{Task}, κλείνει η σελίδα και ανανεώνεται το \texttt{PageHelper}.
+
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{DeleteTask\_Snippet}}
                     \begin{center}
                         \includegraphics[width=\textwidth]{UniTask_Mendix/DeleteTask_Snippet}
                     \end{center}
                 \end{figure}
+
+                Το microflow καλείται από το κουμπί της κάρτας στην Dashboard σελίδα για τη διαγραφή μιας εργασίας, στην περίπτωση που ο χρήστης έχει ενεργοποιήσει την επιλογή γρήγορης διαγραφής.
+
+                Γίνεται delete το αντικείμενο \texttt{Task} και ανανεώνεται το \texttt{PageHelper}.
 
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{DeleteAllTasks}}
@@ -715,6 +748,10 @@ else ''         \end{lstlisting}
                     \end{center}
                 \end{figure}
 
+                Το microflow καλείται από το κουμπί της σελίδας \texttt{POPOUT\_Settings} για τη διαγραφή όλων των εργασιών του χρήστη.
+
+                Αρχικά γίνεται retrieve το σύνολο των εργασιών του χρήστη ως μια λίστα και στη συνέχεια γίνεται διαγραφή της λίστας. Τέλος, ανανεώνεται το \texttt{PageHelper} και στέλνεται επιβεβαιωτικό μήνυμα.
+
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{InitializeTasks}}
                     \begin{center}
@@ -722,6 +759,35 @@ else ''         \end{lstlisting}
                     \end{center}
                 \end{figure}
 
+                Το microflow καλείται από το κουμπί της σελίδας \texttt{POPOUT\_Settings} για την αρχικοποίηση των εργασιών του χρήστη.
 
+                Αρχικά επιστρέφεται το \texttt{Student} μέσω του \texttt{RET\_Student} και δημιουργείται ένα \texttt{PageHelper} που θα χρησιμοποιηθεί ως όρισμα. Πριν δημιουργηθούν οι νέες εργασίες, γίνονται retrieve οι υπάρχουσες, διαγράφονται και ανανεώνεται το \texttt{PageHelper} Στη συνέχεια δημιουργούνται τέσσερις εργασίες με hard-coded προκαθορισμένες τιμές και στέλνεται επιβεβαιωτικό μήνυμα.
 
-            \subsubsection{Έγγραφα του \texttt{TaskManager}}
+        \subsection{Module \texttt{UniTaskDesignSystem}}
+            Το \texttt{UniTaskDesignSystem} περιλαμβάνει τα layouts της εφαρμογής όπως επίσης παρεμβάσεις που αφορούν το styling της εφαρμογής.
+
+            \subsubsection{Layouts του \texttt{UniTaskDesignSystem}}
+                Το module \texttt{UniTaskDesignSystem} περιλαμβάνει τα εξής layouts:
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{UniTask\_TopBar}}
+                    \begin{center}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/UniTask_TopBar}
+                    \end{center}
+                \end{figure}
+
+                Το layout χρησιμοποιείται για την εμφάνιση της μπάρας πλοήγησης στην κορυφή της σελίδας. Η μπάρα πλοήγησης αποτελείται από δύο διαφορετικά Navigation μενού, το αριστερό (το κύριο Project navigation) και το δεξί (ένα Menu document του \texttt{UniTaskDesignSystem}) τοποθετημένα σε ένα Layout Grid με δύο στήλες. Τα Navigation μενού καλού τα αντίστοιχα \texttt{ShowPage} microflows για την ανακατεύθυνση του χρήστη στην επιλεγμένη σελίδα. Εξαίρεση αποτελεί το κουμπί {\Zona Home} που καλεί τη σελίδα \texttt{PAGE\_Home\_Page} απευθείας και το κουμπί {\Zonaa αποσύνδεση} που αποσυνδέει τον χρήστη.
+
+                Ο τίτλος της εφαρμογής {\ZonaSB UniTask} που εμφανίζεται στα αριστερά χρησιμοποιεί custom CSS και περιλαμβάνεται ένα hamburger μενού στα αριστερά για μεγαλύτερη προσβασιμότητα. Το {\Zone Admin} περιλαμβάνει το υπομενού {\Zona Account Overview} και είναι προσβάσιμα μόνο από τον Administrator.
+
+                \begin{figure}[H] \noindent
+                    \paragraph{\texttt{UniTask\_SideBar}}
+                    \begin{center}
+                        \includegraphics[width=\textwidth]{UniTask_Mendix/UniTask_SideBar}
+                    \end{center}
+                \end{figure}\textbf{}
+
+                Ισχύουν τα αντίστοιχα με το προηγούμενο layout με τη διαφορά ότι δεν εμφανίζονται οι Ρυθμίσεις και το κύριο Project navigation εμφανίζεται στα αριστερά.
+
+            \subsubsection{Styling του \texttt{UniTaskDesignSystem}}
+                Στα αρχεία \texttt{custom-variables.scss} και \texttt{design.scss} των \texttt{UniTaskDesignSystem} και \texttt{App} modules περιλαμβάνεται custom CSS κώδικας για το styling της εφαρμογής. Εκεί ορίζεται για παράδειγμα το πορτοκαλί χρώμα που έχουν οι μπάρες πλοήγησης, η custom γραμματοσειρά Zona Pro που χρησιμοποιείται ή κάποιες custom δυναμικές κλάσεις.
