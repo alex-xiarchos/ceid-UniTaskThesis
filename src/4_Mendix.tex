@@ -8,21 +8,21 @@
 
         Το 2018, το Mendix εξαγοράστηκε από τη Siemens, τη μεγαλύτερη βιομηχανική κατασκευαστική εταιρεία στην Ευρώπη, γεγονός που επέφερε σημαντικές εξελίξεις στην πλατφόρμα. Η συγχώνευση αυτή επέτρεψε την ενσωμάτωση προηγμένων βιομηχανικών και IoT (Internet of Things) λύσεων, ενισχύοντας τη θέση του Mendix στην αγορά των λογισμικών σχεδιασμένων για επιχειρήσεις. Έτσι, το Mendix αποτελεί μία από τις πιο ισχυρές και ευέλικτες λύσεις στην αγορά του low-code προγραμματισμού, προσφέροντας αποτελεσματικότητα, ταχύτητα και καινοτομία στην ανάπτυξη λογισμικού, ενώ παράλληλα ενσωματώνει τις πιο σύγχρονες τεχνολογίες για να καλύψει τις ανάγκες επιχειρήσεων που επιθυμούν να παραμείνουν ανταγωνιστικές στην ψηφιακή εποχή \cite{LowCodeMendix}.
 
-        Η Gartner, μία από τις μεγαλύτερες εταιρείες έρευνας και συμβουλευτικής στον κλάδο της τεχνολογίας, χαρακτηρίζει το Mendix ως ηγέτη στην αγορά των πλατφορμών ανάπτυξης λογισμικού για 8 συνεχόμενα χρόνια, (βλ. Σχήμα \ref{fig:GartnerQuadrant}). Η κατάταξη αυτή αποδεικνύει την ικανότητα του Mendix να παρέχει λύσεις υψηλής ποιότητας και αξίας στους πελάτες του, καθώς και την ικανότητά του να προσαρμόζεται στις ανάγκες της αγοράς και να προσφέρει συνεχώς καινοτόμες λύσεις \cite{mendixGartnerQuadrant}. Για αυτούς τους λόγους έχει προτιμηθεί για την υλοποίηση της εφαρμογής που θα παρουσιαστεί στο επόμενο κεφάλαιο.
+        Η Gartner, μία από τις μεγαλύτερες εταιρείες έρευνας και συμβουλευτικής στον κλάδο της τεχνολογίας, χαρακτηρίζει το Mendix ως ηγέτη στην αγορά των πλατφορμών ανάπτυξης λογισμικού για 8 συνεχόμενα χρόνια, (σχήμα \ref{fig:GartnerQuadrant}). Η κατάταξη αυτή αποδεικνύει την ικανότητα του Mendix να παρέχει λύσεις υψηλής ποιότητας και αξίας στους πελάτες του, καθώς και την ικανότητά του να προσαρμόζεται στις ανάγκες της αγοράς και να προσφέρει συνεχώς καινοτόμες λύσεις \cite{mendixGartnerQuadrant}. Για αυτούς τους λόγους έχει προτιμηθεί για την υλοποίηση της εφαρμογής που θα παρουσιαστεί στο επόμενο κεφάλαιο.
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.5\textwidth]{GartnerQuadrant}
-                    \caption{\centering Τεταρτημόριο της Gartner με πλατφόρμες ανάπτυξης λογισμικού \cite{mendixGartnerQuadrant}}
-                    \label{fig:GartnerQuadrant}
+                \includegraphics[width=0.5\textwidth]{GartnerQuadrant}
+                \caption{\centering Τεταρτημόριο της Gartner με πλατφόρμες ανάπτυξης λογισμικού \cite{mendixGartnerQuadrant}}
+                \label{fig:GartnerQuadrant}
             \end{figure}
 
     \section{Το Mendix Studio}
         Το Mendix Studio Pro αποτελεί το βασικό εργαλείο ανάπτυξης εφαρμογών της πλατφόρμας Mendix, προσφέροντας στους χρήστες τη δυνατότητα να δημιουργήσουν, να προσαρμόσουν, να δοκιμάσουν και να αναπτύξουν εφαρμογές.
 
         \begin{figure}[h!] \noindent \centering
-                \includegraphics[width=\textwidth]{Mendix/MendixStudioOverlay}
-                \caption{\centering Στιγμιότυπο του Mendix Studio Pro.}
-                \label{fig:MendixStudioOverlay}
+            \includegraphics[width=\textwidth]{Mendix/MendixStudioOverlay}
+            \caption{\centering Στιγμιότυπο του Mendix Studio Pro.}
+            \label{fig:MendixStudioOverlay}
         \end{figure}
 
         \subsection{Περιβάλλον ανάπτυξης}
@@ -61,7 +61,7 @@
             \subsubsection{Το module App}
             Κάτα τη δημιουργία μιας νέας εφαρμογής, το Mendix διαθέτει ένα σύνολο από προεγκατεστημένες σελίδες με έτοιμο σχεδιασμό και λειτουργικότητα. Τα αρχεία αυτών των σελίδων βρίσκονται στο module \texttt{App}. Το module \texttt{App} πέρα από τα παράθυρα των Ρυθμίσεων και Ασφάλειας (τα οποία έτσι και αλλιώς υπάρχουν σε όλα τα modules) επιπλέον περιλαμβάνει την Πλοήγηση (Navigation) και τα Κείμενα Συστήματος (System Texts)\footnote{Στο έγγραφο με τα Κείμενα Συστήματος μπορεί να γίνει μετάφραση των μηνυμάτων που παράγονται από τον διακομιστή κατά την εκτέλεση μιας εφαρμογής (για παράδειγμα \say{Password too short}).}. Επιπλέον, περιλαμβάνει ένα φάκελο \texttt{Styling} με \texttt{.js} και \texttt{.css} αρχεία τα οποία χρησιμοποιούνται για το styling της εφαρμογής\footnote{Στα συγκεκριμένα αρχεία μπορούν να επεξεργαστούν μεταβλητές που αφορούν τη σχεδίαση του UI resources module \texttt{Atlas}, το οποίο χρησιμοποιείται ως κεντρικό theme για τις προεγκατεστημένες σελίδες του Mendix. Το \texttt{Atlas} για παράδειγμα περιλαμβάνει έτοιμα color schemes (\texttt{primary}, \texttt{success}, \texttt{warning}, \texttt{danger}, \texttt{info}) τα οποία χρησιμοποιούνται σε όλα τα widgets των σελιδών, όπως επίσης γραμματοσειρές, spacings κτλ. Τα αρχεία λοιπόν έναν από τους τρόπους προσαρμογής της προεπιλεγμένης σχεδίασης του \texttt{Atlas}. Εναλλακτικός τρόπος είναι η δημιουργία ενός custom UI resources module.} και έναν φάκελο \texttt{Marketplace modules} το οποίο περιλαμβάνει εξωτερικά modules που μπορούν να προστεθούν μέσω του Mendix Marketplace.
 
-            Το παράθυρο \textbf{Ρυθμίσεων} του \texttt{App} (βλ. σχήμα \ref{fig:MendixAppSettings}) διαφέρει σε σχέση με τα υπόλοιπα modules, καθώς αυτό περιλαμβάνει παραμετροποιήσεις για το runtime περιβάλλον της εφαρμογής, το theme που χρησιμοποιείται, την επιλογή συγκεκριμένων ενεργειών πριν αρχικοποιηθεί η εφαρμογή κατά την εκκίνησή της, επιλογή συγκεκριμένου αλγόριθμου κρυπτογράφησης για το Hashed String τύπο δεδομένων, καθορισμός γλώσσας και άλλα.
+            Το παράθυρο \textbf{Ρυθμίσεων} του \texttt{App} (σχήμα \ref{fig:MendixAppSettings}) διαφέρει σε σχέση με τα υπόλοιπα modules, καθώς αυτό περιλαμβάνει παραμετροποιήσεις για το runtime περιβάλλον της εφαρμογής, το theme που χρησιμοποιείται, την επιλογή συγκεκριμένων ενεργειών πριν αρχικοποιηθεί η εφαρμογή κατά την εκκίνησή της, επιλογή συγκεκριμένου αλγόριθμου κρυπτογράφησης για το Hashed String τύπο δεδομένων, καθορισμός γλώσσας και άλλα.
 
             \begin{figure}[h!] \noindent \centering
                 \includegraphics[width=0.7\textwidth]{Mendix/AppSettings}
@@ -75,7 +75,7 @@
                 \label{fig:MendixAppSecurity}
             \end{figure}
 
-            Το παράθυρο \textbf{Ασφάλεια} του \texttt{App} (βλ. σχήμα \ref{fig:MendixAppSecurity}) το οποίο και αυτό διαφέρει σε σχέση με τα αντίστοιχα παράθυρα των υπόλοιπων modules, χρησιμοποιείται για να τροποποιηθεί το \textit{επίπεδο ασφάλειας} (Security level) της εφαρμογής. Συγκεκριμένα μπορεί να επιλεγεί ώστε οι χρήστες να μη χρειάζεται να συνδεθούν για να έχουν πρόσβαση στην εφαρμογή (Security level = Off), να χρειάζεται να συνδεθούν για να ώστε να μπορέσουν να χρησιμοποιήσουν φόρμες, microflows κτλ (Security level = Prototype/demo), ή να χρειάζεται να συνδεθούν ώστε να έχουν πρόσβαση στην εφαρμογή καθολικά (Security level = Production).
+            Το παράθυρο \textbf{Ασφάλεια} του \texttt{App} (σχήμα \ref{fig:MendixAppSecurity}) το οποίο και αυτό διαφέρει σε σχέση με τα αντίστοιχα παράθυρα των υπόλοιπων modules, χρησιμοποιείται για να τροποποιηθεί το \textit{επίπεδο ασφάλειας} (Security level) της εφαρμογής. Συγκεκριμένα μπορεί να επιλεγεί ώστε οι χρήστες να μη χρειάζεται να συνδεθούν για να έχουν πρόσβαση στην εφαρμογή (Security level = Off), να χρειάζεται να συνδεθούν για να ώστε να μπορέσουν να χρησιμοποιήσουν φόρμες, microflows κτλ (Security level = Prototype/demo), ή να χρειάζεται να συνδεθούν ώστε να έχουν πρόσβαση στην εφαρμογή καθολικά (Security level = Production).
 
             Επίσης, μπορούν να οριστούν \textit{ρόλοι χρηστών} όπως για παράδειγμα Administrator, User ή Guest. Κατ' αυτόν τον τρόπο καθίσταται δυνατό να διαχωριστούν τα δικαιώματα πρόσβασης των modules ανάλογα με το ποιος είναι ο ρόλος του χρήστη. Για παράδειγμα, ένας Administrator χρήστης μπορεί να έχει πλήρη πρόσβαση στα modules και στις σελίδες της εφαρμογής, ενώ ένας Guest μπορεί να έχει περιορισμένη προβολή.
 
@@ -87,7 +87,7 @@
                 \label{fig:MendixAppNavigation}
             \end{figure}
 
-            Η \textbf{Πλοήγηση} του module \texttt{App} (βλ. σχήμα \ref{fig:MendixAppNavigation}) εμφανίζει το σύνολο των σελίδων του κεντρικού μενού της εφαρμογής. Εκεί μπορεί να γίνει η επεξεργασία του μενού με την προσθήκη στοιχείων ή και υποστοιχείων σε στοιχεία. Επίσης, περιλαμβάνονται διαφορετικές προβολές ανάλογα με τον εκάστοτε ρόλο χρήστη, στις οποίες εμφανίζονται μόνο οι σελίδες που είναι προσβάσιμες σε κάθε ρόλο. Στην Πλοήγηση επίσης μπορεί να διαμορφωθεί το όνομα και το εικονίδιο της εφαρμογής όπως επίσης και να οριστεί και η αρχική σελίδα (home page) της, η οποία μάλιστα μπορεί να διαμορφωθεί ώστε να είναι διαφορετική για εκάστοτε ρόλο χρήστη \cite{mendixDoc}.
+            Η \textbf{Πλοήγηση} του module \texttt{App} (σχήμα \ref{fig:MendixAppNavigation}) εμφανίζει το σύνολο των σελίδων του κεντρικού μενού της εφαρμογής. Εκεί μπορεί να γίνει η επεξεργασία του μενού με την προσθήκη στοιχείων ή και υποστοιχείων σε στοιχεία. Επίσης, περιλαμβάνονται διαφορετικές προβολές ανάλογα με τον εκάστοτε ρόλο χρήστη, στις οποίες εμφανίζονται μόνο οι σελίδες που είναι προσβάσιμες σε κάθε ρόλο. Στην Πλοήγηση επίσης μπορεί να διαμορφωθεί το όνομα και το εικονίδιο της εφαρμογής όπως επίσης και να οριστεί και η αρχική σελίδα (home page) της, η οποία μάλιστα μπορεί να διαμορφωθεί ώστε να είναι διαφορετική για εκάστοτε ρόλο χρήστη \cite{mendixDoc}.
 
             \subsubsection{Το module System}
                 Το module \texttt{System} είναι ένα προεγκατεστημένο module που περιλαμβάνει τη βασική λειτουργικότητα η οποία χρησιμοποιείται στις ήδη κατασκευασμένες σελίδες και microflows του \texttt{App}. Το συγκεκριμένο module δεν μπορεί να επεξεργαστεί από τον χρήστη, αλλά μπορούν με βάσει αυτό να προστεθούν συσχετίσεις (associations) ή γενικεύσεις (generalizations) τα modules τα οποία κατασκευάζονται από τους χρήστες. Για παράδειγμα, μπορεί να δημιουργηθεί μια οντότητα \texttt{Πελάτης} η οποία θα συσχετίζεται με την οντότητα \texttt{User} του module \texttt{System} και έτσι θα κληρονομεί τις ρυθμίσεις ασφαλείας του \cite{mendixSystemModule}.
@@ -130,9 +130,9 @@
                 Tο Mendix προσφέρει προκαθορισμένα σύνολα από widgets, γνωστά ως \textit{Building blocks}, τα οποία δημιουργούν στοιχεία όπως επικεφαλίδες (headers), φόρμες και ειδοποιήσεις (notifications). Αυτά τα Building blocks διευκολύνουν και επιταχύνουν τη διαδικασία ανάπτυξης, παρέχοντας στους χρήστες έτοιμες λύσεις που μπορούν να ενσωματωθούν απευθείας στις εφαρμογές.
 
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel1}
-                        \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel2}
-                        \caption{\centering Το panel Properties.}
+                    \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel1}
+                    \includegraphics[width=0.3\textwidth]{Mendix/PropertiesPanel2}
+                    \caption{\centering Το panel Properties.}
                 \end{figure}
 
                 Τέλος, για κάθε widget (όπως και για κάθε σελίδα) μπορούν να επεξεργαστούν οι ιδιότητές του. Το panel Properties (σχήμα) είναι ένα δυναμικό panel στο οποίο αλλάζει το περιεχόμενό του ανάλογα με το στοιχείο που έχουμε επιλεγμένο. Στο Properties μπορούμε να ορίσουμε συνθήκες όπου θα επιτρέπεται η εμφάνιση ενός στοιχείου, να επιλέξουμε διαφορετικά render styles από τα προκατασκευασμένα που παρέχει το Mendix, να ορίσουμε events που θα συμβαίνουν όταν ο χρήστης αλληλεπιδρά με το στοιχείο, όπως επίσης και να αλλάξουμε CSS κλάσεις είτε μέσω των παρεχόμενων επιλογών του Mendix είτε μέσω της προσθήκης δικού μας custom CSS κώδικα.
@@ -141,10 +141,10 @@
             Στο Mendix Studio Pro, μια σελίδα μπορεί να προβληθεί είτε σε Structure Mode είτε σε Design Mode, προσφέροντας στους χρήστες διαφορετικές οπτικές για τη διαχείριση και τον σχεδιασμό των σελίδων.
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.6\textwidth]{Mendix/PageView2} \\
-                    \includegraphics[width=0.6\textwidth]{Mendix/PageView1} \\
-                    \includegraphics[width=0.6\textwidth]{Mendix/PageView3}
-                    \caption{\centering Διαφορετικές εμφανίσεις της ίδιας σελίδας από αριστερά \\ προς τα δεξιά: Structure Mode, Design Mode, X-Ray Mode.}
+                \includegraphics[width=0.6\textwidth]{Mendix/PageView2} \\
+                \includegraphics[width=0.6\textwidth]{Mendix/PageView1} \\
+                \includegraphics[width=0.6\textwidth]{Mendix/PageView3}
+                \caption{\centering Διαφορετικές εμφανίσεις της ίδιας σελίδας από αριστερά \\ προς τα δεξιά: Structure Mode, Design Mode, X-Ray Mode.}
             \end{figure}
 
             Στο \textbf{Structure Mode}, παρουσιάζονται με σαφήνεια όλα τα δομικά στοιχεία που συνθέτουν τη σελίδα, δίνοντας έμφαση στη δομή της και επιτρέποντας την εύκολη προσαρμογή και οργάνωση των περιεχομένων. Αυτή η λειτουργία είναι ιδανική για την ανάλυση της λογικής της σελίδας, τη διαχείριση των στοιχείων της και τη διόρθωση πιθανών προβλημάτων διάταξης. Είναι επίσης ο μοναδικός τρόπος προβολής των εφαρμογών κινητών συσκευών (Native mobile).
@@ -171,8 +171,8 @@
 Τέλος, τα Workflows ενδείκνυνται για τη διαχείριση σταθερών και επαναλαμβανόμενων διαδικασιών, επιτρέποντας την αυτοματοποίηση και την απλοποίηση της εκτέλεσής τους.} αποτελούν τον εγκέφαλο των εφαρμογών του Mendix καθώς αναπαριστούν της λογικής λειτουργίας της εφαρμογής με έναν οπτικό τρόπο χαμηλού κώδικα. Αυτά τα διαγράμματα ροής λειτουργούν ως οδικοί χάρτες για την εκτέλεση διάφορων εντολών και αλληλουχιών ενεργειών, επιτρέποντας την κατασκευή σύνθετης λειτουργικότητας χωρίς την ανάγκη γραφής παραδοσιακού κώδικα. Χρησιμοποιούνται ευρέως για ενέργειες όπως η δημιουργία, η ενημέρωση και η διαγραφή δεδομένων, η εμφάνιση σελίδων, το φιλτράρισμα δεδομένων, η εκτέλεση ελέγχων, η είσοδος δεδομένων από εξωτερικές πηγές και άλλα
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.7\textwidth]{Mendix/microflow-nanoflow-example}
-                    \caption{\centering Παράδειγμα Microflow. Τα πράσινα και κόκκινα κυκλάκια αναπαριστούν τα events, τα μπλε ορθογώνια τα activities και ο πορτοκαλί ρόμβος το decision. Ως είσοδο έχουμε το parameter AccountPasswordData \cite{mendixDoc}.}
+                \includegraphics[width=0.7\textwidth]{Mendix/microflow-nanoflow-example}
+                \caption{\centering Παράδειγμα Microflow. Τα πράσινα και κόκκινα κυκλάκια αναπαριστούν τα events, τα μπλε ορθογώνια τα activities και ο πορτοκαλί ρόμβος το decision. Ως είσοδο έχουμε το parameter AccountPasswordData \cite{mendixDoc}.}
             \end{figure}
 
             Τα Microflows αποτελείται από τα παρακάτω στοιχεία:
@@ -186,9 +186,10 @@
                 \end{itemize}
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.4\textwidth]{Mendix/ToolboxMicroflow}
-                    \caption{\centering Όταν επεξεργαζόμαστε ένα Microflow, \\ τo Toolbox panel περιλαμβάνει τα διαθέσιμα activities.}
+                \includegraphics[width=0.4\textwidth]{Mendix/ToolboxMicroflow}
+                \caption{\centering Όταν επεξεργαζόμαστε ένα Microflow, \\ τo Toolbox panel περιλαμβάνει τα διαθέσιμα activities.}
             \end{figure}
+
             Ένα Microflow μπορεί να εκτελεστεί από διαφορετικά μέρη όπως το Navigation menu, ένα κουμπί, ένα link ή ακόμα και να καλεστεί από ένα άλλο Microflow. Επιπλέον, τα Microflows μπορούν να εκτελεστούν αυτόματα μετά από μια συγκεκριμένη ενέργεια (Event Handlers), όπως η αποθήκευση ενός αντικειμένου ή η ενημέρωση ενός πεδίου.
 
             Τέλος, κάθε Microflow αποθηκεύεται ως ένα Java αρχείο στον πηγαίο κώδικα της εφαρμογής. Για εξειδικευμένες λειτουργίες, το Mendix παρέχει τη δυνατότητα ενσωμάτωσης προσαρμοσμένου κώδικα Java μέσω του $ \text{App} \rightarrow \text{Deploy to Eclipse} $.
@@ -204,9 +205,9 @@
             Το domain model αποτελεί κεντρικό πυλώνα της αρχιτεκτονικής κάθε εφαρμογής. Κάθε module έχει το δικό του domain model, και όλα τα modules μπορούν να χρησιμοποιούν δεδομένα από όλα υπόλοιπα domain modules μέσω συσχετίσεων.
 
             \begin{figure}[h!] \noindent \centering
-                    \includegraphics[width=0.8\textwidth]{Mendix/annotated-domain-model}
-                    \caption{\centering Παράδειγμα από domain model \cite{mendixDoc}.}
-                    \label{fig:MendixDomainModel}
+                \includegraphics[width=0.8\textwidth]{Mendix/annotated-domain-model}
+                \caption{\centering Παράδειγμα από domain model \cite{mendixDoc}.}
+                \label{fig:MendixDomainModel}
             \end{figure}
 
             Το σχήμα \ref{fig:MendixDomainModel} είναι ένα παράδειγμα ενός domain model που αναπαριστά πελάτες και παραγγελίες. Οι πελάτες και οι παραγγελίες αποτελούν οντότητες (entities) του domain model. Οι οντότητες συσχετίζονται μεταξύ τους με μια συσχέτιση (association) πολλών-προς-ένα. Κάθε παραγγελία ανήκει σε έναν μόνο πελάτη, ενώ ένας πελάτης μπορεί να έχει πολλές παραγγελίες. Φυσικά, το Mendix περιλαμβάνει και άλλες πληθικότητες, όπως συσχετίσεις ένα-προς-ένα όπως επίσης και πολλά-προς-πολλά. Επιπλέον, αν διαγραφτεί κάποια οντότητα μπορεί να ρυθμιστεί τι θα συμβεί με τις συσχετίσεις της (π.χ. να διαγραφούν και αυτές).
@@ -215,9 +216,9 @@
 
             \subsubsection{Οντότητες}
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.7\textwidth]{Mendix/EntityProperties}
-                        \caption{\centering Ιδιότητες μιας οντότητας Task (βλ. κεφ. \ref{ch:unitask})}
-                        \label{fig:MendixEntityProperties}
+                    \includegraphics[width=0.7\textwidth]{Mendix/EntityProperties}
+                    \caption{\centering Ιδιότητες μιας οντότητας Task (βλ. κεφ. \ref{ch:unitask})}
+                    \label{fig:MendixEntityProperties}
                 \end{figure}
 
                 Στο σχήμα \ref{fig:MendixEntityProperties} παρουσιάζεται το παράθυρο που εμφανίζεται όταν δημιουργούμε ή επεξεργαζόμαστε μια οντότητα. Στο πάνω μέρος ορίζεται αν η οντότητα έχει κάποια γενίκευση και το αν είναι διατηρήσιμη στη βάση δεδομένων.
@@ -225,20 +226,20 @@
                 Στην καρτέλα \textbf{Attributes} (Γνωρίσματα) καθορίζονται όλα τα γνωρίσματα της οντότητας. Εκεί επιλέγεται ο τύπος δεδομένων του γνωρίσματος. Οι τύποι δεδομένων που υποστηρίζονται από το Mendix είναι οι εξής: \texttt{AutoNumber} (αυτόματα παραγόμενοι αριθμοί, π.χ. IDs), \texttt{Binary}, \texttt{Boolean}, \texttt{Date and time}, \texttt{Decimal}, \texttt{Enumeration} (επιλέγεται κάποιο Enumeration έγγραφο), \texttt{Hashed string}, \texttt{Integer}, \texttt{Long}, \texttt{String}. Ο τύπος ενός γνωρίσματος είναι πιθανό να καθοριστεί αυτόματα από το Mendix βάσει του ονόματος που επιλέγεται κατά τον ορισμό του. Τέλος, μπορεί να οριστεί μια προεπιλεγμένη τιμή του κάθε ορίσματος ή να οριστεί η τιμή να καθορίζεται από κάποιο microflow.
 
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.6\textwidth]{Mendix/AddAttribute}
-                        \caption{\centering Προσθήκη καινούριου γνωρίσματος σε μια οντότητα}
+                    \includegraphics[width=0.6\textwidth]{Mendix/AddAttribute}
+                    \caption{\centering Προσθήκη καινούριου γνωρίσματος σε μια οντότητα}
                 \end{figure}
 
                 Η καρτέλα \textbf{Associations} (Συσχετίσεις) είναι ένας εναλλακτικός τρόπος που επιτρέπει να επεξεργαστούν οι συσχετίσεις μιας οντότητας. Ένας εναλλακτικός τρόπος είναι απευθείας από το domain model μέσω των συνδέσεων μεταξύ των οντοτήτων.
 
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.6\textwidth]{Mendix/ValidationRule}
-                        \caption{\centering Προσθήκη κανόνα επικύρωσης (βλ. κεφ. \ref{ch:unitask})}
+                    \includegraphics[width=0.6\textwidth]{Mendix/ValidationRule}
+                    \caption{\centering Προσθήκη κανόνα επικύρωσης (βλ. κεφ. \ref{ch:unitask})}
                 \end{figure}
 
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.62\textwidth]{Mendix/AccessRuleEntity}
-                        \caption{\centering Επεξεργασία κανόνων πρόσβασης της οντότητας Task (βλ. κεφ. \ref{ch:unitask})}
+                    \includegraphics[width=0.62\textwidth]{Mendix/AccessRuleEntity}
+                    \caption{\centering Επεξεργασία κανόνων πρόσβασης της οντότητας Task (βλ. κεφ. \ref{ch:unitask})}
                 \end{figure}
 
                 Η καρτέλα \textbf{Validation rules} (Κανόνες Επικύρωσης) δημιουργεί συνθήκες που πρέπει να ικανοποιούνται για να είναι έγκυρα τα γνωρίσματα κάθε οντότητας. Οι κανόνες επικύρωσης μπορούν να είναι απλές συνθήκες, όπως π.χ. ένα πεδίο να μην είναι κενό, ή πιο σύνθετες, όπως π.χ. η τιμή ενός πεδίου να καθορίζεται από ένα εύρος τιμών. Αν η συνθήκη δεν πληρούται, εμφανίζεται αυτόματα μήνυμα σφάλματος κάτω από το πεδίο.
@@ -253,6 +254,6 @@
                 Παράλληλα με την ανάπτυξη της εφαρμογής στο Mendix Studio Pro, στο προσωπικό προφίλ κάθε χρήστη υπάρχει ένα dashboard για κάθε εφαρμογή που αναπτύσσουμε όπου παρέχονται project management εργαλεία και μεθοδολογίες ανάπτυξης λογισμικού.
 
                 \begin{figure}[h!] \noindent \centering
-                        \includegraphics[width=0.5\textwidth]{Mendix/Scrum}
-                        \caption{\centering Πίνακας Kanban στο dashboard \cite{mendixDoc}.}
+                    \includegraphics[width=0.5\textwidth]{Mendix/Scrum}
+                    \caption{\centering Πίνακας Kanban στο dashboard \cite{mendixDoc}.}
                 \end{figure}
