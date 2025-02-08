@@ -47,8 +47,8 @@
 
 \def\new@tpage{\newpage\thispagestyle{empty}\null}
 % Measurements
-\setlength{\oddsidemargin}{7mm}
-\setlength{\evensidemargin}{0mm}
+\setlength{\oddsidemargin}{4mm}
+\setlength{\evensidemargin}{4mm}
 \setlength{\textwidth}{150mm}
 
 \setlength{\topmargin}{0mm}
