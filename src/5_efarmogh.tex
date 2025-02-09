@@ -1,5 +1,8 @@
 \chapter{Υλοποίηση εφαρμογής} \label{ch:unitask}
-    Σε αυτό το κεφάλαιο...
+    Σε αυτό το κεφάλαιο παρουσιάζεται η υλοποίηση της εφαρμογής Unitask.  Αρχικά, γίνεται αναφορά στη σχεδιαστική προσέγγιση που ακολουθήθηκε, λαμβάνοντας υπόψη τα αποτελέσματα έρευνας σχετικά με τις προτιμήσεις των φοιτητών. Στη συνέχεια, παρουσιάζεται ένα demo της εφαρμογής με όλες τις δυνατότητές της και στο τέλος εξηγείται η αρχιτεκτονική της εφαρμογής καθώς και τα επιμέρους τεχνικά
+    στοιχεία που την απαρτίζουν. Συγκεκριμένα, αναλύονται τα διάφορα modules που χρησιμοποιήθηκαν, τα διαφορετικά layouts που συνθέτουν το περιβάλλον χρήστη, η λειτουργικότητα των διαφορετικών microflows που έχουν σχεδιαστεί και οι ρυθμίσεις της εφαρμογής.
+
+    Στόχος του κεφαλαίου είναι να παρέχει μια ολοκληρωμένη εικόνα της ανάπτυξης του UniTask, παρουσιάζοντας τόσο το frontend όσο και το backend της εφαρμογής, δίνοντας έμφαση στις επιλογές που διασφαλίζουν την ευχρηστία και την αποδοτικότητα της πλατφόρμας.
 
     \section{Mockups και σχεδιαστική προσέγγιση}
         Στην ενότητα \ref{sec:student_preferences}, παρουσιάστηκε μια έρευνα με τα βασικά χαρακτηριστικά που θεωρήθηκαν απαραίτητα από τους φοιτητές για μια εφαρμογή τους. Λαμβάνοντας υπόψιν τις προτιμήσεις αυτές δόθηκε βάση στην υλοποίηση τους ώστε η εφαρμογή να ανταποκρίνεται στις ανάγκες της ακαδημαϊκής κοινότητας.
@@ -10,19 +13,19 @@
 
         Στα σχήματα \ref{fig:unitaskMockupCalendar}, \ref{fig:unitaskMockupDashboard} και \ref{fig:unitaskMockupKanban} παρουσιάζονται κάποια αρχικά mockups που χρησιμοποιήθηκαν για τον σχεδιασμό της εφαρμογής.
 
-        \begin{figure}[p!] \noindent \centering
+        \begin{figure}[h!] \noindent \centering
             \includegraphics[width=0.65\textwidth]{mockups/Calendar}
             \caption{\centering Mockup Calendar σελίδας}
             \label{fig:unitaskMockupCalendar}
         \end{figure}
 
-        \begin{figure}[p!] \noindent \centering
+        \begin{figure}[h!] \noindent \centering
             \includegraphics[width=0.65\textwidth]{mockups/Dashboard}
             \caption{\centering Mockup Dashboard σελίδας}
             \label{fig:unitaskMockupDashboard}
         \end{figure}
 
-        \begin{figure}[p!] \noindent \centering
+        \begin{figure}[h!] \noindent \centering
             \includegraphics[width=0.65\textwidth]{mockups/Kanban}
             \caption{\centering Mockup Kanban σελίδας}
             \label{fig:unitaskMockupKanban}

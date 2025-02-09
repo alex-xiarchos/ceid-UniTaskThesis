@@ -115,7 +115,7 @@
 
                 \begin{minipage}{15cm}
                 \begin{tabbing}
-                    \large \textbf{\supervisorname :}\hspace{2em} \=\@supervisor\\
+                    \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
                     \>\supervisorTitle\\
                     \large \textbf{\covisorname :} \>\@covisor\\
                     \>\covisorTitle\\
@@ -170,7 +170,7 @@
 
                 \begin{minipage}{15cm}
                 \begin{tabbing}
-                    \large \textbf{\supervisorname :}\hspace{2em} \=\@supervisor\\
+                    \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
                     \>\supervisorTitle\\
                     \large \textbf{\covisorname :} \>\@covisor\\
                     \>\covisorTitle\\
