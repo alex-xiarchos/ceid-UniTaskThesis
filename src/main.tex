@@ -40,11 +40,7 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,       % Χρωματιστά links αντί για υπογράμμιση
-    linkcolor=blue,        % Χρώμα για internal links
-    citecolor=blue,        % Χρώμα για citations
-    filecolor=blue,        % Χρώμα για file links
-    urlcolor=blue          % Χρώμα για URLs
+    colorlinks=false,
 }
 
 \graphicspath{ {./img/} }
@@ -152,19 +148,20 @@
 
 
 \begin{document}
-\maketitle
+%\maketitle
 
-\frontmatter
+%\frontmatter
 % Ευχαριστίες
-	\include{acknowledgements}
+%	\include{acknowledgements}
 % Περίληψη
-	\include{abstract}
+%	\include{abstract}
 % Αφιέρωση
-   \thesisDedication{Αφιέρωση}
+%	\thesisDedication{ }
+%	\thesisDedication{\small{στη μητέρα μου}}
 % Πίνακας Περιεχομένων
-	\tableofcontents
+%	\tableofcontents
 % Κατάλογος Σχημάτων
-	\listoffigures
+%	\listoffigures
 %	\listofalgorithms
 % Κατάλογος Πινάκων
 %	\listoftables
@@ -172,29 +169,23 @@
 %\clearpage
 
 
-\mainmatter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% INCLUDE YOUR CHAPTERS/SECTIONS HERE
-%%
-
-% Εισαγωγή
-%    \include{intro}
-% Κεφάλαια
-%    \include{chap2}
-%	\include{chap3}
-
-%	\cleardoublepage
+%\mainmatter
+	\cleardoublepage
 
 % Συντομογραφίες - Αρκτικόλεξα - Ακρωνύμια
 %	\include{abbreviations}
 
 \pagebreak
-	\input{1_eisagwgh}
-	\input{2_taskmanagement}
-	\input{3_lowcode}
-	\input{4_Mendix}
-	\input{5_efarmogh}
-    \input{6_symperasmata}
+%	\input{1_eisagwgh}
+%	\input{2_taskmanagement}
+	\input{3_erwthmatologio}
+%	\input{4_lowcode}
+%	\input{5_Mendix}
+%	\input{6_efarmogh}
+%    \input{7_experiment}
+%    \input{8_results}
+%    \input{9_symperasmata}
+
 
     \printbibliography
 \end{document}
