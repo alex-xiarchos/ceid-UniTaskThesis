@@ -1,21 +1,22 @@
 \begin{abstract}
-%   Ένα σύστημα ομότιμων κόμβων αποτελείται από ένα σύνολο αυτόνομων υπολογιστικών κόμβων στο Διαδίκτυο, οι οποίοι συνεργάζονται με σκοπό την ανταλλαγή δεδομένων. Στα συστήματα ομότιμων κόμβων που χρησιμοποιούνται ευρέως σήμερα, η αναζήτηση πληροφορίας γίνεται με χρήση λέξεων κλειδιών. Η ανάγκη για πιο εκφραστικές λειτουργίες, σε συνδυασμό με την ανάπτυξη του Σημασιολογικού Ιστού, οδήγησε στα συστήματα ομότιμων κόμβων βασισμένα σε σχήματα. Στα συστήματα αυτά κάθε κόμβος χρησιμοποιεί ένα σχήμα με βάση το οποίο οργανώνει τα τοπικά διαθέσιμα δεδομένα. Για να είναι δυνατή η αναζήτηση δεδομένων στα συστήματα αυτά υπάρχουν δύο τρόποι. Ο πρώτος είναι όλοι οι κόμβοι να χρησιμοποιούν το ίδιο σχήμα κάτι το οποίο δεν είναι ευέλικτο. Ο δεύτερος τρόπος δίνει την αυτονομία σε κάθε κόμβο να επιλέγει όποιο σχήμα θέλει και απαιτεί την ύπαρξη κανόνων αντιστοίχισης μεταξύ των σχημάτων για να μπορούν να αποτιμώνται οι ερωτήσεις. Αυτός ο τρόπος προσφέρει ευελιξία όμως δεν υποστηρίζει την αυτόματη δημιουργία και τη δυναμική ανανέωση των κανόνων, που είναι απαραίτητες για ένα σύστημα ομότιμων κόμβων.
+    Η διαχείριση εργασιών αποτελεί σημαντική πρόκληση για τους σύγχρονους φοιτητές, οι οποίοι καλούνται να ισορροπήσουν μεταξύ ακαδημαϊκών, κοινωνικών και επαγγελματικών υποχρεώσεων. Η έλλειψη αποτελεσματικής οργάνωσης μπορεί να οδηγήσει σε άγχος, αναβλητικότητα και μειωμένη απόδοση, επηρεάζοντας τη συνολική φοιτητική εμπειρία. Ωστόσο, πολλοί φοιτητές είτε δεν χρησιμοποιούν οργανωμένες μεθόδους είτε βρίσκουν τις υπάρχουσες αναποτελεσματικές.
 
-%   Στόχος της διπλωματικής εργασίας είναι η ανάπτυξη ενός συστήματος ομότιμων κόμβων βασισμένο σε σχήματα το οποίο (α) θα επιτρέπει μια σχετική ευελιξία στη χρήση των σχημάτων και (β) θα δίνει τη δυνατότητα μετασχηματισμού ερωτήσεων χωρίς την ανάγκη διατύπωσης κανόνων αντιστοίχισης μεταξύ σχημάτων, xρησιμοποιώντας κόμβους με σχήματα RDF που αποτελούν υποσύνολα-όψεις ενός βασικού σχήματος (καθολικό σχήμα).
+    Ο χαμηλός κώδικας (low-code) αποτελεί μια σύγχρονη προσέγγιση ανάπτυξης λογισμικού που επιτρέπει την ταχύτερη υλοποίηση εφαρμογών μέσω γραφικών διεπαφών και προκαθορισμένων λειτουργικών στοιχείων. Οι πλατφόρμες χαμηλού κώδικα μειώνουν την ανάγκη για εκτενή προγραμματισμό, επιτρέποντας στους προγραμματιστές να εστιάσουν περισσότερο στη σχεδίαση και βελτιστοποίηση των λειτουργιών της εφαρμογής.
 
-   \begin{keywords}
-%      Σύστημα ομότιμων κόμβων, Σύστημα ομότιμων κόμβων βασισμένο σε σχήματα, Σημασιολογικός Ιστός, RDF/S, RQL, Jxta
-   \end{keywords}
+    Η παρούσα διπλωματική εργασία εστιάζει στην ανάπτυξη μιας εφαρμογής διαχείρισης εργασιών για φοιτητές, αξιοποιώντας την ευελιξία και την ταχύτητα υλοποίησης των πλατφορμών χαμηλού κώδικα. Η προτεινόμενη εφαρμογή στοχεύει στη βελτίωση της παραγωγικότητας των φοιτητών, παρέχοντας ένα εύχρηστο και αποτελεσματικό εργαλείο για την καλύτερη οργάνωση των υποχρεώσεών τους. Η αποδοτικότητα και η χρηστικότητά της θα αξιολογηθούν μέσω δοκιμών με πραγματικούς χρήστες, ώστε να διαπιστωθεί η πραγματική της αξία ως εργαλείο υποστήριξης της ακαδημαϊκής διαχείρισης.
+
+%   \begin{keywords}
+%   \end{keywords}
 \end{abstract}
 
 
 \begin{abstracteng}
-%A peer-to-peer system is a set of autonomous computing nodes (the peers) which cooperate in order to exchange data. The peers in the peer-to-peer systems that are widely used today, rely on simple keyword selection in order to search for data. The need for richer facilities in exchanging data, as well as, the evolution of the Semantic Web, led to the evolution of the schema-based peer-to-peer systems. In those systems every node uses a schema to organize the local data. So there are two ways in order for data search to be feasible. The first but not so flexible way implies that every node uses the same schema. The second way gives every node the flexibility to choose a schema according with its needs, but on the same time requires the existence of mapping rules in order for queries to be replied. This way though, doesn't offer automatic creation and dynamic renewal of the mapping rules which would be essential for peer-to-peer systems.
+    Task management is a significant challenge for modern students, who must balance academic, social, and professional obligations. The lack of effective organization can lead to stress, procrastination, and decreased performance, ultimately affecting the overall student experience. However, many students either do not use structured methods or find existing solutions ineffective.
 
-%This diploma thesis aims to the development of a schema-based peer-to-peer system that allows a certain flexibility for schema selection and on the same time enables query transformation without the use of mapping rules. The peers use RDF schemas that are subsets (views) of a big common schema called global schema.
+    Low-code development is a modern software approach that enables faster application implementation through graphical interfaces and pre-configured functional components. Low-code platforms reduce the need for extensive coding, allowing developers to focus more on designing and optimizing application functionalities.
 
-   \begin{keywordseng}
-%      Peer-to-peer, Schema-based peer-to-peer, Semantic Web, RDF/S, RQL, Jxta
-   \end{keywordseng}
+    This thesis focuses on developing a task management application for students, leveraging the flexibility and rapid implementation capabilities of low-code platforms. The proposed application aims to enhance student productivity by providing a user-friendly and efficient tool for better task organization. Its effectiveness and usability will be evaluated through real-user testing to assess its actual value as a student task management support tool.
 
+%   \begin{keywordseng}
+%   \end{keywordseng}
 \end{abstracteng}
