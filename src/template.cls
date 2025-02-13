@@ -63,14 +63,14 @@
         \let\footnoterule\relax
         \renewcommand{\thefootnote}{\fnsymbol{footnote}}
         \new@tpage
-        
+
         \begin{center}
 
         \begin{minipage}{6cm}
             \includegraphics[width=6cm]{img/logo-up-4color-landscape.jpg}
 		\vspace{3pt}
         \end{minipage}
-        
+
         \begin{minipage}{15cm}
         \begin{center}
             \textsc{
@@ -124,7 +124,7 @@
                 \end{tabbing}
                 \end{minipage}
                 \vspace{1mm}
-   
+
             %
             \vfill
             %
@@ -135,7 +135,7 @@
             \end{center}
             %
             \cleardoublepage
-            
+
             \if@twoside\new@tpage
                 \noindent
                 \begin{minipage}[t]{\textwidth}
@@ -258,19 +258,20 @@
     \begin{minipage}{12cm}
         \@institution \\
         \@department \\
-        \@division 
+        \@division
     \end{minipage}
 }
 
 \approval{
-    Εγκρίθηκε από την διμελή εξεταστική επιτροπή την \examinationDate.\\
-    
+    Εγκρίθηκε από την τριμελή εξεταστική επιτροπή την \examinationDate.\\
     \begin{tabbing}
-    aaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\=\kill
-    \> \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\\\\\\
-    \> .............................\>  .............................\\
-    \> \@supervisor\>         \@epitropiF\\
-    \> \supervisorTitle\>    \epitropiFTitle\\\\\\\\
+    \=\hspace*{.35\linewidth}\=\hspace{.35\linewidth}\=\kill \\
+
+    %aaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\= aaaaaaaaaaaaaaaaaaaaaaaaaaa\=\kill%
+    \> \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\>   \textit{(Υπογραφή)}\\\\\\
+    \> .............................\>  .............................\>  .............................\\
+    \> \@supervisor\>         \@covisor\>         \@covisorS\\
+    \> \supervisorTitle\>    \covisorTitle\>    \covisorSTitle\\\\\\\\
     \end{tabbing}
 
 }
@@ -283,7 +284,7 @@
     ολοκλήρου ή τμήματος αυτής, για εμπορικό σκοπό.  Επιτρέπεται η ανατύπωση,
     αποθήκευση και διανομή για σκοπό μη κερδοσκοπικό, εκπαιδευτικής ή
     ερευνητικής φύσης, υπό την προϋπόθεση να αναφέρεται η πηγή προέλευσης και να
-    διατηρείται το παρόν μήνυμα.  
+    διατηρείται το παρόν μήνυμα.
     \\[24pt]
     Το περιεχόμενο αυτής της εργασίας δεν απηχεί απαραίτητα τις απόψεις του Τμήματος, του Επιβλέποντα, ή της επιτροπής που την ενέκρινε.
     \\[24pt]
@@ -436,7 +437,7 @@
 	% Zero page margins
 		\setlength{\oddsidemargin}{0mm}
 		\setlength{\evensidemargin}{0mm}
-		\setlength{\textwidth}{\paperwidth}	
+		\setlength{\textwidth}{\paperwidth}
 		\setlength{\topmargin}{0mm}
 		\setlength{\textheight}{\paperheight}
 	\fontsize{7}{8.4}\selectfont
@@ -450,7 +451,7 @@
 				circle (5.6cm);
                 	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ} \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
                    \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};   
+			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
 	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS }}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
 	        \end{tikzpicture}
 	        };
@@ -460,9 +461,9 @@
 	        \begin{tikzpicture}[remember picture, overlay]
 	             \draw(0,0) % rectangle's center (relative)
 				  rectangle (6cm,2.5cm);
-           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};     
+           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
 	        \end{tikzpicture}
-	        };		
+	        };
 	\end{tikzpicture}
 
 	%% lower copy:
@@ -477,7 +478,7 @@
 				circle (5.6cm);
                 	\node[draw=none, align=center] at (3.5,-1) {\textbf{ΔΙΠΛΩΜΑΤΙΚΗ}  \\ \textbf{ΕΡΓΑΣΙΑ}  \\[5pt] ΠΑΤΡΑ,  \\ #3 \\ #4};
                    \node[draw=none, text width=3.5cm, align=center] at (-3.5,-1) {\textbf{#2}};
-			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};   
+			\node[draw=none,text width=#5cm, align=center] at (0,3) {\fontsize{9}{10.8}\selectfont \textbf{#1} \fontsize{7}{8.4}\selectfont};
 	             \path [decorate,decoration={raise=-1ex, text along path, reverse path, text align={center}, text={PANEPISTHMIO PATRWN - POLUTEQNIKH SQOLH - TMHMA MHQANIKWN HLEKTRONIKWN UPOLOGISTWN KAI PLHROFORIKHS}}] (4.7cm,-2.8cm) arc (-30:210:5.45cm) ;
 	        \end{tikzpicture}
 	        };
@@ -487,9 +488,9 @@
 	        \begin{tikzpicture}[remember picture, overlay]
 	             \draw(0,0) % rectangle's center (relative)
 				  rectangle (6cm,2.5cm);
-           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};      
+           		 \node[draw=none] at (3,1.25) {\textit{Θέση \en{barcode}}};
 	        \end{tikzpicture}
-	        };		
+	        };
 	\end{tikzpicture}
 	%
 	\pagebreak
@@ -501,44 +502,44 @@
 	% Zero page margins
 		\setlength{\oddsidemargin}{0mm}
 		\setlength{\evensidemargin}{0mm}
-		\setlength{\textwidth}{\paperwidth}	
+		\setlength{\textwidth}{\paperwidth}
 		\setlength{\topmargin}{0mm}
 		\setlength{\textheight}{\paperheight}
-	\fontsize{9}{10.8}\selectfont 
+	\fontsize{9}{10.8}\selectfont
 	\begin{tikzpicture}[remember picture, overlay]
 	    \node [shift={(-10.5cm,-8.4cm)}]  at (current page.north east) % slightly change y value for finer adjustment
 	        {%
 	        \begin{tikzpicture}[remember picture, overlay]
-			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
-			\draw[dashed] (-6,-6) rectangle (6,6); 
+			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
+			\draw[dashed] (-6,-6) rectangle (6,6);
 			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{img/logo-up-4color-stam.eps}};
                    \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ };
                    \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
+			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
                    \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
                    \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
                    \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
 	        \end{tikzpicture}
-	        };	
+	        };
 	\end{tikzpicture}
 
 	%% lower copy:
-	\fontsize{9}{10.8}\selectfont 
+	\fontsize{9}{10.8}\selectfont
 	\begin{tikzpicture}[remember picture, overlay]
 	    \node [shift={(-10.5cm,-21.9cm)}]  at (current page.north east) % slightly change y value for finer adjustment
 	        {%
 	        \begin{tikzpicture}[remember picture, overlay]
-			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8); 
+			\draw[thick] (-5.8,-5.8) rectangle (5.8,5.8);
 			\draw[dashed] (-6,-6) rectangle (6,6);
 			\node at (-4.6,4.4){\includegraphics[width=1.8cm]{img/logo-up-4color-stam.eps}};
                    \node[draw=none, text width=9cm, align=left] at (1,4.3) {ΠΑΝΕΠΙΣΤΗΜΙΟ ΠΑΤΡΩΝ \\ ΠΟΛΥΤΕΧΝΙΚΗ ΣΧΟΛΗ \\ TΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ.};
                    \node[draw=none, text width=9cm, align=center] at (0,2.3) {ΔΙΠΛΩΜΑΤΙΚΗ ΕΡΓΑΣΙΑ};
-			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};   
+			\node[draw=none,text width=#5cm, align=center] at (0,0) {\fontsize{11}{13.2}\selectfont \textbf{#1} \fontsize{8}{9.6}\selectfont};
                    \node[draw=none, text width=7cm, align=center] at (0,-2.5) {\textbf{#2}};
                    \node[draw=none, text width=10cm, align=center] at (0,-4) {\scalebox{0.7}{\textbf{ΠΑΤΡΑ}}};
                    \node[draw=none, text width=5cm, align=center] at (0,-4.5) {\scalebox{0.7}{\textbf{#3 #4}}};
 	        \end{tikzpicture}
-	        };	
+	        };
 	\end{tikzpicture}
 	%
 }
