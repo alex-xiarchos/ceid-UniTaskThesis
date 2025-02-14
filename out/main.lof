@@ -6,6 +6,8 @@
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
+\babel@toc {greek}{}\relax 
+\babel@toc {greek}{}\relax 
 \addvspace {10\p@ }
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
@@ -161,19 +163,19 @@
 \contentsline {figure}{\numberline {5.13}{\ignorespaces \centering Όταν επεξεργαζόμαστε ένα Microflow, τo Toolbox panel περιλαμβάνει τα διαθέσιμα activities.}}{65}{figure.caption.47}%
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces \centering Παράδειγμα από domain model \blx@tocontentsinit {0}\cite {mendixDoc}.}}{66}{figure.caption.48}%
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces \centering Παράδειγμα από domain model \blx@tocontentsinit {0}\cite {mendixDoc}.}}{67}{figure.caption.48}%
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
 \contentsline {figure}{\numberline {5.15}{\ignorespaces \centering Ιδιότητες μιας οντότητας Task (βλ. κεφ. \ref {ch:unitask})}}{68}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces \centering Προσθήκη καινούριου γνωρίσματος σε μια οντότητα}}{68}{figure.caption.50}%
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces \centering Προσθήκη καινούριου γνωρίσματος σε μια οντότητα}}{69}{figure.caption.50}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces \centering Προσθήκη κανόνα επικύρωσης (βλ. κεφ. \ref {ch:unitask})}}{69}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces \centering Επεξεργασία κανόνων πρόσβασης της οντότητας Task (βλ. κεφ. \ref {ch:unitask})}}{69}{figure.caption.52}%
 \babel@toc {greek}{}\relax 
 \babel@toc {greek}{}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces \centering Επεξεργασία κανόνων πρόσβασης της οντότητας Task (βλ. κεφ. \ref {ch:unitask})}}{70}{figure.caption.52}%
 \contentsline {figure}{\numberline {5.19}{\ignorespaces \centering Πίνακας Kanban στο dashboard \blx@tocontentsinit {0}\cite {mendixDoc}.}}{70}{figure.caption.53}%
 \addvspace {10\p@ }
 \babel@toc {greek}{}\relax 
