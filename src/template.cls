@@ -129,61 +129,61 @@
             \vfill
             %
 
-            \begin{center}
-                \textsc{\@lab}\\
-                \thesisPlaceDate
-            \end{center}
-            %
-            \cleardoublepage
+%            \begin{center}
+%                \textsc{\@lab}\\
+%                \thesisPlaceDate
+%            \end{center}
+%            %
+%            \cleardoublepage
 
-            \if@twoside\new@tpage
-                \noindent
-                \begin{minipage}[t]{\textwidth}
-                    \@uppertitleback
-                \end{minipage}
-                \par
-                \vfill
-               \begin{center}
-                    \LARGE \bfseries \@title
-                \end{center}
-                \ifx\@subtitle\@empty\else
-                \begin{center}
-                    \LARGE \@subtitle
-                \end{center}
-                \fi
-                %
-                \vspace{5mm}
-                %
-                \begin{center}
-                    \huge{\textsc{\@translator}}\\
-                    \vspace{3mm}
-                    \normalsize{\toutis}\\
-                    \vspace{3mm}
-                    \large{\textbf{\authorNameCapital}}
-                \end{center}
-                %
-                \vspace{5mm}
-                %
-                \hspace{1mm}
+%            \if@twoside\new@tpage
+%                \noindent
+%                \begin{minipage}[t]{\textwidth}
+%                    \@uppertitleback
+%                \end{minipage}
+%                \par
+%                \vfill
+%               \begin{center}
+%                    \LARGE \bfseries \@title
+%                \end{center}
+%                \ifx\@subtitle\@empty\else
+%                \begin{center}
+%                    \LARGE \@subtitle
+%                \end{center}
+%                \fi
+%                %
+%                \vspace{5mm}
+%                %
+%                \begin{center}
+%                    \huge{\textsc{\@translator}}\\
+%                    \vspace{3mm}
+%                    \normalsize{\toutis}\\
+%                    \vspace{3mm}
+%                    \large{\textbf{\authorNameCapital}}
+%                \end{center}
+%                %
+%                \vspace{5mm}
+%                %
+%                \hspace{1mm}
 
-           \vfill
+%           \vfill
 
-                \begin{minipage}{15cm}
-                \begin{tabbing}
-                    \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
-                    \>\supervisorTitle\\
-                    \large \textbf{\covisorname :} \>\@covisor\\
-                    \>\covisorTitle\\
-                    \large \textbf{\covisorSname :} \>\@covisorS\\
-                    \>\covisorSTitle\\
-                \end{tabbing}
-                \end{minipage}
-                \vspace{1mm}
-           \vfill
+%                \begin{minipage}{15cm}
+%                \begin{tabbing}
+%                    \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
+%                    \>\supervisorTitle\\
+%                    \large \textbf{\covisorname :} \>\@covisor\\
+%                    \>\covisorTitle\\
+%                    \large \textbf{\covisorSname :} \>\@covisorS\\
+%                    \>\covisorSTitle\\
+%                \end{tabbing}
+%                \end{minipage}
+%                \vspace{1mm}
+%           \vfill
 
-                \begin{minipage}{\textwidth}
-                    \@approval
-                \end{minipage}
+%                \begin{minipage}{\textwidth}
+%                    \@approval
+%                \end{minipage}
 
             \vfill
             \begin{center}
@@ -296,11 +296,11 @@
 δεδομένων, ιδεών ή λέξεων, είτε αυτές αναφέρονται ακριβώς είτε παραφρασμένες. Επίσης,
 βεβαιώνω ότι αυτή η διπλωματική εργασία προετοιμάστηκε από εμένα προσωπικά ειδικά για τις
 απαιτήσεις του προγράμματος σπουδών του Τμήματος Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής του Πανεπιστημίου Πατρών.
-    \\[24pt]
-    \textit{(Υπογραφή)}
-    \\[24pt]
-    .............................\\
-    \@author
+%    \\[24pt]
+%    \textit{(Υπογραφή)}
+%    \\[24pt]
+%    .............................\\
+%    \@author
 }
 
 
