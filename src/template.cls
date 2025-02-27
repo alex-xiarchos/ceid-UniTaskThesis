@@ -114,14 +114,27 @@
            \vfill
 
                 \begin{minipage}{15cm}
+%                \begin{tabbing}
+%                    \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
+%                    \>\supervisorTitle\\
+%                    \large \textbf{\covisorname :} \>\@covisor\\
+%                    \>\covisorTitle\\
+%                    \large \textbf{\covisorSname :} \>\@covisorS\\
+%                    \>\covisorSTitle\\
+%                \end{tabbing}
+
                 \begin{tabbing}
                     \large \textbf{\supervisorname :}\hspace{3em} \=\@supervisor\\
-                    \>\supervisorTitle\\
+                    \>\supervisorTitle\\[1ex] % extra space if needed
                     \large \textbf{\covisorname :} \>\@covisor\\
-                    \>\covisorTitle\\
+                    \>\covisorTitle\\[1ex]
                     \large \textbf{\covisorSname :} \>\@covisorS\\
+                    \>Αν. Καθηγητής\\[1ex] % placeholder under @covisor
                     \>\covisorSTitle\\
+                    \>ΕΔΙΠ\\ % placeholder under @covisorsS
                 \end{tabbing}
+
+
                 \end{minipage}
                 \vspace{1mm}
 
