@@ -109,7 +109,7 @@
                 \vspace{5mm}
                 %
                 \hspace{1mm}
-           \end{center}
+       \end{center}
 
            \vfill
 
@@ -134,9 +134,8 @@
                     \>ΕΔΙΠ\\ % placeholder under @covisorsS
                 \end{tabbing}
 
-
                 \end{minipage}
-                \vspace{1mm}
+                \vspace{2mm}
 
             %
             \vfill
