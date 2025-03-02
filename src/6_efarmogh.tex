@@ -1,5 +1,5 @@
 \chapter{Υλοποίηση εφαρμογής} \label{ch:unitask}
-    Σε αυτό το κεφάλαιο παρουσιάζεται η υλοποίηση της εφαρμογής UniTask.  Αρχικά, γίνεται αναφορά στη σχεδιαστική προσέγγιση που ακολουθήθηκε, λαμβάνοντας υπόψη τα αποτελέσματα έρευνας σχετικά με τις προτιμήσεις των φοιτητών. Στη συνέχεια, παρουσιάζεται ένα demo της εφαρμογής με όλες τις δυνατότητές της και στο τέλος εξηγείται η αρχιτεκτονική της εφαρμογής καθώς και τα επιμέρους τεχνικά
+    Σε αυτό το κεφάλαιο παρουσιάζεται η υλοποίηση της εφαρμογής UniTask.  Αρχικά, γίνεται αναφορά στη σχεδιαστική προσέγγιση που ακολουθήθηκε, λαμβάνοντας υπόψη τα αποτελέσματα της έρευνας σχετικά με τις προτιμήσεις των φοιτητών. Στη συνέχεια, παρουσιάζεται ένα demo της εφαρμογής με όλες τις δυνατότητές της και στο τέλος εξηγείται η αρχιτεκτονική της εφαρμογής καθώς και τα επιμέρους τεχνικά
     στοιχεία που την απαρτίζουν. Συγκεκριμένα, αναλύονται τα διάφορα modules που χρησιμοποιήθηκαν, τα διαφορετικά layouts που συνθέτουν το περιβάλλον χρήστη, η λειτουργικότητα των διαφορετικών microflows που έχουν σχεδιαστεί και οι ρυθμίσεις της εφαρμογής.
 
     Στόχος του κεφαλαίου είναι να παρέχει μια ολοκληρωμένη εικόνα της ανάπτυξης του UniTask, παρουσιάζοντας τόσο το frontend όσο και το backend της εφαρμογής, δίνοντας έμφαση στις επιλογές που διασφαλίζουν την ευχρηστία και την αποδοτικότητα της πλατφόρμας.
@@ -241,7 +241,7 @@
 
                     Χρησιμοποιείται το \texttt{PopupLayout} layout του \texttt{Atlas\_Core} module. Η σελίδα περιλαμβάνει δύο Parameters, το \texttt{Student} και \texttt{AccountPasswordData} του module \linebreak \texttt{Administrator}. Η σελίδα αποτελείται από δύο εμφωλευμένα Data Views, το εξωτερικό έχει ως Data source το \texttt{AccountPasswordData}, ενώ το εσωτερικό έχει ως Data source τη συσχέτιση του \texttt{AccountPasswordData} με το \texttt{Student}. Η χρήση του \texttt{AccountPasswordData} είναι απαραίτητη καθώς η δημιουργία ενός νέου χρήστη χρειάζεται την αποθήκευση του κωδικού πρόσβασής του.
 
-                    Στο εσωτερικό Data View περιλαμβάνει Text Boxes, Radio Buttons και Input \linebreak Reference Set Selectors όπου εισάγονται τιμές για τα \texttt{Username}, \texttt{Blocked}, \texttt{Active}, \texttt{User role}, \texttt{Language}, \texttt{Time zone}, \texttt{New password} και \texttt{Confirm password}. Έχει σημασία να σημειωθεί πως οι ιδιότητες (γνωρίσματα) που αποθηκεύουμε στην πραγματικότητα δεν είναι ιδιότητες του \texttt{Student} αλλά του \texttt{System.User} του οποίου αποτελεί παιδί. Το Input Reference Set Selector χρησιμοποιείται για την επιλογή του \texttt{UserRole}, που αποτελεί διαφορετική σελίδα που θα αναλυθεί στη συνέχεια.
+                    Στο εσωτερικό Data View περιλαμβάνονται Text Boxes, Radio Buttons και Input \linebreak Reference Set Selectors όπου εισάγονται τιμές για τα \texttt{Username}, \texttt{Blocked}, \texttt{Active}, \texttt{User role}, \texttt{Language}, \texttt{Time zone}, \texttt{New password} και \texttt{Confirm password}. Αξίζει να σημειωθεί πως οι ιδιότητες (γνωρίσματα) που αποθηκεύουμε στην πραγματικότητα δεν είναι ιδιότητες του \texttt{Student} αλλά του \texttt{System.User} του οποίου αποτελεί παιδί. Το Input Reference Set Selector χρησιμοποιείται για την επιλογή του \texttt{UserRole}, που αποτελεί διαφορετική σελίδα που θα αναλυθεί στη συνέχεια.
 
                     Τέλος, περιλαμβάνεται κουμπί για την αποθήκευση, το οποίο καλεί το microflow \texttt{ACT\_Account\_Save} του \texttt{Administrator} για την αποθήκευση των τιμών, και κουμπί για την ακύρωση της διαδικασίας.
 
@@ -887,7 +887,7 @@ else ''         \end{lstlisting}
 
                 Το layout (εικόνα \ref{fig:unitask_UniTask_TopBar}) χρησιμοποιείται για την εμφάνιση της μπάρας πλοήγησης στην κορυφή της σελίδας. Η μπάρα πλοήγησης αποτελείται από δύο διαφορετικά Navigation μενού, το αριστερό (το κύριο Project navigation) και το δεξί (ένα Menu document του \texttt{UniTaskDesignSystem}) τοποθετημένα σε ένα Layout Grid με δύο στήλες. Τα Navigation μενού καλούν τα αντίστοιχα \texttt{ShowPage} microflows για την ανακατεύθυνση του χρήστη στην επιλεγμένη σελίδα. Εξαίρεση αποτελεί το κουμπί {\Zona Home} που καλεί τη σελίδα \texttt{PAGE\_Home\_Page} απευθείας και το κουμπί {\Zonaa αποσύνδεση} που αποσυνδέει τον χρήστη.
 
-                Ο τίτλος της εφαρμογής {\ZonaSB UniTask} που εμφανίζεται στα αριστερά χρησιμοποιεί custom CSS και περιλαμβάνεται ένα hamburger μενού στα αριστερά για μεγαλύτερη προσβασιμότητα. Το {\Zone Admin} περιλαμβάνει το υπομενού {\Zona Account Overview} και είναι προσβάσιμα μόνο από τον Administrator.
+                Ο τίτλος της εφαρμογής {\ZonaSB UniTask} που εμφανίζεται στα αριστερά χρησιμοποιεί custom CSS ενώ περιλαμβάνεται ένα hamburger μενού στα αριστερά για μεγαλύτερη προσβασιμότητα. Το {\Zone Admin} περιλαμβάνει το υπομενού {\Zona Account Overview} και είναι προσβάσιμα μόνο από τον Administrator.
 
                 \begin{figure}[H] \noindent
                     \paragraph{\texttt{UniTask\_SideBar}}
